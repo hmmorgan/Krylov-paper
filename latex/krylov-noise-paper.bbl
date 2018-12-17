@@ -1,0 +1,203 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{}
+
+\bibitem[{Saad(1996)Yousef Saad}]{saad96iterative}
+Saad Y.
+\newblock Iterative Methods for Sparse Linear Systems.
+\newblock Boston: PWS Publishing Company; 1996.
+
+\bibitem[{Dongarra et~al.(2015)Jack Dongarra and Piotr Luszczek and
+  others}]{HPCChallenge}
+Dongarra J, Luszczek P, et~al., {HPC} Challenge; 2015.
+\newblock
+  \urlprefix\url{http://icl.cs.utk.edu/hpcc/hpcc_results_lat_band.cgi?display=opt}.
+
+\bibitem[{Chronopoulos and Gear(1989)A. T. Chronopoulos and C. W.
+  Gear}]{Chronopoulos_Gear_1989}
+Chronopoulos AT, Gear CW.
+\newblock {$s$-step} iterative methods for symmetric linear systems.
+\newblock Journal of Computational and Applied Mathematics 1989;25:153--168.
+
+\bibitem[{Ghysels et~al.(2012)Ghysels, P. and Ashby, T.J. and Meerbergen, K.
+  and Vanroose, W.}]{Ghysels_Ashby_Meerbergen_Vanroose_2012}
+Ghysels P, Ashby TJ, Meerbergen K, Vanroose W.
+\newblock Hiding global communication latency in the {GMRES} algorithm on
+  massively parallel machines.
+\newblock Leuven, Belgium: Intel Exascience Lab; 2012.
+
+\bibitem[{Ghysels and Vanroose(2014)P. Ghysels and W.
+  Vanroose}]{GhyselsVanroose2014}
+Ghysels P, Vanroose W.
+\newblock Hiding Global Synchronization Latency in the Preconditioned Conjugate
+  Gradient Algorithm.
+\newblock Parallel Computing 2014;40(7):224--238.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0167819113000719},
+  7th Workshop on Parallel Matrix Algorithms and Applications.
+
+\bibitem[{Strzodka and G\"oddeke(2006)R. Strzodka and D.
+  G\"oddeke}]{StrzodkaGoddeke06}
+Strzodka R, G\"oddeke D.
+\newblock Pipelined Mixed Precision Algorithms on {FPGA}s for Fast and Accurate
+  {PDE} Solvers from Low Precision Components.
+\newblock In: Proceedings of the 14th Annual IEEE Symposium on
+  Field-Programmable Custom Computing Machines IEEE Computer Society; 2006. p.
+  259--270.
+\newblock FCCM '06.
+
+\bibitem[{Sturler and van~der Vorst(1995)E. De Sturler and H. A. van der
+  Vorst}]{Sturler_Vorst_1995}
+Sturler ED, van~der Vorst HA.
+\newblock Reducing the effect of global communication in {GMRES(m)} and CG on
+  parallel distributed memory computers.
+\newblock Applied Numerical Mathematics 1995;18:441--459.
+
+\bibitem[{Jacques et~al.(1999)T. Jacques and L. Nicolas and C.
+  Vollaire}]{JacquesNicolasVollaire12}
+Jacques T, Nicolas L, Vollaire C.
+\newblock Electromagnetic Scattering with the Boundary Integral Method on
+  {MIMD} Systems.
+\newblock In: High-Performance Computing and Networking, vol. 1593 of Lecture
+  Notes in Computer Science Springer; 1999.p. 1025--1031.
+
+\bibitem[{Hoefler et~al.(2010)Hoefler, Torsten and Schneider, Timo and
+  Lumsdaine, Andrew}]{hoefler2010characterizing}
+Hoefler T, Schneider T, Lumsdaine A.
+\newblock Characterizing the influence of system noise on large-scale
+  applications by simulation.
+\newblock In: Proceedings of the 2010 ACM/IEEE International Conference for
+  High Performance Computing, Networking, Storage and Analysis IEEE Computer
+  Society; 2010. p. 1--11.
+
+\bibitem[{Ferreira et~al.(2008)Kurt B. Ferreira and Patrick Bridges and Ron
+  Brightwell}]{FerreiraBridgesBrightwell08}
+Ferreira KB, Bridges P, Brightwell R.
+\newblock Characterizing Application Sensitivity to {OS} Interference Using
+  Kernel-level Noise Injection.
+\newblock In: Proceedings of the 2008 ACM/IEEE Conference on Supercomputing SC
+  '08, Piscataway, NJ: IEEE Press; 2008. p. 19:1--19:12.
+\newblock \urlprefix\url{http://dl.acm.org/citation.cfm?id=1413370.1413390}.
+
+\bibitem[{Parker et~al.(2017)Parker, Scott and Morozov, Vitali and Chunduri,
+  Sudheer and Harms, Kevin and Knight, Chris and Kumaran,
+  Kalyan}]{parker2017early}
+Parker S, Morozov V, Chunduri S, Harms K, Knight C, Kumaran K.
+\newblock Early Evaluation of the Cray XC40 Xeon Phi System Theta at Argonne.
+\newblock Cray User Group 2017 proceedings 2017;.
+
+\bibitem[{Chunduri et~al.(2017)Chunduri, Sudheer and Harms, Kevin and Parker,
+  Scott and Morozov, Vitali and Oshin, Samuel and Cherukuri, Naveen and
+  Kumaran, Kalyan}]{chunduri2017run}
+Chunduri S, Harms K, Parker S, Morozov V, Oshin S, Cherukuri N, et~al.
+\newblock Run-to-run variability on Xeon Phi based Cray XC systems.
+\newblock In: Proceedings of the International Conference for High Performance
+  Computing, Networking, Storage and Analysis ACM; 2017. p.~52.
+
+\bibitem[{Beckman et~al.(2006)Beckman, Pete and Iskra, Kamil and Yoshii,
+  Kazutomo and Coghlan, Susan}]{beckman2006influence}
+Beckman P, Iskra K, Yoshii K, Coghlan S.
+\newblock The influence of operating systems on the performance of collective
+  operations at extreme scale.
+\newblock In: Cluster Computing, 2006 IEEE International Conference on IEEE;
+  2006. p. 1--12.
+
+\bibitem[{Hoefler et~al.(2007)T. Hoefler and A. Lumsdaine and W.
+  Rehm}]{HoeflerLumsdaineRehm07}
+Hoefler T, Lumsdaine A, Rehm W.
+\newblock Implementation and Performance Analysis of Non-Blocking Collective
+  Operations for {MPI}.
+\newblock In: Proceedings of the 2007 International Conference on High
+  Performance Computing, Networking, Storage and Analysis, SC07 IEEE Computer
+  Society/ACM; 2007. .
+
+\bibitem[{Agarwal et~al.(2005)Agarwal, Saurabh and Garg, Rahul and Vishnoi,
+  Nisheeth K}]{agarwal2005impact}
+Agarwal S, Garg R, Vishnoi NK.
+\newblock The impact of noise on the scaling of collectives: A theoretical
+  approach.
+\newblock In: International Conference on High-Performance Computing Springer;
+  2005. p. 280--289.
+
+\bibitem[{Seelam et~al.(2010)Seelam, Seetharami and Fong, Liana and Tantawi,
+  Asser and Lewars, John and Divirgilio, John and Gildea,
+  Kevin}]{seelam2010extreme}
+Seelam S, Fong L, Tantawi A, Lewars J, Divirgilio J, Gildea K.
+\newblock Extreme scale computing: Modeling the impact of system noise in
+  multicore clustered systems.
+\newblock In: Parallel \& Distributed Processing (IPDPS), 2010 IEEE
+  International Symposium on IEEE; 2010. p. 1--12.
+
+\bibitem[{Morgan et~al.(2016)Hannah Morgan and Matthew G. Knepley and Patrick
+  Sanan and L. Ridgway Scott}]{morgan2016krylov}
+Morgan H, Knepley MG, Sanan P, Scott LR.
+\newblock A stochastic performance model for pipelined {K}rylov methods.
+\newblock Concurrency and Computation: Practice and Experience
+  2016;28(18):4532--4542.
+
+\bibitem[{Sodani(2015)Sodani, Avinash}]{sodani2015knights}
+Sodani A.
+\newblock Knights landing (knl): 2nd generation intel{\textregistered} xeon phi
+  processor.
+\newblock In: Hot Chips 27 Symposium (HCS), 2015 IEEE IEEE; 2015. p. 1--24.
+
+\bibitem[{Alverson et~al.(2012)Alverson, Bob and Froese, Edwin and Kaplan,
+  Larry and Roweth, Duncan}]{alverson2012cray}
+Alverson B, Froese E, Kaplan L, Roweth D.
+\newblock Cray XC series network.
+\newblock Cray Inc, White Paper WP-Aries01-1112 2012;.
+
+\bibitem[{Balay et~al.(2017)Balay, Satish and Abhyankar, Shrirang and Adams,
+  Mark and Brown, Jed and Brune, Peter and Buschelman, Kris and Dalcin, LD and
+  Eijkhout, Victor and Gropp, W and Kaushik, Dinesh and
+  others}]{balay2017petsc}
+Balay S, Abhyankar S, Adams M, Brown J, Brune P, Buschelman K, et~al.
+\newblock Petsc users manual revision 3.8.
+\newblock Argonne National Lab.(ANL), Argonne, IL (United States); 2017.
+
+\bibitem[{Balay et~al.(2001)Balay, Satish and Buschelman, Kris and Gropp,
+  William D and Kaushik, Dinesh and Knepley, Matthew G and McInnes, L Curfman
+  and Smith, Barry F and Zhang, Hong}]{balay2001petsc}
+Balay S, Buschelman K, Gropp WD, Kaushik D, Knepley MG, McInnes LC, et~al.,
+  PETSc web page; 2001.
+
+\bibitem[{Cram{\'e}r(2016)Cram{\'e}r, Harald}]{cramer2016mathematical}
+Cram{\'e}r H.
+\newblock Mathematical methods of statistics (PMS-9), vol.~9.
+\newblock Princeton university press; 2016.
+
+\bibitem[{David and Nagaraja(2004)David, Herbert Aron and Nagaraja, Haikady
+  Navada}]{david2004order}
+David HA, Nagaraja HN.
+\newblock Order statistics.
+\newblock Encyclopedia of Statistical Sciences 2004;9.
+
+\bibitem[{Bertsimas et~al.(2006)Bertsimas, Dimitris and Natarajan, Karthik and
+  Teo, Chung-Piaw}]{bertsimas2006tight}
+Bertsimas D, Natarajan K, Teo CP.
+\newblock Tight bounds on expected order statistics.
+\newblock Probability in the Engineering and Informational Sciences
+  2006;20(4):667--686.
+
+\bibitem[{Hammarlund et~al.(2014)Hammarlund, Per and Martinez, Alberto J and
+  Bajwa, Atiq A and Hill, David L and Hallnor, Erik and Jiang, Hong and Dixon,
+  Martin and Derr, Michael and Hunsaker, Mikal and Kumar, Rajesh and
+  others}]{hammarlund2014haswell}
+Hammarlund P, Martinez AJ, Bajwa AA, Hill DL, Hallnor E, Jiang H, et~al.
+\newblock Haswell: The fourth-generation intel core processor.
+\newblock IEEE Micro 2014;34(2):6--20.
+
+\bibitem[{Kumaran(2016)Kumaran, Kalyan}]{kumaran2016introduction}
+Kumaran K.
+\newblock Introduction to Mira.
+\newblock In: Code for Q Workshop; 2016. .
+
+\bibitem[{Groves et~al.(2017)Groves, Taylor and Gu, Yizi and Wright, Nicholas
+  J}]{groves2017understanding}
+Groves T, Gu Y, Wright NJ.
+\newblock Understanding Performance Variability on the Aries Dragonfly Network.
+\newblock In: Cluster Computing (CLUSTER), 2017 IEEE International Conference
+  on IEEE; 2017. p. 809--813.
+
+\end{thebibliography}

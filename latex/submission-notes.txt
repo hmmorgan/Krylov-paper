@@ -1,0 +1,9 @@
+
+CPE instructions:
+http://www.cc-pe.net/journalinfo/authors.html
+
+CPE template:
+https://www.overleaf.com/latex/templates/template-for-submissions-to-concurrency-and-computation-practice-and-experience/tnrtspsypskx
+
+notes to send with email:
+* too much in one paper?

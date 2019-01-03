@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  30 NOV 2018 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  3 JAN 2019 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1884,7 +1884,44 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \FV@StepNumber=\count351
 \FV@OutFile=\write4
 )
-(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count352
+\float@exts=\toks57
+\float@box=\box74
+\@float@everytoks=\toks58
+\@floatcapt=\box75
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks59
+\c@algorithm=\count353
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count354
+\c@ALG@rem=\count355
+\c@ALG@nested=\count356
+\ALG@tlm=\skip168
+\ALG@thistlm=\skip169
+\c@ALG@Lnr=\count357
+\c@ALG@blocknr=\count358
+\c@ALG@storecount=\count359
+\c@ALG@tmpcounter=\count360
+\ALG@tmplength=\skip170
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/02/14 3.18 The Babel package
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
@@ -1895,11 +1932,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count352
+\babel@savecnt=\count361
 \U@D=\dimen319
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count353
+\bbl@dirlevel=\count362
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -1907,77 +1944,77 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip168
-\multirow@cntb=\count354
-\multirow@dima=\skip169
+\multirow@colwidth=\skip171
+\multirow@cntb=\count363
+\multirow@dima=\skip172
 \bigstrutjot=\dimen320
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count355
-\c@subtable=\count356
-\c@subfeaturebox=\count357
+\c@subfigure=\count364
+\c@subtable=\count365
+\c@subfeaturebox=\count366
 )
 (./krylov-noise-paper.aux)
 \openout1 = `krylov-noise-paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 65.
+LaTeX Font Info:    Checking defaults for OML/ntxsfmi/m/it on input line 67.
 LaTeX Font Info:    Try loading font information for OML+ntxsfmi on input line 
-65.
+67.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtxsf/omlntxsfmi.fd
 File: omlntxsfmi.fd 2014/11/16 Fontinst v1.933 font definitions for OML/ntxsfmi
 .
 )
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 65.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 65.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 67.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 67.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 65.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 65
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 67.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 67
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Try loading font information for T1+lato-TLF on input line 
-65.
+67.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lato/T1lato-TLF.fd
 File: T1lato-TLF.fd 2017/10/22 Font definitions for T1/lato-TLF.
 )
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 65.
+(Font)              scaled to size 8.0pt on input line 67.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
+\scratchcounter=\count367
 \scratchdimen=\dimen321
-\scratchbox=\box74
-\nofMPsegments=\count359
-\nofMParguments=\count360
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count361
+\scratchbox=\box76
+\nofMPsegments=\count368
+\nofMParguments=\count369
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count370
 \MPscratchDim=\dimen322
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
-\everyMPtoPDFconversion=\toks58
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
+\everyMPtoPDFconversion=\toks61
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1996,10 +2033,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 65.
-\AtBeginShipoutBox=\box75
+LaTeX Info: Redefining \selectfont on input line 67.
+\AtBeginShipoutBox=\box77
  ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 65.
+LaTeX Info: Redefining \microtypecontext on input line 67.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2013,8 +2050,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lato-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c@mv@tabular=\count364
-\c@mv@boldtabular=\count365
+\c@mv@tabular=\count373
+\c@mv@boldtabular=\count374
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2052,6 +2089,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -2061,7 +2099,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 65.
+or `english'. on input line 67.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
@@ -2146,37 +2184,37 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 65.
+(Font)              scaled to size 6.2pt on input line 67.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 65.
+(Font)              scaled to size 5.5pt on input line 67.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 67.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 67.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 67.
 
 LaTeX Font Info:    Try loading font information for U+ntxsfmia on input line 6
-5.
+7.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtxsf/untxsfmia.fd
 File: untxsfmia.fd 2014/11/16 Fontinst v1.933 font definitions for U/ntxsfmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 65.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 67.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2184,7 +2222,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2192,7 +2230,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 65.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 67.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2204,9 +2242,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 67.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 65.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 67.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -2217,71 +2255,78 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 67.
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/eb/n' will be
-(Font)              scaled to size 8.0pt on input line 67.
+(Font)              scaled to size 8.0pt on input line 69.
 LaTeX Font Info:    Font shape `T1/lato-TLF/eb/n' will be
-(Font)              scaled to size 9.0pt on input line 67.
+(Font)              scaled to size 9.0pt on input line 69.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 67.
+(Font)              scaled to size 9.0pt on input line 69.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 67.
+(Font)              scaled to size 7.3pt on input line 69.
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 
  []
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <18> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 67
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 69
 .
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 18.0pt on input line 67.
+(Font)              scaled to size 18.0pt on input line 69.
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <12> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 67
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 69
 .
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 67.
+(Font)              scaled to size 12.0pt on input line 69.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 67.
+(Font)              scaled to size 12.0pt on input line 69.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 8.8pt on input line 67.
+(Font)              scaled to size 8.8pt on input line 69.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 67.
+(Font)              scaled to size 6.6pt on input line 69.
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <8.8> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 67
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 69
 .
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 8.8pt on input line 67.
+(Font)              scaled to size 8.8pt on input line 69.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 78.
+(Font)              scaled to size 7.0pt on input line 81.
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <7> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 78
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 81
 .
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 78.
-\wiley@abstractbox=\box76
-Package mdframed Info: mdframed works in twoside mode on input line 78.
+(Font)              scaled to size 7.0pt on input line 81.
+\wiley@abstractbox=\box78
+Package mdframed Info: mdframed works in twoside mode on input line 81.
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <9> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 78
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 81
 .
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 78.
+(Font)              scaled to size 9.0pt on input line 81.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 78.
-Package mdframed Info: mdframed works in twoside mode on input line 78.
+ mdframed uses option nobreak mdframed on input line 81.
+Package mdframed Info: mdframed works in twoside mode on input line 81.
 
-Overfull \hbox (0.14725pt too wide) in paragraph at lines 78--78
-\T1/lato-TLF/m/n/9 pipelined Krylov method ex-e-cu-tion on the Cray XC40 Theta
+Overfull \hbox (2.43884pt too wide) in paragraph at lines 81--81
+\T1/lato-TLF/m/n/9 the im-pact of op-er-at-ing sys-tem, ma-chine vari-ance, and
+ other
+ []
+
+
+Overfull \hbox (1.56926pt too wide) in paragraph at lines 81--81
+\T1/lato-TLF/m/n/9 We per-form re-peated runs and col-lect fine-grained data th
+at
  []
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <10> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 80
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 83
 .
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 80.
+(Font)              scaled to size 10.0pt on input line 83.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 80.
+(Font)              scaled to size 10.0pt on input line 83.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][] 
@@ -2290,17 +2335,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <8> not available
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 11
+1.
+LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 111.
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
+(Font)              scaled to size 6.66675pt on input line 113.
+
+Underfull \vbox (badness 1259) has occurred while \output is active []
 
  [2]
-[3]
+Underfull \vbox (badness 1460) has occurred while \output is active []
+
+ [3]
 <../plots/GMRES_ex23_8192_1000000_identical_in_p.png, id=24, 462.528pt x 346.89
 6pt>
 File: ../plots/GMRES_ex23_8192_1000000_identical_in_p.png Graphic file (type pn
 g)
 <use ../plots/GMRES_ex23_8192_1000000_identical_in_p.png>
 Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_identical_in_p.png  u
-sed on input line 165.
+sed on input line 221.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 <../plots/PGMRES_ex23_8192_1000000_identical_in_p.png, id=26, 462.528pt x 346.8
 96pt>
@@ -2308,360 +2363,341 @@ File: ../plots/PGMRES_ex23_8192_1000000_identical_in_p.png Graphic file (type p
 ng)
 <use ../plots/PGMRES_ex23_8192_1000000_identical_in_p.png>
 Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_identical_in_p.png  
-used on input line 166.
+used on input line 222.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
- [4 <../plots/GMRES_ex23_8192_1000000_identical_in_p.png> <../plots/PGMRES_ex23
-_8192_1000000_identical_in_p.png>]
-<../plots/GMRES_ex23_8192_1000000_independent_in_p_2500.pdf, id=32, 462.52798pt
- x 346.89601pt>
-File: ../plots/GMRES_ex23_8192_1000000_independent_in_p_2500.pdf Graphic file (
-type pdf)
-<use ../plots/GMRES_ex23_8192_1000000_independent_in_p_2500.pdf>
-Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_independent_in_p_2500
-.pdf  used on input line 188.
+
+[4]
+<../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf, id=30, 462.52798pt x
+ 346.89601pt>
+File: ../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf Graphic file (ty
+pe pdf)
+<use ../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf>
+Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_independent_in_p_44.p
+df  used on input line 244.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex23_8192_1000000_independent_in_p_2500.pdf, id=33, 462.52798p
-t x 346.89601pt>
-File: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_2500.pdf Graphic file 
-(type pdf)
-<use ../plots/PGMRES_ex23_8192_1000000_independent_in_p_2500.pdf>
-Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_250
-0.pdf  used on input line 189.
+<../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf, id=31, 462.52798pt 
+x 346.89601pt>
+File: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf Graphic file (t
+ype pdf)
+<use ../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf>
+Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.
+pdf  used on input line 245.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap6.png, id=34, 462.528
-pt x 346.896pt>
-File: ../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap6.png Graphic fi
-le (type png)
-<use ../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap6.png>
+<../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap.png, id=32, 462.528p
+t x 346.896pt>
+File: ../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap.png Graphic fil
+e (type png)
+<use ../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap.png>
 Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_stationary_in_t_color
-map6.png  used on input line 204.
+map.png  used on input line 260.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colormap.png, id=35, 462.528
+<../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colormap.png, id=33, 462.528
 pt x 346.896pt>
 File: ../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colormap.png Graphic fi
 le (type png)
 <use ../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colormap.png>
 Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colo
-rmap.png  used on input line 205.
+rmap.png  used on input line 261.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-
-Underfull \vbox (badness 2035) has occurred while \output is active []
-
- [5 <../plots/GMRES_ex23_8192_1000000_independent_in_p_2500.pdf> <../plots/PGMR
-ES_ex23_8192_1000000_independent_in_p_2500.pdf
+ [5 <../plots/GMRES_ex23_8192_1000000_identical_in_p.png> <../plots/PGMRES_ex23
+_8192_1000000_identical_in_p.png>] [6 <../plots/GMRES_ex23_8192_1000000_indepen
+dent_in_p_44.pdf> <../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../plots/PGMRES_ex23_8192_10
-00000_independent_in_p_2500.pdf): PDF inclusion: multiple pdfs with page group 
-included in a single page
-> <../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap6.png> <../plots/PG
-MRES_ex23_8192_1000000_stationary_in_t_colormap.png>]
-<../plots/GMRES_ex48_8192_1000000_identical_in_p.png, id=118, 462.528pt x 346.8
+00000_independent_in_p_48.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+> <../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap.png> <../plots/PGM
+RES_ex23_8192_1000000_stationary_in_t_colormap.png>]
+<../plots/GMRES_ex48_8192_1000000_identical_in_p.png, id=123, 462.528pt x 346.8
 96pt>
 File: ../plots/GMRES_ex48_8192_1000000_identical_in_p.png Graphic file (type pn
 g)
 <use ../plots/GMRES_ex48_8192_1000000_identical_in_p.png>
 Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_identical_in_p.png  u
-sed on input line 233.
+sed on input line 289.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/GMRES_ex48_8192_1000000_independent_in_p_2500.pdf, id=119, 462.52798p
-t x 346.89601pt>
-File: ../plots/GMRES_ex48_8192_1000000_independent_in_p_2500.pdf Graphic file (
-type pdf)
-<use ../plots/GMRES_ex48_8192_1000000_independent_in_p_2500.pdf>
-Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_independent_in_p_2500
-.pdf  used on input line 234.
+<../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf, id=124, 462.52798pt 
+x 346.89601pt>
+File: ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf Graphic file (ty
+pe pdf)
+<use ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf>
+Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.p
+df  used on input line 290.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap2.png, id=120, 462.52
-8pt x 346.896pt>
-File: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap2.png Graphic fi
-le (type png)
-<use ../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap2.png>
+<../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=125, 462.528
+pt x 346.896pt>
+File: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png Graphic fil
+e (type png)
+<use ../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png>
 Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_color
-map2.png  used on input line 235.
+map.png  used on input line 291.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/PGMRES_ex48_8192_1000000_identical_in_p.png, id=121, 462.528pt x 346.
+<../plots/PGMRES_ex48_8192_1000000_identical_in_p.png, id=126, 462.528pt x 346.
 896pt>
 File: ../plots/PGMRES_ex48_8192_1000000_identical_in_p.png Graphic file (type p
 ng)
 <use ../plots/PGMRES_ex48_8192_1000000_identical_in_p.png>
 Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_identical_in_p.png  
-used on input line 236.
+used on input line 292.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/PGMRES_ex48_8192_1000000_independent_in_p_2500.pdf, id=122, 462.52798
-pt x 346.89601pt>
-File: ../plots/PGMRES_ex48_8192_1000000_independent_in_p_2500.pdf Graphic file 
-(type pdf)
-<use ../plots/PGMRES_ex48_8192_1000000_independent_in_p_2500.pdf>
-Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_independent_in_p_250
-0.pdf  used on input line 237.
+<../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf, id=127, 462.52798pt
+ x 346.89601pt>
+File: ../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf Graphic file (t
+ype pdf)
+<use ../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf>
+Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.
+pdf  used on input line 293.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap2.png, id=123, 462.5
-28pt x 346.896pt>
-File: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap2.png Graphic f
-ile (type png)
-<use ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap2.png>
+<../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=128, 462.52
+8pt x 346.896pt>
+File: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png Graphic fi
+le (type png)
+<use ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png>
 Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colo
-rmap2.png  used on input line 238.
+rmap.png  used on input line 294.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <../plots/GMRES_ex48_8192_1000000_identical_in_p.png> <../plots/GMRES_ex48_
-8192_1000000_independent_in_p_2500.pdf> <../plots/GMRES_ex48_8192_1000000_stati
-onary_in_t_colormap2.png> <../plots/PGMRES_ex48_8192_1000000_identical_in_p.png
-> <../plots/PGMRES_ex48_8192_1000000_independent_in_p_2500.pdf
+ [7 <../plots/GMRES_ex48_8192_1000000_identical_in_p.png> <../plots/GMRES_ex48_
+8192_1000000_independent_in_p_44.pdf> <../plots/GMRES_ex48_8192_1000000_station
+ary_in_t_colormap.png> <../plots/PGMRES_ex48_8192_1000000_identical_in_p.png> <
+../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../plots/PGMRES_ex48_8192_10
-00000_independent_in_p_2500.pdf): PDF inclusion: multiple pdfs with page group 
-included in a single page
-> <../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap2.png>]
-<../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png, id=207,
+00000_independent_in_p_48.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+> <../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png>]
+<../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png, id=215,
  462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png Gra
 phic file (type png)
 <use ../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_wit
-h_johnsonsu.png  used on input line 278.
+h_johnsonsu.png  used on input line 334.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png, id=208,
+<../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png, id=216,
  462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png Gra
 phic file (type png)
 <use ../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_wit
-h_johnsonsu.png  used on input line 279.
+h_johnsonsu.png  used on input line 335.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
- [7]
-[8 <../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png> <../
-plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png>]
+ [8 <../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png> <..
+/plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png>]
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 7.5pt on input line 326.
-LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <8> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 33
-1.
+(Font)              scaled to size 7.5pt on input line 382.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 331.
+(Font)              scaled to size 6.2pt on input line 387.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 6.2pt on input line 331.
-LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 5.5pt on input line 331.
+(Font)              scaled to size 5.5pt on input line 387.
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <6.2> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 33
-1.
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 38
+7.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 6.2pt on input line 331.
+(Font)              scaled to size 6.2pt on input line 387.
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <5.5> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 33
-1.
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 38
+7.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 5.5pt on input line 331.
+(Font)              scaled to size 5.5pt on input line 387.
 <../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png, id=2
-18, 462.528pt x 346.896pt>
+22, 462.528pt x 346.896pt>
 File: ../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png 
 Graphic file (type png)
 <use ../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png>
 Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000__stationary_in_t_with
-_uniform_14_44.png  used on input line 357.
+_uniform_14_44.png  used on input line 413.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png>]
-<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png, id=224
+ [9]
+<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png, id=227
 , 462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png Gr
 aphic file (type png)
 <use ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_wi
-th_johnsonsu.png  used on input line 375.
+th_johnsonsu.png  used on input line 431.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png, id=225
+<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png, id=228
 , 462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png Gr
 aphic file (type png)
 <use ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_wi
-th_johnsonsu.png  used on input line 376.
+th_johnsonsu.png  used on input line 432.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10 <../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png> <
-../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png>]
+[10 <../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png>]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 405.
-
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 461.
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4.52597> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <3.41> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <4.52597> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <3.41> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.52597> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <3.41> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.52597> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <3.41> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.52597> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <3.41> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4.01497> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <3.02501> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <4.01497> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <3.02501> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.01497> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <3.02501> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.01497> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <3.02501> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.01497> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <3.02501> not available
-(Font)              size <5> substituted on input line 405.
+(Font)              size <5> substituted on input line 461.
 
 
-Underfull \vbox (badness 1264) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-<../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png, id=234, 462.528p
+ [11 <../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png> <
+../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png>]
+<../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png, id=238, 462.528p
 t x 346.896pt>
 File: ../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png Graphic file
  (type png)
 <use ../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnson
-su.png  used on input line 450.
+su.png  used on input line 506.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png, id=235, 462.528
-pt x 346.896pt>
-File: ../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png Graphic fil
-e (type png)
-<use ../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png>
-Package pdftex.def Info: ../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnso
-nsu.png  used on input line 451.
+<../plots/GMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png, id=239, 462.528p
+t x 346.896pt>
+File: ../plots/GMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png Graphic file
+ (type png)
+<use ../plots/GMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png>
+Package pdftex.def Info: ../plots/GMRES_ex48_1000000_s_k_strong_scaling_johnson
+su.png  used on input line 507.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png, id=236, 462.528p
+<../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png, id=240, 462.528p
 t x 346.896pt>
 File: ../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png Graphic file
  (type png)
 <use ../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_ex48_1000000_a_k_static_scaling_johnson
-su.png  used on input line 457.
+su.png  used on input line 513.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png, id=237, 462.528
-pt x 346.896pt>
-File: ../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png Graphic fil
-e (type png)
-<use ../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png>
-Package pdftex.def Info: ../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnso
-nsu.png  used on input line 458.
+<../plots/GMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png, id=241, 462.528p
+t x 346.896pt>
+File: ../plots/GMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png Graphic file
+ (type png)
+<use ../plots/GMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png>
+Package pdftex.def Info: ../plots/GMRES_ex48_1000000_s_k_static_scaling_johnson
+su.png  used on input line 514.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 
-[12 <../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png> <../plots/PG
-MRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png> <../plots/GMRES_ex48_100000
-0_a_k_static_scaling_johnsonsu.png> <../plots/PGMRES_ex48_1000000_s_k_static_sc
-aling_johnsonsu.png>]
-<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png, id=245,
+Underfull \vbox (badness 7851) has occurred while \output is active []
+
+ [12 <../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png> <../plots/G
+MRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png>]
+<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png, id=247,
  462.528pt x 346.896pt>
 File: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png Gra
 phic file (type png)
 <use ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png>
 Package pdftex.def Info: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_
-uniform_a_k.png  used on input line 483.
+uniform_a_k.png  used on input line 539.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png, id=246,
+<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png, id=248,
  462.528pt x 346.896pt>
 File: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png Gra
 phic file (type png)
 <use ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png>
 Package pdftex.def Info: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_
-uniform_s_k.png  used on input line 484.
+uniform_s_k.png  used on input line 540.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png, id=247, 462.528pt x
+<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png, id=249, 462.528pt x
  346.896pt>
 File: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png Graphic file (t
 ype png)
 <use ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png>
 Package pdftex.def Info: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.
-png  used on input line 498.
+png  used on input line 554.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png, id=248, 462.528pt x
+<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png, id=250, 462.528pt x
  346.896pt>
 File: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png Graphic file (t
 ype png)
 <use ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png>
 Package pdftex.def Info: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.
-png  used on input line 499.
+png  used on input line 555.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13 <../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png> <.
-./plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png> <../plots
-/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png> <../plots/THETA_PIZDAINT_ex4
-8_8192_1000000_uniform_s_k.png>]
+ [13 <../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png> <../plots/G
+MRES_ex48_1000000_s_k_static_scaling_johnsonsu.png>]
 <../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_with_k_mod_30.png, id=257, 
 462.528pt x 346.896pt>
 File: ../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_with_k_mod_30.png Grap
 hic file (type png)
 <use ../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_with_k_mod_30.png>
 Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_wit
-h_k_mod_30.png  used on input line 519.
+h_k_mod_30.png  used on input line 575.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 <../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_with_k_mod_30.png, id=25
 8, 462.528pt x 346.896pt>
@@ -2669,22 +2705,27 @@ File: ../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_with_k_mod_30.png G
 raphic file (type png)
 <use ../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_with_k_mod_30.png>
 Package pdftex.def Info: ../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_
-with_k_mod_30.png  used on input line 520.
+with_k_mod_30.png  used on input line 576.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
- [14 <../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_with_k_mod_30.png> <..
-/plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_with_k_mod_30.png>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png> <.
+./plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png> <../plots
+/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png> <../plots/THETA_PIZDAINT_ex4
+8_8192_1000000_uniform_s_k.png>]
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 549.
+(Font)              scaled to size 10.0pt on input line 606.
 
 
 LaTeX Font Warning: Font shape `T1/lato-TLF/bx/sc' undefined
-(Font)              using `T1/lato-TLF/bx/n' instead on input line 549.
+(Font)              using `T1/lato-TLF/bx/n' instead on input line 606.
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/sc' in size <10> not available
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 54
-9.
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 60
+6.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 549.
+(Font)              scaled to size 10.0pt on input line 606.
 (./krylov-noise-paper.bbl
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <7.5> not available
@@ -2751,24 +2792,25 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.47496> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.12502> not available
 (Font)              size <5> substituted on input line 15.
 
-[15]
+[15 <../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_with_k_mod_30.png> <../
+plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_with_k_mod_30.png>]
 LaTeX Font Info:    Try loading font information for OMS+lato-TLF on input line
- 141.
-LaTeX Font Info:    No file OMSlato-TLF.fd. on input line 141.
+ 155.
+LaTeX Font Info:    No file OMSlato-TLF.fd. on input line 155.
 
 
 LaTeX Font Warning: Font shape `OMS/lato-TLF/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 141.
+(Font)              using `OMS/cmsy/m/n' instead on input line 155.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 141.
+(Font)              size <7> substituted on input line 155.
 
 
 LaTeX Font Warning: Font shape `OMS/lato-TLF/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 141.
+(Font)              size <7> substituted on input line 155.
 
-) [16] [17] (./krylov-noise-paper.aux)
+[16]) [17] [18] (./krylov-noise-paper.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.97499pt have occurred.
@@ -2779,13 +2821,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 35821 strings out of 492649
- 725747 string characters out of 6129622
- 786394 words of memory out of 5000000
- 38980 multiletter control sequences out of 15000+600000
- 1352852 words of font info for 289 fonts, out of 8000000 for 9000
+ 36453 strings out of 492649
+ 734997 string characters out of 6129622
+ 799075 words of memory out of 5000000
+ 39593 multiletter control sequences out of 15000+600000
+ 1375092 words of font info for 291 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,21n,102p,10395b,1057s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -2801,10 +2846,10 @@ e/2018/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/
 mf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/public/newtxsf/zsfmi-reg.pfb></usr/local/texlive/2018/texmf-dist/fo
 nts/type1/public/newtxsf/zsfmia-reg.pfb>
-Output written on krylov-noise-paper.pdf (17 pages, 1687463 bytes).
+Output written on krylov-noise-paper.pdf (18 pages, 1718108 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 320 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 33940 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 34452 words of extra memory for PDF output out of 35830 (max. 10000000)
 

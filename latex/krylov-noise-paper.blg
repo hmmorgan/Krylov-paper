@@ -10,45 +10,45 @@ Warning--empty pages in HoeflerLumsdaineRehm07
 Warning--empty author and editor in balay2001petsc
 Warning--missing publisher in balay2001petsc
 Warning--empty pages in kumaran2016introduction
-You've used 27 entries,
+You've used 29 entries,
             3097 wiz_defined-function locations,
-            847 strings with 11274 characters,
-and the built_in function-call counts, 43889 in all, are:
-= -- 5297
-> -- 376
-< -- 21
-+ -- 213
-- -- 94
-* -- 3753
-:= -- 4788
-add.period$ -- 81
-call.type$ -- 27
+            861 strings with 11739 characters,
+and the built_in function-call counts, 47139 in all, are:
+= -- 5714
+> -- 400
+< -- 22
++ -- 230
+- -- 100
+* -- 4020
+:= -- 5133
+add.period$ -- 88
+call.type$ -- 29
 change.case$ -- 26
-chr.to.int$ -- 27
-cite$ -- 33
-duplicate$ -- 3552
-empty$ -- 4229
-format.name$ -- 154
-if$ -- 10137
+chr.to.int$ -- 29
+cite$ -- 35
+duplicate$ -- 3885
+empty$ -- 4533
+format.name$ -- 163
+if$ -- 10896
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 264
-newline$ -- 141
-num.names$ -- 54
-pop$ -- 519
+missing$ -- 284
+newline$ -- 152
+num.names$ -- 58
+pop$ -- 554
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 456
+skip$ -- 483
 stack$ -- 0
-substring$ -- 8204
-swap$ -- 669
+substring$ -- 8766
+swap$ -- 709
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 158
+type$ -- 170
 warning$ -- 6
-while$ -- 232
+while$ -- 249
 width$ -- 0
-write$ -- 363
+write$ -- 390
 (There were 6 warnings)

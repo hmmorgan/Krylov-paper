@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -61,6 +61,20 @@ Jacques T, Nicolas L, Vollaire C.
   {MIMD} Systems.
 \newblock In: High-Performance Computing and Networking, vol. 1593 of Lecture
   Notes in Computer Science Springer; 1999.p. 1025--1031.
+
+\bibitem[{Cools(2018)Cools, Siegfried}]{Cools2018}
+Cools S.
+\newblock Numerical stability analysis of the class of communication hiding
+  pipelined Conjugate Gradient methods.
+\newblock arXiv preprint arXiv:180402962 2018;.
+
+\bibitem[{Carson et~al.(2018)Carson, E. and Rozložník, M. and Strakoš, Z.
+  and Tichý, P. and Tůma, M.}]{CarsonEtAl2018}
+Carson E, Rozložník M, Strakoš Z, Tichý P, Tůma M.
+\newblock The Numerical Stability Analysis of Pipelined Conjugate Gradient
+  Methods: Historical Context and Methodology.
+\newblock SIAM Journal on Scientific Computing 2018;40(5):A3549--A3580.
+\newblock \urlprefix\url{https://doi.org/10.1137/16M1103361}.
 
 \bibitem[{Hoefler et~al.(2010)Hoefler, Torsten and Schneider, Timo and
   Lumsdaine, Andrew}]{hoefler2010characterizing}

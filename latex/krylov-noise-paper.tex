@@ -75,7 +75,7 @@ We perform repeated runs and collect fine-grained data that
  shows the influence of variability on Krylov and pipelined Krylov methods.
 To succinctly describe the execution performance, we 
  employ stochastic models based on the distribution of iteration times of each method.
- We test the models with collected data and suggest ways to improve and expand them in order to make a prior performance estimates.
+ We test the models with collected data and suggest ways to improve and expand them in order to make a priori performance estimates.
 % Please include a maximum of seven keywords
 \keywords{Krylov, pipelining, noise, performance model, GMRES, PGMRES}
 \end{abstract}
@@ -368,7 +368,7 @@ We will use these to compare with our Krylov performance models.
 \subsection{Results}
 
 Distribution fitting alone gives some insight into algorithm execution. 
-In Figure \ref{fig:bulk-fitted}, we show bulk data from Section \ref{sec:experimental-results} with the Johnson SU distribution. Note that there were some other good fitting distributions, including Non-central Student's T.
+In Figure \ref{fig:bulk-fitted}, we show bulk data from Section \ref{sec:experimental-results} with the Johnson SU distribution. Note that there were some other good fitting distributions, including Non-central Student's T (NCT).
 The bulk data show that in a given method, the iterates $\mathcal{T}^k_p$ are mostly clustered and fairly quick with a fewer, longer, giving the distribution a small tail.
 In general, PGMRES runtimes were faster than GMRES, consistent with faster overall execution in these examples. Ex48 runtimes are shifted to the right of ex23 and more spread out, implying longer iterations with more variation. 
 
@@ -415,7 +415,7 @@ In the previous section, we showed that our performance models $\widehat{E}[T]$ 
 \caption{GMRES  iterations $k = 14, 44$ with fitted uniform distributions.} \label{fig:iterations-with-fitted-uniform}
 \end{figure}
 
-Bulk statistics appear to be enough to succinctly describe the performance of a pipelined method, they are not a sufficient way to describe a traditional Krylov method. Instead, we used non-stationary uniform distributions to model each iteration, shown in Figure \ref{fig:iterations-with-fitted-uniform}.
+Bulk statistics appear to be enough to succinctly describe the performance of a pipelined method, but they are not a sufficient way to describe a traditional Krylov method. Instead, we used non-stationary uniform distributions to model each iteration, shown in Figure \ref{fig:iterations-with-fitted-uniform}.
 Here we see how non-stationary the iterations actually are, in this case they are almost non-overlapping, and how the parameters change over time. 
 That is, for each iteration $k$, the random variables $\mathcal{T}_p^k$ follow a uniform distribution with pdf $f_k$ and cdf $F_k$ given by
 \begin{equation} \label{eq:uniform}
@@ -450,7 +450,7 @@ We simulate a pipelined Krylov computation in the same way, pulling random varia
 \widehat{E}[T'_k] =  \mu_k
 \end{equation}
 where $\mu_k$ is the mean of $\text{Uniform}(a_k, s_k)$. 
-Table \ref{tab:simulated-runtimes} shows the results of this simulation using the Johnson SU parameters from Table \ref{tab:distribution-params}. The results are good when we have the Johnson SU parameters. The challenge in general will be to reason about these parameters so that we can make a priori performance estimates for Krylov and pipelined Krylov methods.
+Table \ref{tab:simulated-runtimes} shows the results of this simulation using the Johnson SU parameters from Table \ref{tab:distribution-params}. The results are good when we have the Johnson SU parameters. The challenge in general is to reason about these parameters so that we can make a priori performance estimates for Krylov and pipelined Krylov methods.
 
 \begin{table}[t]
 \caption{Johnson SU parameters for uniform parameters $a_k$ and $s_k$.}
@@ -528,7 +528,7 @@ We solve PETSc ex23, the one-dimensional Laplacian problem, using the Stabalized
 
 Many aspects of the BCGS and PIPEBCGS computations were consistent with GMRES and PGMRES, such as non-stationary iterates and nearly constant BCGS runtimes on a given node of Theta. 
 Figure \ref{fig:bcgs} shows uniform parameter $a_k$ and $s_k$ histograms with GMRES and PGMRES for comparison. 
-Although with different parameters, the BCGS and PIPEBCGS distributions look like they can be modeled by Johnson SU distribution family, 
+Although with different parameters, the BCGS and PIPEBCGS distributions can be modeled by Johnson SU distribution family, 
 suggesting that our performance model is applicable to Krylov methods outside of GMRES methods.
 GMRES and PGMRES outperform BCGS and PIPEBCGS and have quicker minimum iteration times (Johnson SU distributions shifted to the left for uniform parameter $a_k$), but runtimes are  tightly grouped.
 Performance results for BCGS and PIPEBCGS using our non-stationary stochastic models are in shown Table \ref{tab:performance-model-2}.
@@ -544,10 +544,10 @@ Performance results for BCGS and PIPEBCGS using our non-stationary stochastic mo
 \subsection{Piz Daint}\label{sec:pizdaint}
 
 We repeat experiments on the Cray XC40 Piz Daint supercomputer at the Swiss National Computing Center. 
-Piz Daint and Theta both employ a Aries Dragonfly interconnect but Piz Daint contains Intel Xeon E5 Haswell  processors \cite{hammarlund2014haswell} on compute nodes, so the differences we see are likely due to different processors or the shared use of a communication network.
+Piz Daint and Theta both employ an Aries Dragonfly interconnect, but Piz Daint contains Intel Xeon E5 Haswell  processors \cite{hammarlund2014haswell} on compute nodes, so the differences we see are likely due to different processors or the shared use of a communication network.
 Figure \ref{fig:pizdaint} shows runs of ex48 with GMRES and PGMRES on 8192 processors and $10^6$ unknowns. 
 In a given iteration, the quickest processor can be much faster on Piz Daint than Theta, but both uniform parameters contain much more variation.
-Non-stationary performance model results from Piz Daint are in shown Table \ref{tab:performance-model-2}.
+Non-stationary performance model results from Piz Daint are in shown in Table \ref{tab:performance-model-2}.
 
 \begin{figure}[b]
 \centering

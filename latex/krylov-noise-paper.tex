@@ -75,7 +75,7 @@ We perform repeated runs and collect fine-grained data that
  shows the influence of variability on Krylov and pipelined Krylov methods.
 To succinctly describe the execution performance, we 
  employ stochastic models based on the distribution of iteration times of each method.
- We test the models with collected data and suggest ways to improve and expand them in order to make a priori performance estimates.
+ We test the models with collected data and suggest ways to improve and expand them in order to make a prior performance estimates.
 % Please include a maximum of seven keywords
 \keywords{Krylov, pipelining, noise, performance model, GMRES, PGMRES}
 \end{abstract}
@@ -163,8 +163,8 @@ In \cite{morgan2016krylov}, we introduced stochastic performance models that des
 In this work, we are interested in characterizing the performance of Krylov and pipelined Krylov methods on HPC systems in the presence of variability using experimental data and refining the performance model introduced in \cite{morgan2016krylov}.
 We detail the results of experiments performed at the Argonne Leadership Computing Facility (ALCF) and the Swiss National Supercomputing Center and find that, using these results, our stochastic performance models can accurately describe runtimes and suggest a way to perform a priori estimates.
 
-This paper is organized into several sections. Section \ref{sec:model-review} reviews the performance models introduced in \cite{morgan2016krylov} for Kylov and pipelined Krylov methods in the presence of system noise. In Section \ref{sec:experimental-results} we examine the results from runs of Krylov and pipelined Krylov methods and refine the performance models in Section \ref{sec:updated-model} based on insights from the experimental data.
-In Section \ref{sec:performance-model} we employ our stochastic performance models and show that the updated model is in close agreement with reality.  In Sections \ref{sec:performance-estimates} and \ref{sec:more-experiments} we present more experimental data and suggest ways to perform a priori performance estimates.  Finally, we conclude our work in Section \ref{sec:conclusion}. 
+This paper is organized into several sections. Section \ref{sec:model-review} reviews the performance models introduced in \cite{morgan2016krylov} for Kylov and pipelined Krylov methods in the presence of system noise. In Section \ref{sec:experimental-results} we present experimental data and refine these performance models in Section \ref{sec:updated-model}.
+In Section \ref{sec:performance-model} we  employ our stochastic performance models for a specific problem and show that they are in close agreement with reality.  In Sections \ref{sec:performance-estimates} we suggest a way to perform a priori performance estimates and in Section \ref{sec:more-experiments} we present more experimental data and use our performance models in more extensive circumstances.  Finally, we conclude our work in Section \ref{sec:conclusion}. 
 
 \section{Stochastic model review} \label{sec:model-review}
 
@@ -210,18 +210,20 @@ Since changes and upgrades to HPC machines can affect performance, we note that 
 
 %Select data can be found in the open Bitbucket repository \cite{morgan2017theta}.
 
-\subsection{One-dimensional Laplacian} \label{sec:ex23}
-PETSc tutorial ex23 is a one-dimensional discretization of the Laplacian, resulting in a simple tridiagonal system. 
-We run ex23 with GMRES and PGMRES on 8192 processors with $10^6$ unknowns and a Jacobi preconditioner. 
-Throughout these simulations we force 5000 iterations of the Krylov method.
-
-
 \begin{figure}[t]
 \centering
 \includegraphics[width=6cm]{../plots/GMRES_ex23_8192_1000000_identical_in_p.png}
 \includegraphics[width=6cm]{../plots/PGMRES_ex23_8192_1000000_identical_in_p.png}
 \caption{Distribution of iterates $\mathcal{T}^k_p$ for fixed processors.} \label{fig:ex23-identical}
 \end{figure}
+
+\subsection{One-dimensional Laplacian} \label{sec:ex23}
+PETSc tutorial ex23 is a one-dimensional discretization of the Laplacian, resulting in a simple tridiagonal system. 
+We run ex23 with GMRES and PGMRES on 8192 processors with $10^6$ unknowns and a Jacobi preconditioner. 
+Throughout these simulations we force 5000 iterations of the Krylov method.
+
+
+
 
 
 
@@ -232,8 +234,8 @@ We reject the hypothesis that the samples come from the same distribution with s
 $$D > c(\alpha)\sqrt{\frac{n + m}{nm}}$$
 where $c(\alpha)$ is a tabulated value. 
 For GMRES, $n = m = 5000$ and $n = m = 5334$ for PGMRES. We use significance level $\alpha = 0.05$ and SciPy's ${\texttt{stat.ks\_2samp}}$ function to calculate the test statistic $D$.  
-We find that we do not reject that GMRES ranks 0 and 1 come from the same distribution with significance level $\alpha = 0.05$ since $D = 0.002 < 0.024$, the threshold. For PGMRES ranks 0 and 1, $D = 0.088 > 0.023$, so we reject the null hypothesis. 
-On rank 1, we reject none of the $P-1$ pairs of GMRES ranks and reject $54.5\%$ of PGMRES pairs.
+For GMRES ranks 0 and 1, we do not reject that the iterates come from the same distribution with significance level $\alpha = 0.05$ since $D = 0.002 < 0.024$, the threshold. For PGMRES ranks 0 and 1, $D = 0.088 > 0.023$, so we reject the hypothesis that the iterates follow the same distribution. 
+We compare rank 1 with the $P-1$ other ranks and do not reject that any of the GMRES pairs come from the same distribution. However, we reject $54.5\%$ of the PGMRES pairs.
 %Overall, we do not reject $x\%$ of the $\frac{P(P-1)}{2}$ pairs of GMRES ranks and $y\%$ of PGMRES ranks.
 
 Because it is inefficient to orthogonalize against a very big basis, GMRES methods are often implemented to restart after $R$ iterations. When a Krylov method restarts, the basis for the Krylov space is thrown out and the current solution is used as the initial guess for the next cycle.
@@ -368,13 +370,15 @@ We will use these to compare with our Krylov performance models.
 \subsection{Results}
 
 Distribution fitting alone gives some insight into algorithm execution. 
-In Figure \ref{fig:bulk-fitted}, we show bulk data from Section \ref{sec:experimental-results} with the Johnson SU distribution. Note that there were some other good fitting distributions, including Non-central Student's T (NCT).
+In Figure \ref{fig:bulk-fitted}, we show bulk data from Section \ref{sec:experimental-results} with the Johnson SU distribution. Note that there were some other good fitting distributions, including Non-central Student's T.
 The bulk data show that in a given method, the iterates $\mathcal{T}^k_p$ are mostly clustered and fairly quick with a fewer, longer, giving the distribution a small tail.
 In general, PGMRES runtimes were faster than GMRES, consistent with faster overall execution in these examples. Ex48 runtimes are shifted to the right of ex23 and more spread out, implying longer iterations with more variation. 
 
 
 Results for the data presented in Section \ref{sec:experimental-results} are shown in Table \ref{tab:performance-model} for PETSc ex23 and ex48.
-We see that the original model for the expected time of a Krylov method $E[T]$  overestimates the actual runtimes and is not a particularly good estimate, nor is any bulk distribution best in all cases.  On the other hand, the updated Krylov model $\widehat{E}[T]$ is a big improvement for traditional Krylov methods and makes a reasonable prediction. The analytical bounds are very loose and not particularly helpful.
+We see that the original model for the expected time of a Krylov method $E[T]$  overestimates the actual runtimes and is not a particularly good estimate, nor is any bulk distribution best in all cases.  On the other hand, the updated Krylov model $\widehat{E}[T]$ is a big improvement for traditional Krylov methods and makes a reasonable prediction. 
+Using a uniform distribution to model each iteration is a simplification that could account for some of the discrepancy between the KSPSolve time and $\widehat{E}_{\text {Unif}}[T]$. Not all iterations resembled the same distribution, however, so we will keep this simplification.
+The analytical bounds are very loose and not particularly helpful.
 $E[T']$ and $\widehat{E}[T']$ are both good estimates for the pipelined method, suggesting that modeling a method without explicit synchronization is more flexible. 
 In one case, the non-stationary model $\widehat{E}[T']$ is not as good a predictor for PGMRES, but it is more representative of the actual process. 
 The results show that when we have available iteration data, the updated performance models \eqref{eq:updated-krylov-model} and \eqref{eq:updated-pipelined-model} are good performance predictors and we will use them from here on. 
@@ -415,7 +419,7 @@ In the previous section, we showed that our performance models $\widehat{E}[T]$ 
 \caption{GMRES  iterations $k = 14, 44$ with fitted uniform distributions.} \label{fig:iterations-with-fitted-uniform}
 \end{figure}
 
-Bulk statistics appear to be enough to succinctly describe the performance of a pipelined method, but they are not a sufficient way to describe a traditional Krylov method. Instead, we used non-stationary uniform distributions to model each iteration, shown in Figure \ref{fig:iterations-with-fitted-uniform}.
+Bulk statistics appear to be enough to succinctly describe the performance of a pipelined method, they are not a sufficient way to describe a traditional Krylov method. Instead, we used non-stationary uniform distributions to model each iteration, shown in Figure \ref{fig:iterations-with-fitted-uniform}.
 Here we see how non-stationary the iterations actually are, in this case they are almost non-overlapping, and how the parameters change over time. 
 That is, for each iteration $k$, the random variables $\mathcal{T}_p^k$ follow a uniform distribution with pdf $f_k$ and cdf $F_k$ given by
 \begin{equation} \label{eq:uniform}
@@ -450,7 +454,7 @@ We simulate a pipelined Krylov computation in the same way, pulling random varia
 \widehat{E}[T'_k] =  \mu_k
 \end{equation}
 where $\mu_k$ is the mean of $\text{Uniform}(a_k, s_k)$. 
-Table \ref{tab:simulated-runtimes} shows the results of this simulation using the Johnson SU parameters from Table \ref{tab:distribution-params}. The results are good when we have the Johnson SU parameters. The challenge in general is to reason about these parameters so that we can make a priori performance estimates for Krylov and pipelined Krylov methods.
+Table \ref{tab:simulated-runtimes} shows the results of this simulation using the Johnson SU parameters from Table \ref{tab:distribution-params}. The results are good when we have the Johnson SU parameters. The challenge in general will be to reason about these parameters so that we can make a priori performance estimates for Krylov and pipelined Krylov methods.
 
 \begin{table}[t]
 \caption{Johnson SU parameters for uniform parameters $a_k$ and $s_k$.}
@@ -498,7 +502,7 @@ Again, these experiments were performed in autumn 2018.
 
 Our experiments so far have been performed on 8192 processors with $10^6$ unknowns.
 To see how changing processor count and problem size affect the Krylov method performance and underlying uniform parameters, we run strong- and static-scaling experiments.
-Figures \ref{fig:strong-scaling} and \ref{fig:static-scaling} show the Johnson SU distributions for the uniform parameters $a_k$ and $s_k$ for strong- and static-scaling experiments. 
+Figures \ref{fig:strong-scaling} and \ref{fig:static-scaling} show the Johnson SU distributions for the uniform parameters $a_k$ and $s_k$ for strong- and static-scaling experiments using GMRES. 
 
 
 \begin{figure}[t]
@@ -516,9 +520,10 @@ Figures \ref{fig:strong-scaling} and \ref{fig:static-scaling} show the Johnson S
 \end{figure}
 
 With strong-scaling experiments, we see how varying the processor count affects Krylov method performance for a fixed problem. We repeat runs of ex48 with  $10^6$ unknowns on $P = 1024 - 8192$ processors. 
-We see that, for a fixed number of unknowns, as we decrease problem size the Johnson SU distribution shifts to the right and spreads out for both uniform parameters since each processor does more work and is more likely to experience a detour. 
-Similarly, we perform static-scaling results where we keep the number of processors fixed at $P=8192$ and vary the number of unknowns to see the effect of computation on underlying iteration distributions.
-Static-scaling changes exaggerate what we see for strong-scaling.
+We see that, for a fixed number of unknowns, when we use fewer processors the Johnson SU distribution that models the uniform parameter $a_k$ (the minimum) shifts to the right, which is unsurprising.  The distribution of the uniform parameter $s_k$ (the span) flattens slightly with more processors, but not much. 
+
+We also perform static-scaling results where we keep the number of processors fixed at $P=8192$ and vary the number of unknowns to see how the amount of computation affects the underlying iteration distributions.
+Increasing the amount of computation per processor shifts the distribution of the uniform parameters $a_k$ and $s_k$. Similar results were found for computations using PGMRES.
 
 %Pipelined methods have the potential to outperform than traditional Krylov methods when enough processors are deployed so that communication dominates the algorithm, since pipelined methods can overlap computation with communication. We found that on 8192 processors with $10^6$ unknowns, PGMRES outperforms GMRES for PETSc tutorials ex23 and ex48. The pipelined limit is reached, however, closer to $10^7$ unknowns on 8192 processors, when computation dominates each iteration.
 
@@ -528,7 +533,7 @@ We solve PETSc ex23, the one-dimensional Laplacian problem, using the Stabalized
 
 Many aspects of the BCGS and PIPEBCGS computations were consistent with GMRES and PGMRES, such as non-stationary iterates and nearly constant BCGS runtimes on a given node of Theta. 
 Figure \ref{fig:bcgs} shows uniform parameter $a_k$ and $s_k$ histograms with GMRES and PGMRES for comparison. 
-Although with different parameters, the BCGS and PIPEBCGS distributions can be modeled by Johnson SU distribution family, 
+Although with different parameters, the BCGS and PIPEBCGS distributions look like they can be modeled by Johnson SU distribution family, 
 suggesting that our performance model is applicable to Krylov methods outside of GMRES methods.
 GMRES and PGMRES outperform BCGS and PIPEBCGS and have quicker minimum iteration times (Johnson SU distributions shifted to the left for uniform parameter $a_k$), but runtimes are  tightly grouped.
 Performance results for BCGS and PIPEBCGS using our non-stationary stochastic models are in shown Table \ref{tab:performance-model-2}.
@@ -544,10 +549,10 @@ Performance results for BCGS and PIPEBCGS using our non-stationary stochastic mo
 \subsection{Piz Daint}\label{sec:pizdaint}
 
 We repeat experiments on the Cray XC40 Piz Daint supercomputer at the Swiss National Computing Center. 
-Piz Daint and Theta both employ an Aries Dragonfly interconnect, but Piz Daint contains Intel Xeon E5 Haswell  processors \cite{hammarlund2014haswell} on compute nodes, so the differences we see are likely due to different processors or the shared use of a communication network.
+Piz Daint and Theta both employ a Aries Dragonfly interconnect but Piz Daint contains Intel Xeon E5 Haswell  processors \cite{hammarlund2014haswell} on compute nodes, so the differences we see are likely due to different processors or the shared use of a communication network.
 Figure \ref{fig:pizdaint} shows runs of ex48 with GMRES and PGMRES on 8192 processors and $10^6$ unknowns. 
 In a given iteration, the quickest processor can be much faster on Piz Daint than Theta, but both uniform parameters contain much more variation.
-Non-stationary performance model results from Piz Daint are in shown in Table \ref{tab:performance-model-2}.
+Non-stationary performance model results from Piz Daint are in shown Table \ref{tab:performance-model-2}.
 
 \begin{figure}[b]
 \centering
@@ -600,6 +605,13 @@ The goal of this work was to gather fine-grained iteration data from runs of Kry
 We used the data to develop and test stochastic performance models, which are in good agreement with reality. 
 Variability during computation suggests that performance is not deterministic and could be better explained in a stochastic setting. 
 With descriptive enough statistics we were also able to make a priori performance estimates. 
+
+Repeating similar analysis for different classes of problems on different machines will 
+make HPC users better equipped to make good performance estimates in a variety of circumstances.
+Better performance estimates allow users to 
+allocate an appropriate amount of time for jobs on HPC machines and eases the need to overestimate,
+which leads to idle, wasted machine time and energy. 
+
 In future work, nondeterministic performance models can be derived for other parallel algorithms where unpredictable system interference could impact performance.
 Insights from performance models can also be used to guide the development of new algorithms, particularly those we expect to be running in less predictable computing environments, such as heavily loaded machines or loosely coupled networks used in cloud computing or those with shared resources.
 

@@ -103,10 +103,11 @@ It is important to understand and characterize the performance of applications i
 However, developing coherent performance models is difficult in the presence of variability \cite{beckman2006influence, HoeflerLumsdaineRehm07} particularly between systems. 
 
 Employing stochastic performance models for algorithms that run on HPC systems could reflect a more realistic computing scenario since many detours and sources of variability are unpredictable.
-Some work has been done using 
+Some work has been done using stochastic models to predict performance in HPC environments. 
+For example, \cite{agarwal2005impact} studied the impact of different
 
 % side-by-side algorithms here
-\noindent\begin{minipage}[t]{.5\textwidth}
+\noindent\begin{minipage}[b]{.5\textwidth}
 \begin{algorithm}[H]
 \caption{GMRES}\label{gmres_alg}
 \begin{algorithmic}[1]
@@ -125,7 +126,7 @@ Some work has been done using
 \end{algorithmic}
 \end{algorithm}
 \end{minipage}%
-\begin{minipage}[t]{.5\textwidth}
+\begin{minipage}[b]{.5\textwidth}
 \begin{algorithm}[H]
  \caption{PGMRES}\label{pgmres_alg}
 \begin{algorithmic}[1]
@@ -154,8 +155,7 @@ Some work has been done using
 \end{algorithm}
 \end{minipage}
 
-\noindent stochastic models to predict performance in HPC environments. 
-For example, \cite{agarwal2005impact} studied the impact of different noise distributions on a single collective operation and \cite{seelam2010extreme} modeled operating system 
+\noindent  noise distributions on a single collective operation and \cite{seelam2010extreme} modeled operating system 
  ``jitter" as random variables in order to compute computational slowdown in the 
   presence of noise.
 In \cite{morgan2016krylov}, we introduced stochastic performance models that described the performance of Krylov and pipelined Krylov methods in the presence of noise using random variables to model iteration times. 

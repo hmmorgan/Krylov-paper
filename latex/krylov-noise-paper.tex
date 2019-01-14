@@ -1,69 +1,117 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% A template for Wiley article submissions.
-% Developed by Overleaf. 
 %
-% Please note that whilst this template provides a 
-% preview of the typeset manuscript for submission, it 
-% will not necessarily be the final publication layout.
+% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[sigconf, anonymous]{acmart}
+
 %
-% Usage notes:
-% The "blind" option will make anonymous all author, affiliation, correspondence and funding information.
-% Use "num-refs" option for numerical citation and references style.
-% Use "alpha-refs" option for author-year citation and references style.
+% defining the \BibTeX command - from Oren Patashnik's original BibTeX documentation.
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
-%\documentclass[num-refs]{wiley-article}
-\documentclass[sigconf]{acmart}
-% \documentclass[blind,alpha-refs]{wiley-article}
 
-% Add additional packages here if required
+% Add additional
 \usepackage{siunitx}
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{fancyvrb}
 \usepackage{mathtools}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
 \usepackage[english]{babel}	
 \usepackage{multirow}
 \usepackage{enumitem} % for itemize labels
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{tikz}
 
+% Rights management information. 
+% This information is sent to you when you complete the rights form.
+% These commands have SAMPLE values in them; it is your responsibility as an author to replace
+% the commands and values with those provided to you when you complete the rights form.
+%
+% These commands are for a PROCEEDINGS abstract or paper.
+\copyrightyear{2018}
+\acmYear{2018}
+\setcopyright{acmlicensed}
+\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
+\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection, June 03--05, 2018, Woodstock, NY}
+\acmPrice{15.00}
+\acmDOI{10.1145/1122445.1122456}
+\acmISBN{978-1-4503-9999-9/18/06}
 
-\title{The impact of noise on pipelined Krylov method performance}
+%
+% These commands are for a JOURNAL article.
+%\setcopyright{acmcopyright}
+%\acmJournal{TOG}
+%\acmYear{2018}\acmVolume{37}\acmNumber{4}\acmArticle{111}\acmMonth{8}
+%\acmDOI{10.1145/1122445.1122456}
 
-% List abbreviations here, if any. Please note that it is preferred that abbreviations be defined at the first instance they appear in the text, rather than creating an abbreviations list.
-% \abbrevs{ABC, a black cat; DEF, doesn't ever fret; GHI, goes home immediately.}
+%
+% Submission ID. 
+% Use this when submitting an article to a sponsored event. You'll receive a unique submission ID from the organizers
+% of the event, and this ID should be used as the parameter to this command.
+%\acmSubmissionID{123-A56-BU3}
 
-% Include full author names and degrees, when required by the journal.
-% Use the \authfn to add symbols for additional footnotes and present addresses, if any. Usually start with 1 for notes about author contributions; then continuing with 2 etc if any author has a different present address.
-\author[1]{Hannah Morgan}
-%\author[1\authfn{1}]{Hannah Morgan}
-\author[2]{Patrick Sanan}
-\author[3]{Matthew Knepley}
-\author[1]{Richard Mills}
+%
+% The majority of ACM publications use numbered citations and references. If you are preparing content for an event
+% sponsored by ACM SIGGRAPH, you must use the "author year" style of citations and references. Uncommenting
+% the next command will enable that style.
+%\citestyle{acmauthoryear}
 
-%\contrib[\authfn{1}]{Equally contributing authors.}
-
-% Include full affiliation details for all authors
-\affil[1]{Mathematics and Computer Science, Argonne National Laboratory, Argonne, Illinois, USA}
-\affil[2]{Institute of Geophysics,  ETH Zurich,  Zurich, Switzerland}
-\affil[3]{Computer Science in Engineering, University of Buffalo, Buffalo, New York, USA}
-
-\corraddress{Hannah Morgan, Mathematics and Computer Science, Argonne National Laboratory, Argonne, Illinois, USA}
-\corremail{hmorgan@anl.gov}
-
-\fundinginfo{The authors were supported by the U.S. Department of Energy, Office of Science, Advanced Scientific Computing Research under Contract DE-AC02-06CH11357. This research used resources of the Argonne Leadership Computing Facility, which is a DOE Office of Science User Facility supported under Contract DE-AC02-06CH11357. PS acknowledges financial support from the Swiss University Conference and the Swiss Council of Federal Institutes of Technology through the Platform for Advanced Scientific Computing (PASC) program.}
-
-% Include the name of the author that should appear in the running header
-\runningauthor{Morgan et al.}
-
-
+%
+% end of the preamble, start of the body of the document source.
 \begin{document}
 
-\maketitle
+%
+% The "title" command has an optional parameter, allowing the author to define a "short title" to be used in page headers.
+\title{The Impact of Noise on Krylov Method Performance}
 
+%
+% The "author" command and its associated commands are used to define the authors and their affiliations.
+% Of note is the shared affiliation of the first two authors, and the "authornote" and "authornotemark" commands
+% used to denote shared contribution to the research.
+\author{Hannah Morgan}
+\email{trovato@corporation.com}
+\orcid{1234-5678-9012}
+\authornotemark[1]
+\email{webmaster@marysville-ohio.com}
+\affiliation{%
+  \institution{Institute for Clarity in Documentation}
+  \streetaddress{P.O. Box 1212}
+  \city{Dublin}
+  \state{Ohio}
+  \postcode{43017-6221}
+}
+
+\author{Patrick Sanan}
+\affiliation{%
+  \institution{The Th{\o}rv{\"a}ld Group}
+  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
+  \city{Hekla}
+  \country{Iceland}}
+\email{larst@affiliation.org}
+
+\author{Matthew Knepley}
+\affiliation{%
+  \institution{Inria Paris-Rocquencourt}
+  \city{Rocquencourt}
+  \country{France}
+}
+
+\author{Richard Mills}
+\affiliation{%
+ \institution{Rajiv Gandhi University}
+ \streetaddress{Rono-Hills}
+ \city{Doimukh}
+ \state{Arunachal Pradesh}
+ \country{India}}
+ 
+%
+% By default, the full list of authors will be used in the page headers. Often, this list is too long, and will overlap
+% other information printed in the page headers. This command allows the author to define a more concise list
+% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Morgan, et al.}
+
+
+%
+% The abstract is a short summary of the work to be presented in the article.
 \begin{abstract}
 In this work, we develop a performance model and study the impact of 
 operating system, machine variance, and other factors on Krylov and pipelined Krylov method execution.
@@ -72,9 +120,50 @@ We perform repeated runs and collect fine-grained data that
 To succinctly describe the execution performance, we 
  employ stochastic models based on the distribution of iteration times of each method.
  We test the models with collected data and suggest ways to improve and expand them in order to make a prior performance estimates.
-% Please include a maximum of seven keywords
-\keywords{Krylov, pipelining, noise, performance model, GMRES, PGMRES}
 \end{abstract}
+
+
+
+%
+% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+% Please copy and paste the code instead of the example below.
+%
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010520.10010553.10010562</concept_id>
+  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010575.10010755</concept_id>
+  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010520.10010553.10010554</concept_id>
+  <concept_desc>Computer systems organization~Robotics</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003033.10003083.10003095</concept_id>
+  <concept_desc>Networks~Network reliability</concept_desc>
+  <concept_significance>100</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computer systems organization~Embedded systems}
+\ccsdesc[300]{Computer systems organization~Redundancy}
+\ccsdesc{Computer systems organization~Robotics}
+\ccsdesc[100]{Networks~Network reliability}
+
+%
+% Keywords. The author(s) should pick words that accurately describe the work being
+% presented. Separate the keywords with commas.
+\keywords{Krylov, pipelining, noise, performance model, GMRES, PGMRES}
+
+\maketitle
 
 \section{Introduction}
 
@@ -85,8 +174,6 @@ As we move to more massively parallel computing the latency cost for global comm
 To mitigate the latency associated with global communication, algebraically equivalent pipelined versions of Krylov methods have been introduced 
 \cite{Chronopoulos_Gear_1989, Ghysels_Ashby_Meerbergen_Vanroose_2012, GhyselsVanroose2014, StrzodkaGoddeke06, Sturler_Vorst_1995, JacquesNicolasVollaire12}. 
 Pipelined methods rearrange computations so that it is possible to hide some of the cost of global communication with local computation. 
-This rearrangement typically incurs additional local computation and degrades numerical stability \cite{Cools2018, CarsonEtAl2018}. 
-We have included a GMRES algorithm (Algorithm~\ref{gmres_alg}) and a pipelined version by~\cite{Ghysels_Ashby_Meerbergen_Vanroose_2012} (Algorithm~\ref{pgmres_alg}) below for completeness. 
 
 The increasing complexity of HPC computing environments has introduced many sources of run-to-run variability at different levels of HPC systems. 
 For example, operating systems can interrupt processors at any time for its activities, causing detours in computations and degrading performance \cite{hoefler2010characterizing, FerreiraBridgesBrightwell08}.
@@ -100,58 +187,7 @@ However, developing coherent performance models is difficult in the presence of 
 
 Employing stochastic performance models for algorithms that run on HPC systems could reflect a more realistic computing scenario since many detours and sources of variability are unpredictable.
 Some work has been done using stochastic models to predict performance in HPC environments. 
-For example, \cite{agarwal2005impact} studied the impact of different
-
-% side-by-side algorithms here
-\noindent\begin{minipage}[b]{.5\textwidth}
-\begin{algorithm}[H]
-\caption{GMRES}\label{gmres_alg}
-\begin{algorithmic}[1]
-   \State $r_0 \gets b-Ax_0$; $v_0 \gets r_0/\|r_0\|_2$
-\For{$i = 0, 1, \dots, m - 1$} 
-\State{$z \gets Av_i$}
-\State{$h_{j, i} \gets \langle z, v_j \rangle, j = 0, 1, \dots, i$}
-\State{$\tilde{v}_{i + 1} \gets z - \sum_{j = 1}^i h_{j, i} v_j$}
-\State{$h_{i+1, i} \gets \| \tilde{v}_{i + 1} \|_2$}
-\State{$v_{i + 1}  \gets \tilde{v}_{i + 1}/h_{i+1, i}$}
-\State{\# apply Givens rotations to $H_{:, i}$}
- \EndFor
-\State $y_m \gets \text{argmin}\|(H_{m+1, m} y_m - \|r_0\|_2 e_1 )\|_2$
-\State $x \gets x_0 + V_m y_m$
-\vspace{1.8in}
-\end{algorithmic}
-\end{algorithm}
-\end{minipage}%
-\begin{minipage}[b]{.5\textwidth}
-\begin{algorithm}[H]
- \caption{PGMRES}\label{pgmres_alg}
-\begin{algorithmic}[1]
-   \State $r_0 \gets b-Ax_0$; $v_0 \gets r_0/\|r_0\|_2$; $z_0 \gets v_0$
-\For{$i = 0, 1, \dots, m + 1$} 
-\State $w \gets Az_i$
-\If{i $>$ 1}
-\State $v_{i-1} \gets v_{i-1}/h_{i-1, i-2}$
-\State $z_i \gets z_i/h_{i-1, i-2}$
-\State $w \gets w/h_{i-1, i-2}$
-\For{$j = 0, 1, \dots, i$}
-\State{$h_{j, i-1} \gets h_{j, i-1}/h_{i-1, i-2}$}
-\EndFor
-\State $h_{i-1, i-1} \gets h_{i-1, i-1}/h^2_{i-1, i-2}$
-\EndIf
-\State{$z_{i + 1} \gets w - \sum_{j = 0}^{i-1} h_{j, i-1} z_{j+1}$}
-\If{i $>$ 0}
-\State{$v_i \gets z_i - \sum_{j = 0}^{i-1} h_{j, i-1} v_j$}
-\State $h_{i, i-1} \gets \|v_i\|_2$
-\EndIf
-\State{$h_{j, i} \gets \langle z_{i+1}, v_j \rangle, j = 0, 1, \dots, i$}
-\EndFor
-\State $y_m \gets \text{argmin}\|(H_{m+1, m} y_m - \|r_0\|_2 e_1 )\|_2$
-\State $x \gets x_0 + V_m y_m$
-\end{algorithmic}
-\end{algorithm}
-\end{minipage}
-
-\noindent  noise distributions on a single collective operation and \cite{seelam2010extreme} modeled operating system 
+For example, \cite{agarwal2005impact} studied the impact of different noise distributions on a single collective operation and \cite{seelam2010extreme} modeled operating system 
  ``jitter" as random variables in order to compute computational slowdown in the 
   presence of noise.
 In \cite{morgan2016krylov}, we introduced stochastic performance models that described the performance of Krylov and pipelined Krylov methods in the presence of noise using random variables to model iteration times. 
@@ -159,8 +195,8 @@ In \cite{morgan2016krylov}, we introduced stochastic performance models that des
 In this work, we are interested in characterizing the performance of Krylov and pipelined Krylov methods on HPC systems in the presence of variability using experimental data and refining the performance model introduced in \cite{morgan2016krylov}.
 We detail the results of experiments performed at the Argonne Leadership Computing Facility (ALCF) and the Swiss National Supercomputing Center and find that, using these results, our stochastic performance models can accurately describe runtimes and suggest a way to perform a priori estimates.
 
-This paper is organized into several sections. Section \ref{sec:model-review} reviews the performance models introduced in \cite{morgan2016krylov} for Kylov and pipelined Krylov methods in the presence of system noise. In Section \ref{sec:experimental-results} we present experimental data and refine these performance models in Section \ref{sec:updated-model}.
-In Section \ref{sec:performance-model} we  employ our stochastic performance models for a specific problem and show that they are in close agreement with reality.  In Sections \ref{sec:performance-estimates} we suggest a way to perform a priori performance estimates and in Section \ref{sec:more-experiments} we present more experimental data and use our performance models in more extensive circumstances.  Finally, we conclude our work in Section \ref{sec:conclusion}. 
+This paper is organized into several sections. Section \ref{sec:model-review} reviews the performance models introduced in \cite{morgan2016krylov} for Kylov and pipelined Krylov methods in the presence of system noise. In Section \ref{sec:experimental-results} we examine the results from runs of Krylov and pipelined Krylov methods and refine the performance models in Section \ref{sec:updated-model} based on insights from the experimental data.
+In Section \ref{sec:performance-model} we employ our stochastic performance models and show that the updated model is in close agreement with reality.  In Sections \ref{sec:performance-estimates} and \ref{sec:more-experiments} we present more experimental data and suggest ways to perform a priori performance estimates.  Finally, we conclude our work in Section \ref{sec:conclusion}. 
 
 \section{Stochastic model review} \label{sec:model-review}
 
@@ -206,6 +242,12 @@ Since changes and upgrades to HPC machines can affect performance, we note that 
 
 %Select data can be found in the open Bitbucket repository \cite{morgan2017theta}.
 
+\subsection{One-dimensional Laplacian} \label{sec:ex23}
+PETSc tutorial ex23 is a one-dimensional discretization of the Laplacian, resulting in a simple tridiagonal system. 
+We run ex23 with GMRES and PGMRES on 8192 processors with $10^6$ unknowns and a Jacobi preconditioner. 
+Throughout these simulations we force 5000 iterations of the Krylov method.
+
+
 \begin{figure}[t]
 \centering
 \includegraphics[width=6cm]{../plots/GMRES_ex23_8192_1000000_identical_in_p.png}
@@ -213,58 +255,64 @@ Since changes and upgrades to HPC machines can affect performance, we note that 
 \caption{Distribution of iterates $\mathcal{T}^k_p$ for fixed processors.} \label{fig:ex23-identical}
 \end{figure}
 
-\subsection{One-dimensional Laplacian} \label{sec:ex23}
-PETSc tutorial ex23 is a one-dimensional discretization of the Laplacian, resulting in a simple tridiagonal system. 
-We run ex23 with GMRES and PGMRES on 8192 processors with $10^6$ unknowns and a Jacobi preconditioner. 
-Throughout these simulations we force 5000 iterations of the Krylov method.
-
-
-
-
 
 
 The stochastic model expressions \eqref{eq:krylov-model} and \eqref{eq:pipeline-model} place assumptions on the iterates $\mathcal{T}^k_p$. We check them here to examine the actual performance of the algorithms and to justify use of the models. 
-In Figure \ref{fig:ex23-identical} we graph normed histograms of the iterates $\mathcal{T}^k_p$ to represent probability distribution functions for select processors identified by their MPI ranks. The distributions look similar between ranks, implying that the iterations might be identical with respect to process. We make use of the two sample Kolmogorov–Smirnov test to check whether two samples (e.g. iterations from rank 0 and rank 1) are drawn from the same underlying distribution. The Kolmogorov–Smirnov test calculates the distance between the empirical distributions of two samples with empirical distribution functions $F_1$ of size $n$ and $F_2$ of size $m$ with
+In Figure \ref{fig:ex23-identical} we graph the distribution of the iterates for select processors identified by their MPI ranks. The distributions look similar between ranks, implying that the iterations might be identical with respect to process. We make use of the two sample Kolmogorov–Smirnov test to check whether two samples (e.g. iterations from rank 0 and rank 1) are drawn from the same underlying distribution. The Kolmogorov–Smirnov test calculates the distance between the empirical distributions of two samples with empirical distribution functions $F_1$ of size $n$ and $F_2$ of size $m$ with
 $$ D = \sup_x |F_1(x) - F_2(x)|. $$
 We reject the hypothesis that the samples come from the same distribution with significance level $\alpha$ if 
 $$D > c(\alpha)\sqrt{\frac{n + m}{nm}}$$
 where $c(\alpha)$ is a tabulated value. 
 For GMRES, $n = m = 5000$ and $n = m = 5334$ for PGMRES. We use significance level $\alpha = 0.05$ and SciPy's ${\texttt{stat.ks\_2samp}}$ function to calculate the test statistic $D$.  
-For GMRES ranks 0 and 1, we do not reject that the iterates come from the same distribution with significance level $\alpha = 0.05$ since $D = 0.002 < 0.024$, the threshold. For PGMRES ranks 0 and 1, $D = 0.088 > 0.023$, so we reject the hypothesis that the iterates follow the same distribution. 
-We compare rank 1 with the $P-1$ other ranks and do not reject that any of the GMRES pairs come from the same distribution. However, we reject $54.5\%$ of the PGMRES pairs.
+We find that we do not reject that GMRES ranks 0 and 1 come from the same distribution with significance level $\alpha = 0.05$ since $D = 0.002 < 0.024$, the threshold. For PGMRES ranks 0 and 1, $D = 0.088 > 0.023$, so we reject the null hypothesis. 
+On rank 1, we reject none of the $P-1$ pairs of GMRES ranks and reject $54.5\%$ of PGMRES pairs.
 %Overall, we do not reject $x\%$ of the $\frac{P(P-1)}{2}$ pairs of GMRES ranks and $y\%$ of PGMRES ranks.
 
 Because it is inefficient to orthogonalize against a very big basis, GMRES methods are often implemented to restart after $R$ iterations. When a Krylov method restarts, the basis for the Krylov space is thrown out and the current solution is used as the initial guess for the next cycle.
 Since the PETSc default restart value $R = 30$ and each cycle of PGMRES uses two additional iterations to ``fill the pipeline," 5334 iterations are actually employed instead of 5000. Some of these are very quick and easily identifiable as the bump of very short iterations in Figure \ref{fig:ex23-identical} (right). 
 
+\iffalse
 \begin{figure}
 \centering
 \includegraphics[width=6cm]{../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf}
 \includegraphics[width=6cm]{../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf}
-\caption{Time for iterations  $k=44, 48$ on process $p$. } \label{fig:ex23-independent}
+\caption{Time for iterations $k=44$ (GMRES) and $k=48$ (PGMRES) on process $p$. }
+ \label{fig:ex23-independent}
+\end{figure}
+\fi
+
+\begin{figure}
+ \centering
+   \begin{tikzpicture}
+     \node at (0, 0) {\includegraphics[width=6cm]{../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf}};
+     \node at (-1.15, -.8) {\includegraphics[width=2cm]{../plots/GMRES_ex23_8192_1000000_independent_in_p_inset_44_with_lines.pdf}};
+  \end{tikzpicture}
+     \begin{tikzpicture}
+     \node at (0, 0) {\includegraphics[width=6cm]{../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf}};
+     \node at (-1.27, -.88) {\includegraphics[width=2cm]{../plots/PGMRES_ex23_8192_1000000_independent_in_p_inset_48_with_lines.pdf}};
+  \end{tikzpicture}
+\caption{Time for iterations $k=44$ (GMRES) and $k=48$ (PGMRES) on process $p$ with inset showing the first 10 nodes. }
+ \label{fig:ex23-independent}
 \end{figure}
 
 
-Figure \ref{fig:ex23-independent} shows the time for iterations $k=44$ (GMRES) and $k=48$ (PGMRES) on process $p$ for the first 1000 processors in order of MPI rank. Iterates are drawn with grey bars.
-GMRES iterates are nearly constant on a node, so that each KNL node of 64 processors is clearly visible in Figure \ref{fig:ex23-independent} (left) so that the iterations are not really independent in $p$ as we claimed above. The variance of iteration times on node 0 (with MPI ranks 0-63) is $9.7 \cdot10^{-13}$. 
+Figure \ref{fig:ex23-independent} shows the time for iterations $k=44$ (GMRES) and $k=48$ (PGMRES) on process $p$ in order of MPI rank. Iterates are drawn with grey bars and we include a inset graph that shows the iterations on the first ten nodes delineated by black lines. 
+GMRES iterates are nearly constant on a node, each KNL node of 64 processors is clearly visible in Figure \ref{fig:ex23-independent} (left, inset) so that the iterations are not really independent in $p$ as we claimed above. The variance of iteration times on node 0 (with MPI ranks 0-63) is $6.3\cdot10^{-13}$. 
 This could be due to the synchronizations in each iteration of GMRES, forcing processors on a node to perform in lockstep. 
-There is a significant difference between the performance of the nodes.
-Conversely, PGMRES iterations appear to contain more variability on a node ($1.8\cdot10^{-9}$ on the node with MPI ranks 0-63, four orders of magnitude greater than GMRES). 
-
-% not independent in p
+There is also some periodic behavior over all the nodes.
+Conversely, PGMRES iterations appear to contain more variability on a node ($1.4\cdot10^{-10}$ on the node with MPI ranks 0-63, three orders of magnitude greater than GMRES), but less between them. 
 
 \begin{figure}[b]
 \centering
-\includegraphics[width=6cm]{../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap.png}
-\includegraphics[width=6cm]{../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colormap.png}
-\caption{Colormap of iterates $\mathcal{T}_p^k$ for the first 5000 processors.} \label{fig:ex23-stationary}
+\includegraphics[width=6cm]{../plots/GMRES_ex23_8192_1000000__stationary_in_t_colormap.png}
+\includegraphics[width=6cm]{../plots/PGMRES_ex23_8192_1000000__stationary_in_t_colormap.png}
+\caption{Colormap of iterates $\mathcal{T}_p^k$.} \label{fig:ex23-stationary}
 \end{figure}
 
 
 
 
-Figure \ref{fig:ex23-stationary} is a colormap of the iterates $\mathcal{T}_p^k$
-for the first 5000 processors.
+Figure \ref{fig:ex23-stationary} is a colormap of the iterates $\mathcal{T}_p^k$ for all iterations and all processors.
 Graphed are the iterations that perform the ``average" amount of work during each GMRES cycle (GMRES iteration $14 \bmod 30$ and PGMRES $16 \bmod 32$) so that each iteration shown performs the same computation. 
 Horizontal lines are highly visible, implying that processors perform similarly within a given iteration. 
 The difference between different iterations is also clear so that the iterates seem to jump around in time without an obvious pattern.
@@ -280,17 +328,16 @@ PETSc ex48 solves the hydrostatic equations for ice sheet flow, where the ice us
 We repeat the analysis from Section \ref{sec:ex23} and find qualitatively similar results, shown in Figure \ref{fig:ex48}. Using the Kolmogorov–Smirnov test again we find that we do not reject the assumption that GMRES iterates from ranks 0 and 1 come from the same distribution since $D = 0.003 < 0.024$ and we reject that PGMRES iterates come from the same distribution since $D = 0.078 > 0.023$.
 The iterates on a fixed process $p$ look like they could be from the same family of distributions with different parameters as those in the previous subsection. 
 
-GMRES iterates again look highly dependent on the node with node 0 variance $1.4\cdot10^{-12}$. The variance on PGMRES node 0 is $5.2\cdot10^{-10}$. This could be explained by the communication induced by the matrix sparsity pattern. While certain nodes appear to take much longer, the colormap (bottom right) shows that overall processors perform similarly within an iteration. Again, the computation is  not stationary in time. 
+GMRES iterates again look highly dependent on the node with node 0 variance $4.3\cdot10^{-13}$. The variance on PGMRES node 0 is $8.6\cdot10^{-10}$, larger than before, and there is more variation between PGMRES nodes which looks periodic. This could be explained by the communication induced by the matrix sparsity pattern. While certain nodes appear to take much longer, the colormap (bottom right) shows that overall processors perform similarly within an iteration. Again, the computation is  not stationary in time. 
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=4cm]{../plots/GMRES_ex48_8192_1000000_identical_in_p.png}
+\includegraphics[width=4cm]{../plots/PGMRES_ex48_8192_1000000_identical_in_p.png} \\
 \includegraphics[width=4cm]{../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf}
-\includegraphics[width=4cm]{../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png} \\
-\includegraphics[width=4cm]{../plots/PGMRES_ex48_8192_1000000_identical_in_p.png}
-\includegraphics[width=4cm]{../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf} 
-\includegraphics[width=4cm]{../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png}
-\caption{GMRES (top) and PGMRES (bottom) iterations for PETSc ex48.} \label{fig:ex48}
+\includegraphics[width=4.3cm]{../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf} \\
+\includegraphics[width=4.3cm]{../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png} \includegraphics[width=4cm]{../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png}
+\caption{GMRES (left) and PGMRES (right) iterations for PETSc ex48.} \label{fig:ex48}
 \end{figure}
 
 
@@ -315,7 +362,7 @@ Similarly for a pipelined method, we use \eqref{eq:pipeline-expression} as befor
 where $\mu_k$ is the mean of the underlying distribution in iteration $k$. 
 
 The original Krylov model \eqref{eq:krylov-model} benefits from slight alteration as well. 
-Since the iterates on each node are nearly constant, shown in Figure \eqref{fig:ex23-independent} (left) and Figure \ref{fig:ex48} (top middle), they are more suitably modeled by $\widehat{P} = P/64$  independent random variables than $P$ independent processors. We make use of this substitution in the next section but it does not seem to affect \eqref{eq:updated-krylov-model} much.
+Since the iterates on each node are nearly constant, shown in Figure \eqref{fig:ex23-independent} (left) and Figure \ref{fig:ex48} (top middle), they are more suitably modeled by $\widehat{P} = P/64$  independent random variables than $P$ independent processors. We make use of this substitution in the next section but it does not seem to effect \eqref{eq:updated-krylov-model} much.
 
 
 \section{Performance modeling} \label{sec:performance-model}
@@ -325,7 +372,7 @@ In this section, we will deploy our performance models and test them against col
 \subsection{Computing expected runtimes} \label{sec:computing-runtimes}
 
 The expressions for $E[T]$ and $E[T']$ say that the iterates come from some underlying  distribution with pdf $f(x)$, cdf $F(x)$, and mean $\mu$. 
-We will use ``bulk statistics" with these performance models, taking all iterations for all processors in aggregate, for the underlying distribution to characterize the iteration times and machine variation. 
+We will use ``bulk statistics" with these performance models, taking all iterations for all processors in aggregate, for the underlying distribution and to characterize the iteration times and machine variation. 
 
 \begin{figure}[b]
 \centering
@@ -341,17 +388,14 @@ For the pipelined methods, we disregard the two iterations in each cycle that ``
 
 
 
-Using these good fitting distributions (e.g. Johnson SU shown in Figure \ref{fig:bulk-fitted}), we can calculate $E[T]$ and $E[T']$ and compare the expected results to the actual KSPSolve times (the time spent inside the Krylov solver) provided by PETSc's ${\texttt{-log\_view}}$ option. 
+Using these good fitting distributions, we can calculate $E[T]$ and $E[T']$ and compare the expected results to the actual KSPSolve times (the time spent inside the Krylov solver) provided by PETSc's ${\texttt{-log\_view}}$ option. 
 For integration in \eqref{eq:krylov-model} we use Python's ${\texttt{quad}}$ function and integrate over the bounds of the data.
 
 To employ the updated models $\widehat{E}[T]$ and $\widehat{E}[T']$, we again perform distribution fitting using ${\texttt{scipy}}$, this time for each iteration to find  $f_k(x)$, $F_k(x)$, and mean $\mu_k$.
 We claim that the runtimes $\mathcal{T}^k_p$ for each iteration $k$ are from the same family with possibly different parameters. 
-Not all iterations resemble the same distribution family, so we use a uniform distribution to model the iterations, shown fitted to two GMRES iterations in Figure \ref{fig:iterations-with-fitted-uniform}. 
+Not all iterations resemble the same distribution family, so we use a uniform distribution to model the iterations, shown fitted to GMRES and PGMRES iterations in Figure \ref{fig:iterations-with-fitted-uniform}. 
 The distribution parameters vary by iteration.
 In \eqref{eq:updated-krylov-model}, integration is performed in each iteration again using ${\texttt{quad}}$ and the calculated expected total times are compared to the KSPSolve time.
-
-
-
 
 Analytical expressions have been used \cite{seelam2010extreme} to bound the maximum of a set of random variables using the sample mean $\mu_X$ and standard deviation $\sigma_X$.  Cramer \cite{cramer2016mathematical, david2004order} bound the maximum of $N$ identical and independent random variables  with
 \begin{equation}
@@ -372,29 +416,25 @@ In general, PGMRES runtimes were faster than GMRES, consistent with faster overa
 
 
 Results for the data presented in Section \ref{sec:experimental-results} are shown in Table \ref{tab:performance-model} for PETSc ex23 and ex48.
-We see that the original model for the expected time of a Krylov method $E[T]$  overestimates the actual runtimes and is not a particularly good estimate, nor is any bulk distribution best in all cases.  On the other hand, the updated Krylov model $\widehat{E}[T]$ is a big improvement for traditional Krylov methods and makes a reasonable prediction. 
-Using a uniform distribution to model each iteration is a simplification that could account for some of the discrepancy between the KSPSolve time and $\widehat{E}_{\text {Unif}}[T]$. Not all iterations resembled the same distribution, however, so we will keep this simplification.
-The analytical bounds are very loose and not particularly helpful.
+We see that the original model for the expected time of a Krylov method $E[T]$  overestimates the actual runtimes and is not a particularly good estimate, nor is any bulk distribution best in all cases.  On the other hand, the updated Krylov model $\widehat{E}[T]$ is a big improvement for traditional Krylov methods and makes a reasonable prediction. The analytical bounds are very loose and not particularly helpful.
 $E[T']$ and $\widehat{E}[T']$ are both good estimates for the pipelined method, suggesting that modeling a method without explicit synchronization is more flexible. 
 In one case, the non-stationary model $\widehat{E}[T']$ is not as good a predictor for PGMRES, but it is more representative of the actual process. 
 The results show that when we have available iteration data, the updated performance models \eqref{eq:updated-krylov-model} and \eqref{eq:updated-pipelined-model} are good performance predictors and we will use them from here on. 
 
-\begin{table}[t]
+\begin{table*}[t]
 \caption{Performance model results and bounds for ex23 and ex48 with good fitting distributions.}
 \begin{center}
-\begin{threeparttable}
-\begin{tabular}{l l l l l l l}
-\headrow ex23 & \thead{KSPSolve} & \thead{$\boldsymbol{E_{\text {JohnSU}}\left[T\right]}$} & \thead{$\boldsymbol{E_{\text {NCT}}\left[T\right]}$} & \thead{$\boldsymbol{\widehat{E}_{\text {Unif}}\left[T\right]}$} & \thead{Cramer bound} & \thead{Bertsimas bound} \\
- GMRES & 2.217 & 4.831 & 4.365   & 2.432 & 6.35 & 8.102  \\
- PGMRES & 2.006 & 1.865 & 1.868 & 1.857   & & \\
-\headrow ex48 &  &  &  &  & & \\
+\begin{tabular}{| l l l l l  l l |} \hline
+ ex23 & KSPSolve & $E_{\text {JohnSU}}\left[T\right]$ & $E_{\text {NCT}}\left[T\right]$ & $\widehat{E}_{\text {Unif}}\left[T\right]$  & Cramer bound & Bertsimas bound \\
+ GMRES & 2.217 & 4.831 & 4.365   & 2.432  & 6.35 & 8.102 \\
+ PGMRES & 2.006 & 1.865 & 1.868 & 1.857 & &  \\ \hline
+ ex48 &  &  &  &  & & \\
  GMRES & 2.943 & 5.716 & 10.88  & 3.189 & 20.59  & 27.99 \\
  PGMRES & 2.656 & 2.413 & 2.413 & 2.455   & & \\
 \hline  % Please only put a hline at the end of the table
-\end{tabular}
-\end{threeparttable} \label{tab:performance-model}
+\end{tabular} \label{tab:performance-model}
 \end{center}
-\end{table}
+\end{table*}
 
 \iffalse
 The original models use bulk statistics and an underlying distribution to describe the iterations in aggregate. We found Johnson SU to be a good fit with our data. 
@@ -410,9 +450,9 @@ In the previous section, we showed that our performance models $\widehat{E}[T]$ 
 
 \begin{figure}[b]
 \centering
-\includegraphics[width=6cm]{../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png}
-%\includegraphics[width=6cm]{../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_15_45.png}
-\caption{GMRES  iterations $k = 14, 44$ with fitted uniform distributions.} \label{fig:iterations-with-fitted-uniform}
+\includegraphics[width=4cm]{../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_14_44.png}
+\includegraphics[width=4cm]{../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with_uniform_16_48.png}
+\caption{GMRES  iterations $k = 14, 44$ and PGMRES $k = 16, 48$ iterations  with fitted uniform distributions.} \label{fig:iterations-with-fitted-uniform}
 \end{figure}
 
 Bulk statistics appear to be enough to succinctly describe the performance of a pipelined method, they are not a sufficient way to describe a traditional Krylov method. Instead, we used non-stationary uniform distributions to model each iteration, shown in Figure \ref{fig:iterations-with-fitted-uniform}.
@@ -450,39 +490,35 @@ We simulate a pipelined Krylov computation in the same way, pulling random varia
 \widehat{E}[T'_k] =  \mu_k
 \end{equation}
 where $\mu_k$ is the mean of $\text{Uniform}(a_k, s_k)$. 
-Table \ref{tab:simulated-runtimes} shows the results of this simulation using the Johnson SU parameters from Table \ref{tab:distribution-params}. The results are good when we have the Johnson SU parameters. The challenge in general will be to reason about these parameters so that we can make a priori performance estimates for Krylov and pipelined Krylov methods.
+Table \ref{tab:simulated-runtimes} shows the results of this simulation using the Johnson SU parameters from Table \ref{tab:distribution-params}. The results are good when we have the computed Johnson SU parameters. The challenge in general will be to reason about these parameters so that we can make a priori performance estimates for Krylov and pipelined Krylov methods.
 
-\begin{table}[t]
+\begin{table*}[t]
 \caption{Johnson SU parameters for uniform parameters $a_k$ and $s_k$.}
 \begin{center}
-\begin{threeparttable}
-\begin{tabular}{l |l l l l |l l l l}
-\headrow  &  \multicolumn{4}{c}{Uniform $a_k$} & \multicolumn{4}{c}{Uniform $s_k$}  \\
-\headrow ex23 & \thead{${\texttt{$a$}}$} & \thead{${\texttt{$b$}}$} & \thead{${\texttt{loc}}$} & \thead{${\texttt{scale}}$} & \thead{${\texttt{$a$}}$} & \thead{${\texttt{$b$}}$} & \thead{${\texttt{loc}}$} & \thead{${\texttt{scale}}$} \\
+\begin{tabular}{| l l l l l |l l l l |} \hline
+  &  \multicolumn{4}{c |}{Uniform $a_k$} & \multicolumn{4}{c |}{Uniform $s_k$}  \\
+ex23 & ${\texttt{$a$}}$ &${\texttt{$b$}}$ & ${\texttt{loc}}$ & ${\texttt{scale}}$ &${\texttt{$a$}}$ &${\texttt{$b$}}$ & ${\texttt{loc}}$ & ${\texttt{scale}}$ \\
  GMRES & -5.86e-01 & 3.35 & 3.97e-04 & 1.07e-21 & -7.40e-01 & 3.21 & 8.06e-04 & 1.86e-23 \\
- PGMRES & 2.84 & 6.74 & 3.10e-04 & 2.26e-19 & -6.18e-02 & 2.42 & 2.21e-03 & 6.47e-19 \\
-\headrow ex48 &  &  &  &  & & & & \\
+ PGMRES & 2.84 & 6.74 & 3.10e-04 & 2.26e-19 & -6.18e-02 & 2.42 & 2.21e-03 & 6.47e-19 \\ \hline
+ ex48 &  &  &  &  & & & & \\
  GMRES & 6.74e-01 & 2.09 & 2.22e-02 & 2.24e-24 & 6.69e-01 & 2.10 & 1.71e-03 & 9.23e-26 \\
  PGMRES & -6.02e-01 & 3.34 & 4.07e-04 & 3.05e-23 & 1.24 & 1.84 & 1.36e-02 & 1.66e-18 \\
 \hline  % Please only put a hline at the end of the table
-\end{tabular}
-\end{threeparttable} \label{tab:distribution-params}
+\end{tabular} \label{tab:distribution-params}
 \end{center}
-\end{table}
+\end{table*}
 
 
 \begin{table}[b]
 \caption{Actual and simulated runtimes in seconds on 8192 processors with $10^6$ unknowns.}
 \begin{center}
-\begin{threeparttable}
-\begin{tabular}{l l l | l l l}
+\begin{tabular}{| l l l | l l l |} \hline
 %\headrow  &  \multicolumn{2}{c}{PETSc ex23} & \multicolumn{2}{c}{PETSc ex48}  \\
-\headrow ex23 & \thead{GMRES} & \thead{PGMRES} & ex48 & \thead{GMRES} & \thead{PGMRES} \\
+ ex23 &GMRES & PGMRES & ex48 & GMRES & PGMRES \\
  KSPSolve & 2.217 & 2.006 &  KSPSolve & 2.943 & 2.656 \\
  Simulated & 2.416 & 1.908 &  Simulated &  3.14 & 2.482  \\
 \hline  % Please only put a hline at the end of the table
-\end{tabular}
-\end{threeparttable} \label{tab:simulated-runtimes}
+\end{tabular} \label{tab:simulated-runtimes}
 \end{center}
 \end{table}
 
@@ -498,28 +534,27 @@ Again, these experiments were performed in autumn 2018.
 
 Our experiments so far have been performed on 8192 processors with $10^6$ unknowns.
 To see how changing processor count and problem size affect the Krylov method performance and underlying uniform parameters, we run strong- and static-scaling experiments.
-Figures \ref{fig:strong-scaling} and \ref{fig:static-scaling} show the Johnson SU distributions for the uniform parameters $a_k$ and $s_k$ for strong- and static-scaling experiments using GMRES. 
+Figures \ref{fig:strong-scaling} and \ref{fig:static-scaling} show the Johnson SU distributions for the uniform parameters $a_k$ and $s_k$ for strong- and static-scaling experiments. 
 
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=6cm]{../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png}
-\includegraphics[width=6cm]{../plots/GMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png} 
+\includegraphics[width=6cm]{../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png} 
 \caption{GMRES ex48 strong-scaling results on $P = 1024 - 8192$ processors.} \label{fig:strong-scaling}
 \end{figure}
  
 \begin{figure}[b]
 \centering
 \includegraphics[width=6cm]{../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png}
-\includegraphics[width=6cm]{../plots/GMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png} 
+\includegraphics[width=6cm]{../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png} 
 \caption{GMRES ex48 static-scaling results for $10^5 - 10^8$ unknowns.} \label{fig:static-scaling}
 \end{figure}
 
 With strong-scaling experiments, we see how varying the processor count affects Krylov method performance for a fixed problem. We repeat runs of ex48 with  $10^6$ unknowns on $P = 1024 - 8192$ processors. 
-We see that, for a fixed number of unknowns, when we use fewer processors the Johnson SU distribution that models the uniform parameter $a_k$ (the minimum) shifts to the right, which is unsurprising.  The distribution of the uniform parameter $s_k$ (the span) flattens slightly with more processors, but not much. 
-
-We also perform static-scaling results where we keep the number of processors fixed at $P=8192$ and vary the number of unknowns to see how the amount of computation affects the underlying iteration distributions.
-Increasing the amount of computation per processor shifts the distribution of the uniform parameters $a_k$ and $s_k$. Similar results were found for computations using PGMRES.
+We see that, for a fixed number of unknowns, as we decrease problem size the Johnson SU distribution shifts to the right and spreads out for both uniform parameters since each processor does more work and is more likely to experience a detour. 
+Similarly, we perform static-scaling results where we keep the number of processors fixed at $P=8192$ and vary the number of unknowns to see the effect of computation on underlying iteration distributions.
+Static-scaling changes exaggerate what we see for strong-scaling.
 
 %Pipelined methods have the potential to outperform than traditional Krylov methods when enough processors are deployed so that communication dominates the algorithm, since pipelined methods can overlap computation with communication. We found that on 8192 processors with $10^6$ unknowns, PGMRES outperforms GMRES for PETSc tutorials ex23 and ex48. The pipelined limit is reached, however, closer to $10^7$ unknowns on 8192 processors, when computation dominates each iteration.
 
@@ -565,32 +600,40 @@ We expect a marked performance difference on Mira since
 nodes on Mira are connected by a 5D Torus Network with hardware to assist collective functions, 
 where nodes on Theta are connected by a Cray Aries Network where neighboring workloads share network routes, increasing performance variability \cite{groves2017understanding}. 
 Each Blue Gene/Q node also contains a redundant processor that can soak up operating system interrupts, similar to Cray's core specialization feature where one core per node is dedicated to handling OS operations, which reduces core variability \cite{chunduri2017run}.
-Figure \ref{fig:mira} shows a bulk histogram for iterates from all processors and all iterations and  histograms of iterations at different places in the GMRES cycle. 
-GMRES iterations on Theta appear to be noisy enough that our simulation from Section \ref{sec:performance-estimates} provided reasonable results even though we drew uniform parameters $a_k$ and $s_k$ from the same Johnson SU distributions regardless of $k$ in the GMRES cycle. 
+
+
+Figure \ref{fig:mira} shows histograms of iterations from difference places in the GMRES cycle as well as a bulk histogram for all iterations from all processors, which can be thought of as the average performance. Each curve has been normalized to represent a distribution.  
+GMRES iterations on Theta at different places in the cycle appear similar to the average. They are noisy enough that our simulation from Section \ref{sec:performance-estimates} provided reasonable results even though we drew uniform parameters $a_k$ and $s_k$ from the same Johnson SU distributions regardless of $k$ in the GMRES cycle. 
 With Mira's quiet network, the GMRES iterates are much more distinct suggesting that a refined model that accounts for the amount of work done per iteration would be needed for a priori estimates.
 Futhermore, we see a jump in the time between iterations $k \mod 30 = 13$ and $k \mod 30 = 14$ probably due to cache effects and using more storage throughout a GMRES cycle. 
 Similar results were found for PGMRES and performance results are in Table \ref{tab:performance-model-2}.
 
+
+
+
 \begin{figure}
 \centering
-\includegraphics[width=6cm]{../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_with_k_mod_30.png}
-\includegraphics[width=6cm]{../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_with_k_mod_30.png}
-\caption{GMRES ex48 iterations and Theta and Mira.}  \label{fig:mira}
+\includegraphics[width=6cm]{../plots/GMRES_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png}
+\includegraphics[width=6cm]{../plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png}
+\caption{GMRES ex48 iteration density and Theta and Mira.}  \label{fig:mira}
 \end{figure}
 
 
 \begin{table}[b]
 \caption{Non-stationary performance model results for ex23 and ex48 for extended experiments.}
 \begin{center}
-\begin{threeparttable}
-\begin{tabular}{l l l | l l l l l}
-\headrow  & & & & \multicolumn{2}{c}{Piz Daint} & \multicolumn{2}{c}{Mira}  \\
-\headrow ex23 & \thead{BCGS} & \thead{PIPEBCGS} & ex48 & \thead{GMRES} & \thead{PGMRES} & \thead{GMRES} & \thead{PGMRES} \\
- KSPSolve & 3.957 & 3.53 & KSPSolve & 3.029 & 2.642 & 3.026 & 2.804 \\
- $\widehat{E}_{\text {Unif}}\left[T\right]$ & 4.227 & 3.512 & $\widehat{E}_{\text {Unif}}\left[T\right]$ & 3.541 & 2.473 & 3.189 & 2.455 \\
+\begin{tabular}{| l l l | l l } \cline{1-3}
+ & \multicolumn{2}{c |}{Theta} & & \\
+ ex23 & BCGS & PIPEBCGS & &   \\
+KSPSolve & 3.957 & 3.53 & &  \\
+ $\widehat{E}_{\text {Unif}}\left[T\right]$ & 4.227 & 3.512 & &  \\ \hline
+
+ & \multicolumn{2}{c |}{Piz Daint} & \multicolumn{2}{c |}{Mira}  \\
+ ex48 &  GMRES & PGMRES & GMRES & \multicolumn{1}{c |}{PGMRES} \\
+ KSPSolve  & 3.029 & 2.642 & 3.026 & \multicolumn{1}{c |}{2.804} \\
+  $\widehat{E}_{\text {Unif}}\left[T\right]$ & 3.541 & 2.473 & 3.189 & \multicolumn{1}{c |}{2.455} \\
 \hline  % Please only put a hline at the end of the table
-\end{tabular}
-\end{threeparttable} \label{tab:performance-model-2}
+\end{tabular} \label{tab:performance-model-2}
 \end{center}
 \end{table}
 
@@ -601,21 +644,17 @@ The goal of this work was to gather fine-grained iteration data from runs of Kry
 We used the data to develop and test stochastic performance models, which are in good agreement with reality. 
 Variability during computation suggests that performance is not deterministic and could be better explained in a stochastic setting. 
 With descriptive enough statistics we were also able to make a priori performance estimates. 
-
-Repeating similar analysis for different classes of problems on different machines will 
-make HPC users better equipped to make good performance estimates in a variety of circumstances.
-Better performance estimates allow users to 
-allocate an appropriate amount of time for jobs on HPC machines and eases the need to overestimate,
-which leads to idle, wasted machine time and energy. 
-
 In future work, nondeterministic performance models can be derived for other parallel algorithms where unpredictable system interference could impact performance.
 Insights from performance models can also be used to guide the development of new algorithms, particularly those we expect to be running in less predictable computing environments, such as heavily loaded machines or loosely coupled networks used in cloud computing or those with shared resources.
 
+\iffalse
 \section*{Acknowledgements}
 Thanks to everyone who offered insight and advice, including Todd Munson, Barry Smith, Ivana Marincic, Vivak Patel, Karl Rupp, and Oana Marin.
+\fi
 
 \bibliography{bibli}
 
+\iffalse
 \newpage
 {\bf Disclaimer.} The submitted manuscript has been created by UChicago Argonne, LLC,
 Operator of Argonne National Laboratory (``Argonne'').
@@ -625,6 +664,7 @@ retains for itself, and others acting on its behalf, a paid-up
 nonexclusive, irrevocable worldwide license in said article to reproduce,
 prepare derivative works, distribute copies to the public, and perform
 publicly and display publicly, by or on behalf of the Government.
+\fi
 
 
 

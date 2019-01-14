@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 JAN 2019 09:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 JAN 2019 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -37,6 +37,7 @@ Package acmart Info: Explicitly selecting natbib mode on input line 106.
 Package acmart Info: Not using anonymous mode on input line 114.
 Package acmart Info: Not using timestamp mode on input line 122.
 Package acmart Info: Not using authordraft mode on input line 132.
+Package acmart Info: Using anonymous mode on input line 141.
 Class acmart Info: Using format sigconf, number 4 on input line 141.
 Class acmart Info: Using fontsize 9pt on input line 199.
 
@@ -1402,36 +1403,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen195
 \l_MT_below_shortintertext_sep=\dimen196
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\@float@every@algorithm=\toks33
-\c@algorithm=\count311
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
-Package: algpseudocode 
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
-Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
-
-Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count312
-\c@ALG@rem=\count313
-\c@ALG@nested=\count314
-\ALG@tlm=\skip85
-\ALG@thistlm=\skip86
-\c@ALG@Lnr=\count315
-\c@ALG@blocknr=\count316
-\c@ALG@storecount=\count317
-\c@ALG@tmpcounter=\count318
-\ALG@tmplength=\skip87
-)
-Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/02/14 3.18 The Babel package
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
@@ -1442,11 +1414,11 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count319
+\babel@savecnt=\count311
 \U@D=\dimen256
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count320
+\bbl@dirlevel=\count312
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -1454,1326 +1426,355 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip88
-\multirow@cntb=\count321
-\multirow@dima=\skip89
+\multirow@colwidth=\skip85
+\multirow@cntb=\count313
+\multirow@dima=\skip86
 \bigstrutjot=\dimen257
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\enitkv@toks@=\toks34
-\labelindent=\skip90
+\enitkv@toks@=\toks33
+\labelindent=\skip87
 \enit@outerparindent=\dimen258
-\enit@toks=\toks35
+\enit@toks=\toks34
 \enit@inbox=\box59
-\enitdp@description=\count322
+\enitdp@description=\count314
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count323
-\c@subtable=\count324
+\c@subfigure=\count315
+\c@subtable=\count316
 )
-! Undefined control sequence.
-l.50 \affil
-           [1]{Mathematics and Computer Science, Argonne National Laboratory...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \affil[
-            1]{Mathematics and Computer Science, Argonne National Laboratory...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-l.51 \affil
-           [2]{Institute of Geophysics,  ETH Zurich,  Zurich, Switzerland}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.52 \affil
-           [3]{Computer Science in Engineering, University of Buffalo, Buffa...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (67.83391pt too wide) in paragraph at lines 50--53
-[]\T1/LinuxLibertineT-TLF/m/n/9 [1]Mathematics
- []
-
-
-Overfull \hbox (13.54497pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 and
- []
-
-
-Overfull \hbox (20.50197pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Com-
- []
-
-
-Overfull \hbox (19.66496pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 puter
- []
-
-
-Overfull \hbox (13.69797pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Sci-
- []
-
-
-Overfull \hbox (18.66595pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 ence,
- []
-
-
-Overfull \hbox (12.64497pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Ar-
- []
-
-
-Overfull \hbox (22.81497pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 gonne
- []
-
-
-Overfull \hbox (13.44598pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Na-
- []
-
-
-Overfull \hbox (21.18596pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 tional
- []
-
-
-Overfull \hbox (16.34398pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Lab-
- []
-
-
-Overfull \hbox (7.57799pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 o-
- []
-
-
-Overfull \hbox (10.50298pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 ra-
- []
-
-
-Overfull \hbox (16.94696pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 tory,
- []
-
-
-Overfull \hbox (12.64497pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Ar-
- []
-
-
-Overfull \hbox (24.70496pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 gonne,
- []
-
-
-Overfull \hbox (12.90596pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Illi-
- []
-
-
-Overfull \hbox (17.34297pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 nois,
- []
-
-
-Overfull \hbox (16.56897pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 USA
- []
-
-
-Overfull \hbox (21.18596pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 [2]In-
- []
-
-
-Overfull \hbox (11.83498pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 sti-
- []
-
-
-Overfull \hbox (14.48997pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 tute
- []
-
-
-Overfull \hbox (7.32599pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 of
- []
-
-
-Overfull \hbox (17.82896pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Geo-
- []
-
-
-Overfull \hbox (29.43895pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 physics,
- []
-
-
-Overfull \hbox (16.956pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 ETH
- []
-
-
-Overfull \hbox (26.67595pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Zurich,
- []
-
-
-Overfull \hbox (26.67595pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Zurich,
- []
-
-
-Overfull \hbox (30.59995pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Switzer-
- []
-
-
-Overfull \hbox (15.92096pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 land
- []
-
-
-Overfull \hbox (31.09496pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 [3]Com-
- []
-
-
-Overfull \hbox (19.66496pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 puter
- []
-
-
-Overfull \hbox (13.69797pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Sci-
- []
-
-
-Overfull \hbox (16.77597pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 ence
- []
-
-
-Overfull \hbox (7.31699pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 in
- []
-
-
-Overfull \hbox (12.93298pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 En-
- []
-
-
-Overfull \hbox (9.98099pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 gi-
- []
-
-
-Overfull \hbox (19.37695pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 neer-
- []
-
-
-Overfull \hbox (13.79698pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 ing,
- []
-
-
-Overfull \hbox (16.30797pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Uni-
- []
-
-
-Overfull \hbox (14.81396pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 ver-
- []
-
-
-Overfull \hbox (13.42798pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 sity
- []
-
-
-Overfull \hbox (7.32599pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 of
- []
-
-
-Overfull \hbox (15.90297pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Buf-
- []
-
-
-Overfull \hbox (15.70496pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 falo,
- []
-
-
-Overfull \hbox (15.90297pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 Buf-
- []
-
-
-Overfull \hbox (15.70496pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 falo,
- []
-
-
-Overfull \hbox (16.97398pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 New
- []
-
-
-Overfull \hbox (19.00795pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 York,
- []
-
-
-Overfull \hbox (16.56897pt too wide) in paragraph at lines 50--53
-\T1/LinuxLibertineT-TLF/m/n/9 USA 
- []
-
-! Undefined control sequence.
-l.54 \corraddress
-                 {Hannah Morgan, Mathematics and Computer Science, Argonne N...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.54 \corraddress{H
-                   annah Morgan, Mathematics and Computer Science, Argonne N...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-l.55 \corremail
-               {hmorgan@anl.gov}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (39.39395pt too wide) in paragraph at lines 54--56
-[]\T1/LinuxLibertineT-TLF/m/n/9 Hannah
- []
-
-
-Overfull \hbox (18.47697pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 Mor-
- []
-
-
-Overfull \hbox (15.47098pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 gan,
- []
-
-
-Overfull \hbox (22.39197pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 Math-
- []
-
-
-Overfull \hbox (7.06499pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 e-
- []
-
-
-Overfull \hbox (17.10896pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 mat-
- []
-
-
-Overfull \hbox (9.80098pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 ics
- []
-
-
-Overfull \hbox (13.54497pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 and
- []
-
-
-Overfull \hbox (20.50197pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 Com-
- []
-
-
-Overfull \hbox (19.66496pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 puter
- []
-
-
-Overfull \hbox (13.69797pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 Sci-
- []
-
-
-Overfull \hbox (18.66595pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 ence,
- []
-
-
-Overfull \hbox (12.64497pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 Ar-
- []
-
-
-Overfull \hbox (22.81497pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 gonne
- []
-
-
-Overfull \hbox (13.44598pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 Na-
- []
-
-
-Overfull \hbox (21.18596pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 tional
- []
-
-
-Overfull \hbox (16.34398pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 Lab-
- []
-
-
-Overfull \hbox (7.57799pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 o-
- []
-
-
-Overfull \hbox (10.50298pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 ra-
- []
-
-
-Overfull \hbox (16.94696pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 tory,
- []
-
-
-Overfull \hbox (12.64497pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 Ar-
- []
-
-
-Overfull \hbox (24.70496pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 gonne,
- []
-
-
-Overfull \hbox (12.90596pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 Illi-
- []
-
-
-Overfull \hbox (17.34297pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 nois,
- []
-
-
-Overfull \hbox (16.56897pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 USA
- []
-
-
-Overfull \hbox (22.87796pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 hmor-
- []
-
-
-Overfull \hbox (48.33893pt too wide) in paragraph at lines 54--56
-\T1/LinuxLibertineT-TLF/m/n/9 gan@anl.gov 
- []
-
-! Undefined control sequence.
-l.57 \fundinginfo
-                 {The authors were supported by the U.S. Department of Energ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 \fundinginfo{T
-                   he authors were supported by the U.S. Department of Energ...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (24.23799pt too wide) in paragraph at lines 57--58
-[]\T1/LinuxLibertineT-TLF/m/n/9 The
- []
-
-
-Overfull \hbox (11.93398pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 au-
- []
-
-
-Overfull \hbox (19.07997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 thors
- []
-
-
-Overfull \hbox (17.97296pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 were
- []
-
-
-Overfull \hbox (16.00197pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 sup-
- []
-
-
-Overfull \hbox (24.10193pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ported
- []
-
-
-Overfull \hbox (9.07199pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 by
- []
-
-
-Overfull \hbox (11.70898pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 the
- []
-
-
-Overfull \hbox (14.05797pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 U.S.
- []
-
-
-Overfull \hbox (13.37398pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 De-
- []
-
-
-Overfull \hbox (18.01796pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 part-
- []
-
-
-Overfull \hbox (18.85497pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ment
- []
-
-
-Overfull \hbox (7.32599pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 of
- []
-
-
-Overfull \hbox (12.93298pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 En-
- []
-
-
-Overfull \hbox (17.95497pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ergy,
- []
-
-
-Overfull \hbox (12.14998pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Of-
- []
-
-
-Overfull \hbox (12.91498pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 fice
- []
-
-
-Overfull \hbox (7.32599pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 of
- []
-
-
-Overfull \hbox (13.69797pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Sci-
- []
-
-
-Overfull \hbox (18.66595pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ence,
- []
-
-
-Overfull \hbox (13.74297pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Ad-
- []
-
-
-Overfull \hbox (25.95593pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 vanced
- []
-
-
-Overfull \hbox (13.69797pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Sci-
- []
-
-
-Overfull \hbox (11.94298pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 en-
- []
-
-
-Overfull \hbox (14.17497pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 tific
- []
-
-
-Overfull \hbox (20.50197pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Com-
- []
-
-
-Overfull \hbox (15.33597pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 put-
- []
-
-
-Overfull \hbox (11.81699pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ing
- []
-
-
-Overfull \hbox (12.34798pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Re-
- []
-
-
-Overfull \hbox (23.61595pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 search
- []
-
-
-Overfull \hbox (12.69897pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 un-
- []
-
-
-Overfull \hbox (11.92497pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 der
- []
-
-
-Overfull \hbox (18.26997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Con-
- []
-
-
-Overfull \hbox (17.00096pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 tract
- []
-
-
-Overfull \hbox (14.36398pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 DE-
- []
-
-
-Overfull \hbox (22.84195pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 AC02-
- []
-
-
-Overfull \hbox (43.65897pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 06CH11357.
- []
-
-
-Overfull \hbox (16.16399pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 This
- []
-
-
-Overfull \hbox (10.34097pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 re-
- []
-
-
-Overfull \hbox (23.61595pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 search
- []
-
-
-Overfull \hbox (16.92896pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 used
- []
-
-
-Overfull \hbox (10.34097pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 re-
- []
-
-
-Overfull \hbox (27.48595pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 sources
- []
-
-
-Overfull \hbox (7.32599pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 of
- []
-
-
-Overfull \hbox (11.70898pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 the
- []
-
-
-Overfull \hbox (12.64497pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Ar-
- []
-
-
-Overfull \hbox (22.81497pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 gonne
- []
-
-
-Overfull \hbox (20.48396pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Lead-
- []
-
-
-Overfull \hbox (10.41298pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 er-
- []
-
-
-Overfull \hbox (15.46198pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ship
- []
-
-
-Overfull \hbox (20.50197pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Com-
- []
-
-
-Overfull \hbox (15.33597pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 put-
- []
-
-
-Overfull \hbox (11.81699pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ing
- []
-
-
-Overfull \hbox (11.51997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Fa-
- []
-
-
-Overfull \hbox (11.70897pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 cil-
- []
-
-
-Overfull \hbox (11.36697pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ity,
- []
-
-
-Overfull \hbox (22.69797pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 which
- []
-
-
-Overfull \hbox (5.94899pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 is
- []
-
-
-Overfull \hbox (4.11299pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 a
- []
-
-
-Overfull \hbox (17.63998pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 DOE
- []
-
-
-Overfull \hbox (12.14998pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Of-
- []
-
-
-Overfull \hbox (12.91498pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 fice
- []
-
-
-Overfull \hbox (7.32599pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 of
- []
-
-
-Overfull \hbox (13.69797pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Sci-
- []
-
-
-Overfull \hbox (16.77597pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ence
- []
-
-
-Overfull \hbox (16.82997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 User
- []
-
-
-Overfull \hbox (11.51997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Fa-
- []
-
-
-Overfull \hbox (11.70897pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 cil-
- []
-
-
-Overfull \hbox (9.91798pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ity
- []
-
-
-Overfull \hbox (16.00197pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 sup-
- []
-
-
-Overfull \hbox (24.10193pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ported
- []
-
-
-Overfull \hbox (12.69897pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 un-
- []
-
-
-Overfull \hbox (11.92497pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 der
- []
-
-
-Overfull \hbox (18.26997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Con-
- []
-
-
-Overfull \hbox (17.00096pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 tract
- []
-
-
-Overfull \hbox (14.36398pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 DE-
- []
-
-
-Overfull \hbox (22.84195pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 AC02-
- []
-
-
-Overfull \hbox (43.65897pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 06CH11357.
- []
-
-
-Overfull \hbox (9.234pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 PS
- []
-
-
-Overfull \hbox (11.00697pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ac-
- []
-
-
-Overfull \hbox (26.09995pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 knowl-
- []
-
-
-Overfull \hbox (20.67296pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 edges
- []
-
-
-Overfull \hbox (8.08199pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 fi-
- []
-
-
-Overfull \hbox (16.91096pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 nan-
- []
-
-
-Overfull \hbox (12.77997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 cial
- []
-
-
-Overfull \hbox (16.00197pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 sup-
- []
-
-
-Overfull \hbox (15.46196pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 port
- []
-
-
-Overfull \hbox (17.71196pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 from
- []
-
-
-Overfull \hbox (11.70898pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 the
- []
-
-
-Overfull \hbox (20.54697pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Swiss
- []
-
-
-Overfull \hbox (16.30797pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Uni-
- []
-
-
-Overfull \hbox (14.81396pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ver-
- []
-
-
-Overfull \hbox (13.42798pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 sity
- []
-
-
-Overfull \hbox (18.26997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Con-
- []
-
-
-Overfull \hbox (13.20297pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 fer-
- []
-
-
-Overfull \hbox (16.77597pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ence
- []
-
-
-Overfull \hbox (13.54497pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 and
- []
-
-
-Overfull \hbox (11.70898pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 the
- []
-
-
-Overfull \hbox (20.54697pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Swiss
- []
-
-
-Overfull \hbox (23.04897pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Coun-
- []
-
-
-Overfull \hbox (8.66698pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 cil
- []
-
-
-Overfull \hbox (7.32599pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 of
- []
-
-
-Overfull \hbox (16.04695pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Fed-
- []
-
-
-Overfull \hbox (13.85997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 eral
- []
-
-
-Overfull \hbox (10.59297pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 In-
- []
-
-
-Overfull \hbox (11.83498pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 sti-
- []
-
-
-Overfull \hbox (17.99997pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 tutes
- []
-
-
-Overfull \hbox (7.32599pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 of
- []
-
-
-Overfull \hbox (20.62796pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Tech-
- []
-
-
-Overfull \hbox (14.83197pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 nol-
- []
-
-
-Overfull \hbox (13.67099pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ogy
- []
-
-
-Overfull \hbox (29.61896pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 through
- []
-
-
-Overfull \hbox (11.70898pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 the
- []
-
-
-Overfull \hbox (17.35196pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Plat-
- []
-
-
-Overfull \hbox (17.78397pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 form
- []
-
-
-Overfull \hbox (10.67398pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 for
- []
-
-
-Overfull \hbox (13.74297pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Ad-
- []
-
-
-Overfull \hbox (25.95593pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 vanced
- []
-
-
-Overfull \hbox (13.69797pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Sci-
- []
-
-
-Overfull \hbox (11.94298pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 en-
- []
-
-
-Overfull \hbox (14.17497pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 tific
- []
-
-
-Overfull \hbox (20.50197pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 Com-
- []
-
-
-Overfull \hbox (15.33597pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 put-
- []
-
-
-Overfull \hbox (11.81699pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 ing
- []
-
-
-Overfull \hbox (26.13596pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 (PASC)
- []
-
-
-Overfull \hbox (15.52496pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 pro-
- []
-
-
-Overfull \hbox (21.05096pt too wide) in paragraph at lines 57--58
-\T1/LinuxLibertineT-TLF/m/n/9 gram. 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.58 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.58 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 58.
-[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.58 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on i
-nput line 58.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
-File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
-uxBiolinumT-TLF.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen259
+\pgfutil@tempdimb=\dimen260
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box60
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen261
+\pgf@y=\dimen262
+\pgf@xa=\dimen263
+\pgf@ya=\dimen264
+\pgf@xb=\dimen265
+\pgf@yb=\dimen266
+\pgf@xc=\dimen267
+\pgf@yc=\dimen268
+\w@pgf@writea=\write6
+\r@pgf@reada=\read3
+\c@pgf@counta=\count317
+\c@pgf@countb=\count318
+\c@pgf@countc=\count319
+\c@pgf@countd=\count320
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 58.
+Driver file for pgf: pgfsys-pdftex.def
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.58 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-[2]
-! Undefined control sequence.
-l.60 \runningauthor
-                   {Morgan et al.}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count321
+\pgfsyssoftpath@bigbuffer@items=\count322
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen269
+\pgfmath@count=\count323
+\pgfmath@box=\box61
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count324
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen270
+\pgf@picmaxx=\dimen271
+\pgf@picminy=\dimen272
+\pgf@picmaxy=\dimen273
+\pgf@pathminx=\dimen274
+\pgf@pathmaxx=\dimen275
+\pgf@pathminy=\dimen276
+\pgf@pathmaxy=\dimen277
+\pgf@xx=\dimen278
+\pgf@xy=\dimen279
+\pgf@yx=\dimen280
+\pgf@yy=\dimen281
+\pgf@zx=\dimen282
+\pgf@zy=\dimen283
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen284
+\pgf@path@lasty=\dimen285
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen286
+\pgf@shorten@start@additional=\dimen287
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count325
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen288
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen289
+\pgf@pt@y=\dimen290
+\pgf@pt@temp=\dimen291
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen292
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen293
+\pgf@sys@shading@range@num=\count326
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box65
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box66
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen294
+\pgf@nodesepend=\dimen295
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen296
+\pgffor@skip=\dimen297
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count327
+\pgfplotmarksize=\dimen298
+)
+\tikz@lastx=\dimen299
+\tikz@lasty=\dimen300
+\tikz@lastxsaved=\dimen301
+\tikz@lastysaved=\dimen302
+\tikzleveldistance=\dimen303
+\tikzsiblingdistance=\dimen304
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count328
+\tikznumberofchildren=\count329
+\tikznumberofcurrentchild=\count330
+\tikz@fig@count=\count331
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.60 \runningauthor{M
-                     organ et al.}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count332
+\pgfmatrixcurrentcolumn=\count333
+\pgf@matrix@numberofcolumns=\count334
+)
+\tikz@expandcount=\count335
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.60 \runningauthor{M
-                     organ et al.}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[3]
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 \runningauthor{M
-                     organ et al.}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (38.92596pt too wide) in paragraph at lines 60--61
-[]\T1/LinuxLibertineT-TLF/m/n/9 Morgan
- []
-
-
-Overfull \hbox (6.86699pt too wide) in paragraph at lines 60--61
-\T1/LinuxLibertineT-TLF/m/n/9 et
- []
-
-
-Overfull \hbox (8.46898pt too wide) in paragraph at lines 60--61
-\T1/LinuxLibertineT-TLF/m/n/9 al. 
- []
-
-\c@theorem=\count325
-Excluding comment 'screenonly' Include comment 'printonly'
-Include comment 'anonsuppress' (./krylov-noise-paper.aux)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+\c@theorem=\count336
+ Excluding comment 'screenonly'
+Include comment 'printonly' Excluding comment 'anonsuppress'
+Excluding comment 'acks' (./krylov-noise-paper.aux)
 \openout1 = `krylov-noise-paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 63.
-LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 63
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 60.
+LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 60
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 63.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 63.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 60.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 63.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 60.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 63.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 63
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 60
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 60.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 6
-3.
+0.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 63.
+(Font)              scaled to size 7.0pt on input line 60.
 LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineT-TLF on
- input line 63.
+ input line 60.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.
 fd
@@ -2781,40 +1782,40 @@ File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 63.
+(Font)              scaled to size 7.3pt on input line 60.
 <<ot1.cmap>>
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 63.
+(Font)              scaled to size 5.5pt on input line 60.
 <<oml.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 63.
+LaTeX Font Info:    Try loading font information for U+msa on input line 60.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 63.
+LaTeX Font Info:    Try loading font information for U+msb on input line 60.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 63.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 60.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2016/01/31 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 63.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 60.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 63.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 60.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Info: Redefining \microtypecontext on input line 63.
+LaTeX Info: Redefining \microtypecontext on input line 60.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2830,8 +1831,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 63.
+\AtBeginShipoutBox=\box71
+Package hyperref Info: Link coloring OFF on input line 60.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2839,30 +1840,30 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count326
+\c@section@level=\count337
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
 
 (./krylov-noise-paper.out) (./krylov-noise-paper.out)
-\@outlinefile=\write6
-\openout6 = `krylov-noise-paper.out'.
+\@outlinefile=\write7
+\openout7 = `krylov-noise-paper.out'.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
-\scratchdimen=\dimen259
-\scratchbox=\box61
-\nofMPsegments=\count328
-\nofMParguments=\count329
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count330
-\MPscratchDim=\dimen260
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count338
+\scratchdimen=\dimen305
+\scratchbox=\box72
+\nofMPsegments=\count339
+\nofMParguments=\count340
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count341
+\MPscratchDim=\dimen306
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
+\everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -2914,8 +1915,8 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count333
-\c@mv@boldtabular=\count334
+\c@mv@tabular=\count344
+\c@mv@boldtabular=\count345
 (/usr/local/texlive/2018/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
@@ -2932,7 +1933,7 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 63.
+(Font)              scaled to size 9.0pt on input line 60.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2944,7 +1945,7 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Try loading font information for OT1+LinuxBiolinumT-TLF on 
-input line 63.
+input line 60.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/OT1LinuxBiolinumT-TLF.f
 d
@@ -2952,49 +1953,70 @@ File: OT1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/L
 inuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 63.
+(Font)              scaled to size 9.0pt on input line 60.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 63.
+(Font)              scaled to size 7.3pt on input line 60.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 63.
-LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 63.
+(Font)              scaled to size 5.5pt on input line 60.
+LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 60.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/inconsolata/ot1zi4.fd
 File: ot1zi4.fd 2018/01/14 OT1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 63.
+(Font)              scaled to size 9.0pt on input line 60.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 7.3pt on input line 63.
+(Font)              scaled to size 7.3pt on input line 60.
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 5.5pt on input line 63.
+(Font)              scaled to size 5.5pt on input line 60.
+
+Excluding 'CCSXML' comment.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 65.
+(Font)              scaled to size 17.28pt on input line 166.
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on i
+nput line 166.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
+File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
+uxBiolinumT-TLF.
+)
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 65.
+(Font)              scaled to size 17.28pt on input line 166.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 65.
+(Font)              scaled to size 17.28pt on input line 166.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 65.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 65.
-
-[4.1]
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 65.
+(Font)              scaled to size 12.0pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.6pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 8.8pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 6.6pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 12.0pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 8.8pt on input line 166.
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 6.6pt on input line 166.
 LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
- input line 65.
+ input line 166.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
 fd
@@ -3002,66 +2024,65 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 65.
+(Font)              scaled to size 8.8pt on input line 166.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 65.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 65.
+(Font)              scaled to size 10.0pt on input line 166.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 65.
+(Font)              scaled to size 7.0pt on input line 166.
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 166.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 166.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 166.
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 166.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 166.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 166.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 166.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 166.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 65.
+(Font)              scaled to size 8.0pt on input line 166.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 65.
+(Font)              scaled to size 6.2pt on input line 166.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 65.
+(Font)              scaled to size 8.0pt on input line 166.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 65.
+(Font)              scaled to size 6.2pt on input line 166.
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 8.0pt on input line 65.
+(Font)              scaled to size 8.0pt on input line 166.
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 6.2pt on input line 65.
+(Font)              scaled to size 6.2pt on input line 166.
 
 
 Package hyperref Warning: Option `pdflang' has already been used,
-(hyperref)                setting the option has no effect on input line 65.
+(hyperref)                setting the option has no effect on input line 166.
 
 
 Package hyperref Warning: Option `pdfdisplaydoctitle' has already been used,
-(hyperref)                setting the option has no effect on input line 65.
-
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 79.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 79.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 108.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 119.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 119.
-
-Overfull \hbox (265.14749pt too wide) in paragraph at lines 106--153
-[][] 
- []
+(hyperref)                setting the option has no effect on input line 166.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5.2
+ [1.1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 181.
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 217.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 181.
+(Font)              scaled to size 9.0pt on input line 217.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -3072,738 +2093,398 @@ Package microtype Info: Character `textendash ' is missing
 Package microtype Info: Character `textemdash ' is missing
 (microtype)             in font `T1/zi4/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
-<../plots/GMRES_ex23_8192_1000000_identical_in_p.png, id=162, 462.528pt x 346.8
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 217.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 217.
+<../plots/GMRES_ex23_8192_1000000_identical_in_p.png, id=134, 462.528pt x 346.8
 96pt>
 File: ../plots/GMRES_ex23_8192_1000000_identical_in_p.png Graphic file (type pn
 g)
 <use ../plots/GMRES_ex23_8192_1000000_identical_in_p.png>
 Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_identical_in_p.png  u
-sed on input line 211.
+sed on input line 253.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex23_8192_1000000_identical_in_p.png, id=164, 462.528pt x 346.
+<../plots/PGMRES_ex23_8192_1000000_identical_in_p.png, id=136, 462.528pt x 346.
 896pt>
 File: ../plots/PGMRES_ex23_8192_1000000_identical_in_p.png Graphic file (type p
 ng)
 <use ../plots/PGMRES_ex23_8192_1000000_identical_in_p.png>
 Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_identical_in_p.png  
-used on input line 212.
+used on input line 254.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
- [6.3]
-<../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf, id=186, 462.52798pt 
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 262.
+ [2.2 <../plots/GMRES_ex23_8192_1000000_identical_in_p.png> <../plots/PGMRES_ex
+23_8192_1000000_identical_in_p.png>]
+<../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf, id=168, 462.52798pt 
 x 346.89601pt>
 File: ../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf Graphic file (ty
 pe pdf)
 <use ../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf>
 Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_independent_in_p_44.p
-df  used on input line 242.
+df  used on input line 287.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf, id=187, 462.52798pt
+<../plots/GMRES_ex23_8192_1000000_independent_in_p_inset_44_with_lines.pdf, id=
+169, 379.93944pt x 288.59016pt>
+File: ../plots/GMRES_ex23_8192_1000000_independent_in_p_inset_44_with_lines.pdf
+ Graphic file (type pdf)
+<use ../plots/GMRES_ex23_8192_1000000_independent_in_p_inset_44_with_lines.pdf>
+
+Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_independent_in_p_inse
+t_44_with_lines.pdf  used on input line 288.
+(pdftex.def)             Requested size: 56.9055pt x 43.2206pt.
+<../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf, id=170, 462.52798pt
  x 346.89601pt>
 File: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf Graphic file (t
 ype pdf)
 <use ../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf>
 Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.
-pdf  used on input line 243.
+pdf  used on input line 291.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap.png, id=190, 462.528
-pt x 346.896pt>
-File: ../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap.png Graphic fil
-e (type png)
-<use ../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap.png>
-Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_stationary_in_t_color
-map.png  used on input line 258.
-(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colormap.png, id=191, 462.52
+<../plots/PGMRES_ex23_8192_1000000_independent_in_p_inset_48_with_lines.pdf, id
+=171, 379.93944pt x 288.59016pt>
+File: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_inset_48_with_lines.pd
+f Graphic file (type pdf)
+<use ../plots/PGMRES_ex23_8192_1000000_independent_in_p_inset_48_with_lines.pdf
+>
+Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_ins
+et_48_with_lines.pdf  used on input line 292.
+(pdftex.def)             Requested size: 56.9055pt x 43.2206pt.
+<../plots/GMRES_ex23_8192_1000000__stationary_in_t_colormap.png, id=174, 462.52
 8pt x 346.896pt>
-File: ../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colormap.png Graphic fi
+File: ../plots/GMRES_ex23_8192_1000000__stationary_in_t_colormap.png Graphic fi
 le (type png)
-<use ../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colormap.png>
-Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_stationary_in_t_colo
-rmap.png  used on input line 259.
+<use ../plots/GMRES_ex23_8192_1000000__stationary_in_t_colormap.png>
+Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000__stationary_in_t_colo
+rmap.png  used on input line 307.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
+<../plots/PGMRES_ex23_8192_1000000__stationary_in_t_colormap.png, id=175, 462.5
+28pt x 346.896pt>
+File: ../plots/PGMRES_ex23_8192_1000000__stationary_in_t_colormap.png Graphic f
+ile (type png)
+<use ../plots/PGMRES_ex23_8192_1000000__stationary_in_t_colormap.png>
+Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000__stationary_in_t_col
+ormap.png  used on input line 308.
+(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
+ [3.3 <../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf> <../plots/GMRE
+S_ex23_8192_1000000_independent_in_p_inset_44_with_lines.pdf
 
-[7.4 <../plots/GMRES_ex23_8192_1000000_identical_in_p.png> <../plots/PGMRES_ex2
-3_8192_1000000_identical_in_p.png> <../plots/GMRES_ex23_8192_1000000_independen
-t_in_p_44.pdf> <../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../plots/GMRES_ex23_8192_100
+0000_independent_in_p_inset_44_with_lines.pdf): PDF inclusion: multiple pdfs wi
+th page group included in a single page
+> <../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../plots/PGMRES_ex23_8192_10
 00000_independent_in_p_48.pdf): PDF inclusion: multiple pdfs with page group in
 cluded in a single page
-> <../plots/GMRES_ex23_8192_1000000_stationary_in_t_colormap.png> <../plots/PGM
-RES_ex23_8192_1000000_stationary_in_t_colormap.png>]
-<../plots/GMRES_ex48_8192_1000000_identical_in_p.png, id=288, 462.528pt x 346.8
+> <../plots/PGMRES_ex23_8192_1000000_independent_in_p_inset_48_with_lines.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../plots/PGMRES_ex23_8192_10
+00000_independent_in_p_inset_48_with_lines.pdf): PDF inclusion: multiple pdfs w
+ith page group included in a single page
+> <../plots/GMRES_ex23_8192_1000000__stationary_in_t_colormap.png> <../plots/PG
+MRES_ex23_8192_1000000__stationary_in_t_colormap.png>]
+<../plots/GMRES_ex48_8192_1000000_identical_in_p.png, id=275, 462.528pt x 346.8
 96pt>
 File: ../plots/GMRES_ex48_8192_1000000_identical_in_p.png Graphic file (type pn
 g)
 <use ../plots/GMRES_ex48_8192_1000000_identical_in_p.png>
 Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_identical_in_p.png  u
-sed on input line 287.
+sed on input line 335.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf, id=289, 462.52798pt 
-x 346.89601pt>
-File: ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf Graphic file (ty
-pe pdf)
-<use ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf>
-Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.p
-df  used on input line 288.
-(pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=290, 462.528
-pt x 346.896pt>
-File: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png Graphic fil
-e (type png)
-<use ../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png>
-Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_color
-map.png  used on input line 289.
-(pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/PGMRES_ex48_8192_1000000_identical_in_p.png, id=291, 462.528pt x 346.
+<../plots/PGMRES_ex48_8192_1000000_identical_in_p.png, id=276, 462.528pt x 346.
 896pt>
 File: ../plots/PGMRES_ex48_8192_1000000_identical_in_p.png Graphic file (type p
 ng)
 <use ../plots/PGMRES_ex48_8192_1000000_identical_in_p.png>
 Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_identical_in_p.png  
-used on input line 290.
+used on input line 336.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf, id=292, 462.52798pt
+<../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf, id=277, 462.52798pt 
+x 346.89601pt>
+File: ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf Graphic file (ty
+pe pdf)
+<use ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf>
+Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.p
+df  used on input line 337.
+(pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
+<../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf, id=278, 462.52798pt
  x 346.89601pt>
 File: ../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf Graphic file (t
 ype pdf)
 <use ../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf>
 Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.
-pdf  used on input line 291.
-(pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=293, 462.52
+pdf  used on input line 338.
+(pdftex.def)             Requested size: 122.34692pt x 91.75761pt.
+<../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=279, 462.528
+pt x 346.896pt>
+File: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png Graphic fil
+e (type png)
+<use ../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png>
+Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_color
+map.png  used on input line 339.
+(pdftex.def)             Requested size: 122.34692pt x 91.75761pt.
+<../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=280, 462.52
 8pt x 346.896pt>
 File: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png Graphic fi
 le (type png)
 <use ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png>
 Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colo
-rmap.png  used on input line 292.
+rmap.png  used on input line 339.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
 
-Underfull \vbox (badness 2096) has occurred while \output is active []
+Underfull \vbox (badness 3471) has occurred while \output is active []
 
- [8.5 <../plots/GMRES_ex48_8192_1000000_identical_in_p.png> <../plots/GMRES_ex4
-8_8192_1000000_independent_in_p_44.pdf> <../plots/GMRES_ex48_8192_1000000_stati
-onary_in_t_colormap.png> <../plots/PGMRES_ex48_8192_1000000_identical_in_p.png>
- <../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../plots/PGMRES_ex48_8192_10
-00000_independent_in_p_48.pdf): PDF inclusion: multiple pdfs with page group in
-cluded in a single page
-> <../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png>]
-<../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png, id=389,
+<../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png, id=287,
  462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png Gra
 phic file (type png)
 <use ../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_wit
-h_johnsonsu.png  used on input line 332.
+h_johnsonsu.png  used on input line 379.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png, id=390,
+<../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png, id=288,
  462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png Gra
 phic file (type png)
 <use ../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_wit
-h_johnsonsu.png  used on input line 333.
+h_johnsonsu.png  used on input line 380.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
+ [4.4 <../plots/GMRES_ex48_8192_1000000_identical_in_p.png> <../plots/PGMRES_ex
+48_8192_1000000_identical_in_p.png> <../plots/GMRES_ex48_8192_1000000_independe
+nt_in_p_44.pdf> <../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf
 
-
-! LaTeX Error: Environment threeparttable undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.385 \begin{threeparttable}
-                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-l.387 \headrow
-               ex23 & \thead{KSPSolve} & \thead{$\boldsymbol{E_{\text {JohnS...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.387 \headrow ex23 & \thead
-                            {KSPSolve} & \thead{$\boldsymbol{E_{\text {JohnS...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.387 \headrow ex23 & \thead{KSPSolve} & \thead
-                                               {$\boldsymbol{E_{\text {JohnS...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 387.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 7.3pt on input line 387.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 5.5pt on input line 387.
-! Undefined control sequence.
-l.387 ...\text {JohnSU}}\left[T\right]}$} & \thead
-                                                  {$\boldsymbol{E_{\text {NC...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.387 ...E_{\text {NCT}}\left[T\right]}$} & \thead
-                                                  {$\boldsymbol{\widehat{E}_...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.387 ..._{\text {Unif}}\left[T\right]}$} & \thead
-                                                  {Cramer bound} & \thead{Be...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.387 ...right]}$} & \thead{Cramer bound} & \thead
-                                                  {Bertsimas bound} \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \headrow 
-                         
-l.390 \headrow
-               ex48 &  &  &  &  & & \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: \begin{center} on input line 384 ended by \end{threeparttable}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.395 \end{threeparttable}
-                           \label{tab:performance-model}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (117.80954pt too wide) in paragraph at lines 386--396
- [] 
- []
-
-<../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png, id=4
-05, 462.528pt x 346.896pt>
-File: ../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png 
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../plots/PGMRES_ex48_8192_10
+00000_independent_in_p_48.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+> <../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png> <../plots/PGM
+RES_ex48_8192_1000000_stationary_in_t_colormap.png>]
+<../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_14_44.png, id=39
+2, 462.528pt x 346.896pt>
+File: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_14_44.png G
+raphic file (type png)
+<use ../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_14_44.png>
+Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_
+uniform_14_44.png  used on input line 453.
+(pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
+<../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with_uniform_16_48.png, id=3
+93, 462.528pt x 346.896pt>
+File: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with_uniform_16_48.png 
 Graphic file (type png)
-<use ../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png>
-Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000__stationary_in_t_with
-_uniform_14_44.png  used on input line 413.
-(pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-[9.6 <../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png> <.
-./plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png>]
-<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png, id=422
+<use ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with_uniform_16_48.png>
+Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with
+_uniform_16_48.png  used on input line 454.
+(pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
+<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png, id=396
 , 462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png Gr
 aphic file (type png)
 <use ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_wi
-th_johnsonsu.png  used on input line 431.
+th_johnsonsu.png  used on input line 471.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png, id=423
+<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png, id=397
 , 462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png Gr
 aphic file (type png)
 <use ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_wi
-th_johnsonsu.png  used on input line 432.
+th_johnsonsu.png  used on input line 472.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
+ [5.5 <../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png> <
+../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png> <../plot
+s/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_14_44.png> <../plots/PGM
+RES_ex48_8192_1000000_stationary_in_t_with_uniform_16_48.png>]
+Underfull \vbox (badness 1845) has occurred while \output is active []
 
 
-! LaTeX Error: Environment threeparttable undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.458 \begin{threeparttable}
-                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-l.460 \headrow
-                &  \multicolumn{4}{c}{Uniform $a_k$} & \multicolumn{4}{c}{Un...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \headrow 
-                         
-l.461 \headrow
-               ex23 & \thead{${\texttt{$a$}}$} & \thead{${\texttt{$b$}}$} & ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.461 \headrow ex23 & \thead
-                            {${\texttt{$a$}}$} & \thead{${\texttt{$b$}}$} & ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.461 ... ex23 & \thead{${\texttt{$a$}}$} & \thead
-                                                  {${\texttt{$b$}}$} & \thea...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.461 ...$}}$} & \thead{${\texttt{$b$}}$} & \thead
-                                                  {${\texttt{loc}}$} & \thea...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.461 ...$}}$} & \thead{${\texttt{loc}}$} & \thead
-                                                  {${\texttt{scale}}$} & \th...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.461 ...}$} & \thead{${\texttt{scale}}$} & \thead
-                                                  {${\texttt{$a$}}$} & \thea...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.461 ...e}}$} & \thead{${\texttt{$a$}}$} & \thead
-                                                  {${\texttt{$b$}}$} & \thea...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.461 ...$}}$} & \thead{${\texttt{$b$}}$} & \thead
-                                                  {${\texttt{loc}}$} & \thea...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.461 ...$}}$} & \thead{${\texttt{loc}}$} & \thead
-                                                  {${\texttt{scale}}$} \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \headrow 
-                         
-l.464 \headrow
-               ex48 &  &  &  &  & & & & \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: \begin{center} on input line 457 ended by \end{threeparttable}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.469 \end{threeparttable}
-                           \label{tab:distribution-params}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (97.87239pt too wide) in paragraph at lines 459--470
+Overfull \hbox (16.63028pt too wide) in paragraph at lines 515--522
  [] 
  []
 
-
-! LaTeX Error: Environment threeparttable undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.477 \begin{threeparttable}
-                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-l.480 \headrow
-               ex23 & \thead{GMRES} & \thead{PGMRES} & ex48 & \thead{GMRES} ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.480 \headrow ex23 & \thead
-                            {GMRES} & \thead{PGMRES} & ex48 & \thead{GMRES} ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.480 \headrow ex23 & \thead{GMRES} & \thead
-                                            {PGMRES} & ex48 & \thead{GMRES} ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.480 ...d{GMRES} & \thead{PGMRES} & ex48 & \thead
-                                                  {GMRES} & \thead{PGMRES} \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.480 ...d{PGMRES} & ex48 & \thead{GMRES} & \thead
-                                                  {PGMRES} \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: \begin{center} on input line 476 ended by \end{threeparttable}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.485 \end{threeparttable}
-                           \label{tab:simulated-runtimes}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (15.83029pt too wide) in paragraph at lines 478--486
- [] 
- []
-
-[10.7 <../plots/GMRES_ex23_8192_1000000__stationary_in_t_with_uniform_14_44.png
-> <../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png> <../
-plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png>]
-<../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png, id=446, 462.528p
+<../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png, id=421, 462.528p
 t x 346.896pt>
 File: ../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png Graphic file
  (type png)
 <use ../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnson
-su.png  used on input line 506.
+su.png  used on input line 542.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png, id=447, 462.528p
-t x 346.896pt>
-File: ../plots/GMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png Graphic file
- (type png)
-<use ../plots/GMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png>
-Package pdftex.def Info: ../plots/GMRES_ex48_1000000_s_k_strong_scaling_johnson
-su.png  used on input line 507.
+<../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png, id=422, 462.528
+pt x 346.896pt>
+File: ../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png Graphic fil
+e (type png)
+<use ../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png>
+Package pdftex.def Info: ../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnso
+nsu.png  used on input line 543.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png, id=448, 462.528p
+<../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png, id=423, 462.528p
 t x 346.896pt>
 File: ../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png Graphic file
  (type png)
 <use ../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png>
 Package pdftex.def Info: ../plots/GMRES_ex48_1000000_a_k_static_scaling_johnson
-su.png  used on input line 513.
+su.png  used on input line 549.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png, id=449, 462.528p
-t x 346.896pt>
-File: ../plots/GMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png Graphic file
- (type png)
-<use ../plots/GMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png>
-Package pdftex.def Info: ../plots/GMRES_ex48_1000000_s_k_static_scaling_johnson
-su.png  used on input line 514.
+<../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png, id=424, 462.528
+pt x 346.896pt>
+File: ../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png Graphic fil
+e (type png)
+<use ../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png>
+Package pdftex.def Info: ../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnso
+nsu.png  used on input line 550.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png, id=452,
+[6.6 <../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png> <
+../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png>]
+<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png, id=438,
  462.528pt x 346.896pt>
 File: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png Gra
 phic file (type png)
 <use ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png>
 Package pdftex.def Info: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_
-uniform_a_k.png  used on input line 540.
+uniform_a_k.png  used on input line 575.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png, id=453,
+<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png, id=439,
  462.528pt x 346.896pt>
 File: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png Gra
 phic file (type png)
 <use ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png>
 Package pdftex.def Info: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_
-uniform_s_k.png  used on input line 541.
+uniform_s_k.png  used on input line 576.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png, id=457, 462.528pt x
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7.7 <../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png> <../plots/
+PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png> <../plots/GMRES_ex48_1000
+000_a_k_static_scaling_johnsonsu.png> <../plots/PGMRES_ex48_1000000_s_k_static_
+scaling_johnsonsu.png>]
+<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png, id=458, 462.528pt x
  346.896pt>
 File: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png Graphic file (t
 ype png)
 <use ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png>
 Package pdftex.def Info: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.
-png  used on input line 555.
+png  used on input line 590.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png, id=458, 462.528pt x
+<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png, id=459, 462.528pt x
  346.896pt>
 File: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png Graphic file (t
 ype png)
 <use ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png>
 Package pdftex.def Info: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.
-png  used on input line 556.
+png  used on input line 591.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
- [11.8 <../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png> <../plots
-/GMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png>]
-<../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_with_k_mod_30.png, id=478, 
+<../plots/GMRES_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png, id=466, 
 462.528pt x 346.896pt>
-File: ../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_with_k_mod_30.png Grap
+File: ../plots/GMRES_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png Grap
 hic file (type png)
-<use ../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_with_k_mod_30.png>
-Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_4_bulk_statistics_wit
-h_k_mod_30.png  used on input line 576.
+<use ../plots/GMRES_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png>
+Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000__bulk_statistics_with
+_k_mod_30_.png  used on input line 616.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_with_k_mod_30.png, id=47
-9, 462.528pt x 346.896pt>
-File: ../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_with_k_mod_30.png G
-raphic file (type png)
-<use ../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_with_k_mod_30.png>
-Package pdftex.def Info: ../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statistics_
-with_k_mod_30.png  used on input line 577.
+<../plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png, id=
+467, 462.528pt x 346.896pt>
+File: ../plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png
+ Graphic file (type png)
+<use ../plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png>
+
+Package pdftex.def Info: ../plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics
+_with_k_mod_30_.png  used on input line 617.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
+ [8.8 <../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png> <
+../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png> <../plot
+s/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png> <../plots/THETA_PIZDAINT_ex
+48_8192_1000000_uniform_s_k.png>] (./krylov-noise-paper.bbl)
+[9.9 <../plots/GMRES_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png> <..
+/plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 671.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 671.
+
+(./krylov-noise-paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 671.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 671.
 
 
-! LaTeX Error: Environment threeparttable undefined.
+Package rerunfilecheck Warning: File `krylov-noise-paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.585 \begin{threeparttable}
-                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-l.587 \headrow
-                & & & & \multicolumn{2}{c}{Piz Daint} & \multicolumn{2}{c}{M...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \headrow 
-                         
-l.588 \headrow
-               ex23 & \thead{BCGS} & \thead{PIPEBCGS} & ex48 & \thead{GMRES}...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.588 \headrow ex23 & \thead
-                            {BCGS} & \thead{PIPEBCGS} & ex48 & \thead{GMRES}...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.588 \headrow ex23 & \thead{BCGS} & \thead
-                                           {PIPEBCGS} & ex48 & \thead{GMRES}...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.588 ...{BCGS} & \thead{PIPEBCGS} & ex48 & \thead
-                                                  {GMRES} & \thead{PGMRES} &...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.588 ...PIPEBCGS} & ex48 & \thead{GMRES} & \thead
-                                                  {PGMRES} & \thead{GMRES} &...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.588 ...& \thead{GMRES} & \thead{PGMRES} & \thead
-                                                  {GMRES} & \thead{PGMRES} \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.588 ...& \thead{PGMRES} & \thead{GMRES} & \thead
-                                                  {PGMRES} \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: \begin{center} on input line 584 ended by \end{threeparttable}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.593 \end{threeparttable}
-                           \label{tab:performance-model-2}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (92.53032pt too wide) in paragraph at lines 586--594
- [] 
- []
-
-[12.9 <../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png> <../plots/
-GMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png> <../plots/BCGS_GMRES_PIPEB
-CGS_PGMRES_ex23_8192_1000000_uniform_a_k.png> <../plots/BCGS_GMRES_PIPEBCGS_PGM
-RES_ex23_8192_1000000_uniform_s_k.png> <../plots/THETA_PIZDAINT_ex48_8192_10000
-00_uniform_a_k.png> <../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png>
-] (./krylov-noise-paper.bbl [13.10 <../plots/GMRES_ex48_8192_1000000_4_bulk_sta
-tistics_with_k_mod_30.png> <../plots/GMRES_MIRA_ex48_8192_1000000_bulk_statisti
-cs_with_k_mod_30.png>]) [14.11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 631.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 631.
- (./krylov-noise-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 631.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 631.
-Package rerunfilecheck Info: File `krylov-noise-paper.out' has not changed.
-(rerunfilecheck)             Checksum: 963727814B786C22E7A7824D19515836;2877.
-
+Package rerunfilecheck Info: Checksums for `krylov-noise-paper.out':
+(rerunfilecheck)             Before: 963727814B786C22E7A7824D19515836;2877
+(rerunfilecheck)             After:  30DE8B61F27BAFB54D6CD4976F3FB8BE;2962.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 31431 strings out of 492649
- 565692 string characters out of 6129622
- 646478 words of memory out of 5000000
- 34202 multiletter control sequences out of 15000+600000
- 734182 words of font info for 434 fonts, out of 8000000 for 9000
+ 40283 strings out of 492649
+ 765740 string characters out of 6129622
+ 811912 words of memory out of 5000000
+ 42876 multiletter control sequences out of 15000+600000
+ 733327 words of font info for 431 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,17n,94p,10389b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
-exlive/2018/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/local/texl
-ive/2018/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr/local/texlive/
-2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/local/texlive/2
-018/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/20
-18/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/201
-8/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2018
-/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texlive/2018/
-texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/fxlri-7letters
-.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/newtx/txbexs.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/newtx/txbsys.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/newtx/txsys.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/newtx/zxlri.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/newtx/zxlzi.pfb>
-Output written on krylov-noise-paper.pdf (14 pages, 2059527 bytes).
+ 60i,16n,94p,10389b,832s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{figure.caption.14} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.16} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{page.14} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{section*.19} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/us
+r/local/texlive/2018/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/l
+ocal/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/lo
+cal/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/loc
+al/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2018
+/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2018/
+texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2018/t
+exmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/2018/te
+xmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.p
+fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/newtx/zxlri.pfb>
+Output written on krylov-noise-paper.pdf (9 pages, 2202227 bytes).
 PDF statistics:
- 615 PDF objects out of 1000 (max. 8388607)
- 373 compressed objects within 4 object streams
- 89 named destinations out of 1000 (max. 500000)
- 57116 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 359 compressed objects within 4 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 65335 words of extra memory for PDF output out of 74296 (max. 10000000)
 

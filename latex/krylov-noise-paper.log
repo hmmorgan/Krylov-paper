@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 JAN 2019 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  14 JAN 2019 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2097,7 +2097,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 7.3pt on input line 217.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 217.
-<../plots/GMRES_ex23_8192_1000000_identical_in_p.png, id=138, 462.528pt x 346.8
+<../plots/GMRES_ex23_8192_1000000_identical_in_p.png, id=147, 462.528pt x 346.8
 96pt>
 File: ../plots/GMRES_ex23_8192_1000000_identical_in_p.png Graphic file (type pn
 g)
@@ -2105,7 +2105,7 @@ g)
 Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_identical_in_p.png  u
 sed on input line 253.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex23_8192_1000000_identical_in_p.png, id=140, 462.528pt x 346.
+<../plots/PGMRES_ex23_8192_1000000_identical_in_p.png, id=149, 462.528pt x 346.
 896pt>
 File: ../plots/PGMRES_ex23_8192_1000000_identical_in_p.png Graphic file (type p
 ng)
@@ -2117,7 +2117,7 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 262.
  [2.2 <../plots/GMRES_ex23_8192_1000000_identical_in_p.png> <../plots/PGMRES_ex
 23_8192_1000000_identical_in_p.png>]
-<../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf, id=171, 462.52798pt 
+<../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf, id=180, 462.52798pt 
 x 346.89601pt>
 File: ../plots/GMRES_ex23_8192_1000000_independent_in_p_44.pdf Graphic file (ty
 pe pdf)
@@ -2126,7 +2126,7 @@ Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_independent_in_p_44.p
 df  used on input line 287.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 <../plots/GMRES_ex23_8192_1000000_independent_in_p_inset_44_with_lines.pdf, id=
-172, 379.93944pt x 288.59016pt>
+181, 379.93944pt x 288.59016pt>
 File: ../plots/GMRES_ex23_8192_1000000_independent_in_p_inset_44_with_lines.pdf
  Graphic file (type pdf)
 <use ../plots/GMRES_ex23_8192_1000000_independent_in_p_inset_44_with_lines.pdf>
@@ -2134,7 +2134,7 @@ File: ../plots/GMRES_ex23_8192_1000000_independent_in_p_inset_44_with_lines.pdf
 Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000_independent_in_p_inse
 t_44_with_lines.pdf  used on input line 288.
 (pdftex.def)             Requested size: 56.9055pt x 43.2206pt.
-<../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf, id=173, 462.52798pt
+<../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf, id=182, 462.52798pt
  x 346.89601pt>
 File: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.pdf Graphic file (t
 ype pdf)
@@ -2143,7 +2143,7 @@ Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_48.
 pdf  used on input line 291.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 <../plots/PGMRES_ex23_8192_1000000_independent_in_p_inset_48_with_lines.pdf, id
-=174, 379.93944pt x 288.59016pt>
+=183, 379.93944pt x 288.59016pt>
 File: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_inset_48_with_lines.pd
 f Graphic file (type pdf)
 <use ../plots/PGMRES_ex23_8192_1000000_independent_in_p_inset_48_with_lines.pdf
@@ -2151,7 +2151,7 @@ f Graphic file (type pdf)
 Package pdftex.def Info: ../plots/PGMRES_ex23_8192_1000000_independent_in_p_ins
 et_48_with_lines.pdf  used on input line 292.
 (pdftex.def)             Requested size: 56.9055pt x 43.2206pt.
-<../plots/GMRES_ex23_8192_1000000__stationary_in_t_colormap.png, id=177, 462.52
+<../plots/GMRES_ex23_8192_1000000__stationary_in_t_colormap.png, id=186, 462.52
 8pt x 346.896pt>
 File: ../plots/GMRES_ex23_8192_1000000__stationary_in_t_colormap.png Graphic fi
 le (type png)
@@ -2159,7 +2159,7 @@ le (type png)
 Package pdftex.def Info: ../plots/GMRES_ex23_8192_1000000__stationary_in_t_colo
 rmap.png  used on input line 307.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex23_8192_1000000__stationary_in_t_colormap.png, id=178, 462.5
+<../plots/PGMRES_ex23_8192_1000000__stationary_in_t_colormap.png, id=187, 462.5
 28pt x 346.896pt>
 File: ../plots/PGMRES_ex23_8192_1000000__stationary_in_t_colormap.png Graphic f
 ile (type png)
@@ -2185,7 +2185,7 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../plots/PGMRES_ex23_8192_10
 ith page group included in a single page
 > <../plots/GMRES_ex23_8192_1000000__stationary_in_t_colormap.png> <../plots/PG
 MRES_ex23_8192_1000000__stationary_in_t_colormap.png>]
-<../plots/GMRES_ex48_8192_1000000_identical_in_p.png, id=276, 462.528pt x 346.8
+<../plots/GMRES_ex48_8192_1000000_identical_in_p.png, id=285, 462.528pt x 346.8
 96pt>
 File: ../plots/GMRES_ex48_8192_1000000_identical_in_p.png Graphic file (type pn
 g)
@@ -2193,7 +2193,7 @@ g)
 Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_identical_in_p.png  u
 sed on input line 335.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/PGMRES_ex48_8192_1000000_identical_in_p.png, id=277, 462.528pt x 346.
+<../plots/PGMRES_ex48_8192_1000000_identical_in_p.png, id=286, 462.528pt x 346.
 896pt>
 File: ../plots/PGMRES_ex48_8192_1000000_identical_in_p.png Graphic file (type p
 ng)
@@ -2201,7 +2201,7 @@ ng)
 Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_identical_in_p.png  
 used on input line 336.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf, id=278, 462.52798pt 
+<../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf, id=287, 462.52798pt 
 x 346.89601pt>
 File: ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.pdf Graphic file (ty
 pe pdf)
@@ -2209,7 +2209,7 @@ pe pdf)
 Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_independent_in_p_44.p
 df  used on input line 337.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf, id=279, 462.52798pt
+<../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf, id=288, 462.52798pt
  x 346.89601pt>
 File: ../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.pdf Graphic file (t
 ype pdf)
@@ -2217,7 +2217,7 @@ ype pdf)
 Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_independent_in_p_48.
 pdf  used on input line 338.
 (pdftex.def)             Requested size: 122.34692pt x 91.75761pt.
-<../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=280, 462.528
+<../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=289, 462.528
 pt x 346.896pt>
 File: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png Graphic fil
 e (type png)
@@ -2225,7 +2225,7 @@ e (type png)
 Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_color
 map.png  used on input line 339.
 (pdftex.def)             Requested size: 122.34692pt x 91.75761pt.
-<../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=281, 462.52
+<../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png, id=290, 462.52
 8pt x 346.896pt>
 File: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_colormap.png Graphic fi
 le (type png)
@@ -2236,7 +2236,7 @@ rmap.png  used on input line 339.
 
 Underfull \vbox (badness 3471) has occurred while \output is active []
 
-<../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png, id=288,
+<../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png, id=297,
  462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_with_johnsonsu.png Gra
 phic file (type png)
@@ -2244,7 +2244,7 @@ phic file (type png)
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex23_8192_1000000_bulk_stats_wit
 h_johnsonsu.png  used on input line 379.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png, id=289,
+<../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png, id=298,
  462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex48_8192_1000000_bulk_stats_with_johnsonsu.png Gra
 phic file (type png)
@@ -2261,23 +2261,23 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../plots/PGMRES_ex48_8192_10
 cluded in a single page
 > <../plots/GMRES_ex48_8192_1000000_stationary_in_t_colormap.png> <../plots/PGM
 RES_ex48_8192_1000000_stationary_in_t_colormap.png>]
-<../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_14_44.png, id=39
-2, 462.528pt x 346.896pt>
+<../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_14_44.png, id=40
+1, 462.528pt x 346.896pt>
 File: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_14_44.png G
 raphic file (type png)
 <use ../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_uniform_14_44.png>
 Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000_stationary_in_t_with_
 uniform_14_44.png  used on input line 453.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with_uniform_16_48.png, id=3
-93, 462.528pt x 346.896pt>
+<../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with_uniform_16_48.png, id=4
+02, 462.528pt x 346.896pt>
 File: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with_uniform_16_48.png 
 Graphic file (type png)
 <use ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with_uniform_16_48.png>
 Package pdftex.def Info: ../plots/PGMRES_ex48_8192_1000000_stationary_in_t_with
 _uniform_16_48.png  used on input line 454.
 (pdftex.def)             Requested size: 113.81102pt x 85.35814pt.
-<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png, id=396
+<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png, id=405
 , 462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png Gr
 aphic file (type png)
@@ -2285,7 +2285,7 @@ aphic file (type png)
 Package pdftex.def Info: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_wi
 th_johnsonsu.png  used on input line 471.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png, id=397
+<../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png, id=406
 , 462.528pt x 346.896pt>
 File: ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png Gr
 aphic file (type png)
@@ -2304,7 +2304,7 @@ Overfull \hbox (16.63028pt too wide) in paragraph at lines 515--522
  [] 
  []
 
-<../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png, id=422, 462.528p
+<../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png, id=431, 462.528p
 t x 346.896pt>
 File: ../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png Graphic file
  (type png)
@@ -2312,7 +2312,7 @@ File: ../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnsonsu.png Graphic file
 Package pdftex.def Info: ../plots/GMRES_ex48_1000000_a_k_strong_scaling_johnson
 su.png  used on input line 542.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png, id=423, 462.528
+<../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png, id=432, 462.528
 pt x 346.896pt>
 File: ../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png Graphic fil
 e (type png)
@@ -2320,7 +2320,7 @@ e (type png)
 Package pdftex.def Info: ../plots/PGMRES_ex48_1000000_s_k_strong_scaling_johnso
 nsu.png  used on input line 543.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png, id=424, 462.528p
+<../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png, id=433, 462.528p
 t x 346.896pt>
 File: ../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png Graphic file
  (type png)
@@ -2328,7 +2328,7 @@ File: ../plots/GMRES_ex48_1000000_a_k_static_scaling_johnsonsu.png Graphic file
 Package pdftex.def Info: ../plots/GMRES_ex48_1000000_a_k_static_scaling_johnson
 su.png  used on input line 549.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png, id=425, 462.528
+<../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png, id=434, 462.528
 pt x 346.896pt>
 File: ../plots/PGMRES_ex48_1000000_s_k_static_scaling_johnsonsu.png Graphic fil
 e (type png)
@@ -2338,7 +2338,7 @@ nsu.png  used on input line 550.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 [6.6 <../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_a_k_with_johnsonsu.png> <
 ../plots/GMRES_PGMRES_ex48_8192_1000000_uniform_s_k_with_johnsonsu.png>]
-<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png, id=440,
+<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png, id=449,
  462.528pt x 346.896pt>
 File: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png Gra
 phic file (type png)
@@ -2346,7 +2346,7 @@ phic file (type png)
 Package pdftex.def Info: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_
 uniform_a_k.png  used on input line 575.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png, id=441,
+<../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png, id=450,
  462.528pt x 346.896pt>
 File: ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png Gra
 phic file (type png)
@@ -2361,7 +2361,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 PGMRES_ex48_1000000_s_k_strong_scaling_johnsonsu.png> <../plots/GMRES_ex48_1000
 000_a_k_static_scaling_johnsonsu.png> <../plots/PGMRES_ex48_1000000_s_k_static_
 scaling_johnsonsu.png>]
-<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png, id=456, 462.528pt x
+<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png, id=466, 462.528pt x
  346.896pt>
 File: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png Graphic file (t
 ype png)
@@ -2369,7 +2369,7 @@ ype png)
 Package pdftex.def Info: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.
 png  used on input line 590.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png, id=457, 462.528pt x
+<../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png, id=467, 462.528pt x
  346.896pt>
 File: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.png Graphic file (t
 ype png)
@@ -2377,7 +2377,7 @@ ype png)
 Package pdftex.def Info: ../plots/THETA_PIZDAINT_ex48_8192_1000000_uniform_s_k.
 png  used on input line 591.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
-<../plots/GMRES_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png, id=464, 
+<../plots/GMRES_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png, id=474, 
 462.528pt x 346.896pt>
 File: ../plots/GMRES_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png Grap
 hic file (type png)
@@ -2386,7 +2386,7 @@ Package pdftex.def Info: ../plots/GMRES_ex48_8192_1000000__bulk_statistics_with
 _k_mod_30_.png  used on input line 616.
 (pdftex.def)             Requested size: 170.71652pt x 128.0372pt.
 <../plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png, id=
-465, 462.528pt x 346.896pt>
+475, 462.528pt x 346.896pt>
 File: ../plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png
  Graphic file (type png)
 <use ../plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png>
@@ -2397,7 +2397,10 @@ _with_k_mod_30_.png  used on input line 617.
  [8.8 <../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_a_k.png> <
 ../plots/BCGS_GMRES_PIPEBCGS_PGMRES_ex23_8192_1000000_uniform_s_k.png> <../plot
 s/THETA_PIZDAINT_ex48_8192_1000000_uniform_a_k.png> <../plots/THETA_PIZDAINT_ex
-48_8192_1000000_uniform_s_k.png>] (./krylov-noise-paper.bbl)
+48_8192_1000000_uniform_s_k.png>] (./krylov-noise-paper.bbl
+LaTeX Info: Redefining \tempurl on input line 196.
+LaTeX Info: Redefining \tempurl on input line 226.
+)
 [9.9 <../plots/GMRES_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png> <..
 /plots/GMRES_MIRA_ex48_8192_1000000__bulk_statistics_with_k_mod_30_.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 672.
@@ -2410,11 +2413,11 @@ Package rerunfilecheck Info: File `krylov-noise-paper.out' has not changed.
 (rerunfilecheck)             Checksum: 30DE8B61F27BAFB54D6CD4976F3FB8BE;2962.
  ) 
 Here is how much of TeX's memory you used:
- 40277 strings out of 492649
- 765720 string characters out of 6129622
- 811907 words of memory out of 5000000
- 42875 multiletter control sequences out of 15000+600000
- 733971 words of font info for 435 fonts, out of 8000000 for 9000
+ 40331 strings out of 492649
+ 766848 string characters out of 6129622
+ 810969 words of memory out of 5000000
+ 42893 multiletter control sequences out of 15000+600000
+ 738651 words of font info for 461 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,16n,94p,10389b,832s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/
@@ -2438,10 +2441,10 @@ pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/newtx/fxlri-7letters
 cal/texlive/2018/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texl
 ive/2018/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on krylov-noise-paper.pdf (9 pages, 2203911 bytes).
+Output written on krylov-noise-paper.pdf (9 pages, 2208800 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 350 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 586 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
  65343 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -1,54 +1,82 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: krylov-noise-paper.aux
-The style file: vancouver-authoryear.bst
-Database file #1: bibli.bib
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--empty author and editor in HPCChallenge
-Warning--missing publisher in HPCChallenge
-Warning--empty pages in HoeflerLumsdaineRehm07
-Warning--empty author and editor in balay2001petsc
-Warning--missing publisher in balay2001petsc
-Warning--empty pages in kumaran2016introduction
-You've used 29 entries,
-            3097 wiz_defined-function locations,
-            861 strings with 11739 characters,
-and the built_in function-call counts, 47139 in all, are:
-= -- 5714
-> -- 400
-< -- 22
-+ -- 230
-- -- 100
-* -- 4020
-:= -- 5133
-add.period$ -- 88
-call.type$ -- 29
-change.case$ -- 26
-chr.to.int$ -- 29
-cite$ -- 35
-duplicate$ -- 3885
-empty$ -- 4533
-format.name$ -- 163
-if$ -- 10896
-int.to.chr$ -- 1
+Database file #1: bibli.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in agarwal2005impact
+Warning--empty address in agarwal2005impact
+Warning--no number and no volume in alverson2012cray
+Warning--page numbers missing in both pages and numpages fields in alverson2012cray
+Warning--empty publisher in beckman2006influence
+Warning--empty address in beckman2006influence
+Warning--empty publisher in chunduri2017run
+Warning--empty address in chunduri2017run
+Warning--empty address in cramer2016mathematical
+Warning--page numbers missing in both pages and numpages fields in david2004order
+Warning--empty publisher in groves2017understanding
+Warning--empty address in groves2017understanding
+Warning--empty address in HoeflerLumsdaineRehm07
+Warning--page numbers missing in both pages and numpages fields in HoeflerLumsdaineRehm07
+Warning--empty publisher in hoefler2010characterizing
+Warning--empty address in hoefler2010characterizing
+Warning--empty address in JacquesNicolasVollaire12
+Warning--empty publisher in kumaran2016introduction
+Warning--empty address in kumaran2016introduction
+Warning--page numbers missing in both pages and numpages fields in kumaran2016introduction
+Warning--no number and no volume in parker2017early
+Warning--page numbers missing in both pages and numpages fields in parker2017early
+Warning--empty publisher in seelam2010extreme
+Warning--empty address in seelam2010extreme
+Warning--empty publisher in sodani2015knights
+Warning--empty address in sodani2015knights
+Warning--empty publisher in StrzodkaGoddeke06
+Warning--empty address in StrzodkaGoddeke06
+You've used 27 entries,
+            5732 wiz_defined-function locations,
+            1467 strings with 20630 characters,
+and the built_in function-call counts, 32582 in all, are:
+= -- 3882
+> -- 1393
+< -- 0
++ -- 465
+- -- 480
+* -- 2450
+:= -- 3464
+add.period$ -- 142
+call.type$ -- 27
+change.case$ -- 209
+chr.to.int$ -- 27
+cite$ -- 55
+duplicate$ -- 2781
+empty$ -- 1955
+format.name$ -- 560
+if$ -- 7700
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 284
-newline$ -- 152
-num.names$ -- 58
-pop$ -- 554
+missing$ -- 99
+newline$ -- 261
+num.names$ -- 216
+pop$ -- 1091
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 451
 quote$ -- 0
-skip$ -- 483
+skip$ -- 965
 stack$ -- 0
-substring$ -- 8766
-swap$ -- 709
-text.length$ -- 12
+substring$ -- 2244
+swap$ -- 266
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 170
-warning$ -- 6
-while$ -- 249
+type$ -- 640
+warning$ -- 28
+while$ -- 190
 width$ -- 0
-write$ -- 390
-(There were 6 warnings)
+write$ -- 513
+(There were 28 warnings)

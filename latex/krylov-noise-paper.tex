@@ -172,7 +172,7 @@ To succinctly describe the execution performance, we
 Large-scale simulations often use Krylov methods \cite{saad96iterative} to solve sparse systems of equations in high performance computing (HPC) environments. 
 As we move to more massively parallel computing the latency cost for global communication has skyrocketed \cite{HPCChallenge}, degrading the performance of Krylov methods because of the reduction operations used in each iteration.
 To mitigate the latency associated with global communication, algebraically equivalent pipelined versions of Krylov methods have been introduced 
-\cite{Chronopoulos_Gear_1989, Ghysels_Ashby_Meerbergen_Vanroose_2012, GhyselsVanroose2014, StrzodkaGoddeke06, Sturler_Vorst_1995, JacquesNicolasVollaire12}. 
+\cite{Chronopoulos_Gear_1989, GhyselsAshbyMeerbergenVanroose2013, GhyselsVanroose2014, StrzodkaGoddeke06, Sturler_Vorst_1995, JacquesNicolasVollaire12}. 
 Pipelined methods rearrange computations so that it is possible to hide some of the cost of global communication with local computation. 
 
 The increasing complexity of HPC computing environments has introduced many sources of run-to-run variability at different levels of HPC systems. 
@@ -237,7 +237,7 @@ Here we present the results from a set of experiments run on the Cray XC40 Theta
 Theta contains Xeon Phi Knights Landing (KNL) compute nodes \cite{sodani2015knights} with 64 CPU processors per node connected by a Cray Aries dragonfly topology \cite{alverson2012cray}.
 We use the Portable, Extensible Toolkit for Scientific Computation (PETSc) \cite{balay2017petsc, balay2001petsc} software package to simulate the solution to problems with varying characteristics such as sparsity pattern. 
 One MPI rank per core is used throughout and we boot the nodes in quadrant clustering mode with flat memory mode. 
-We collect iteration times $\mathcal{T}^k_p$ by inserting calls to ${\texttt{MPI\_Wtime()}}$ at the beginning and end of each Krylov cycle in PETSc's scalable linear equation solvers (KSP) component's GMRES (generalized minimal residual method) and PGMRES (pipelined GMRES) methods. 
+We collect iteration times $\mathcal{T}^k_p$ by inserting calls to ${\texttt{MPI\_Wtime()}}$ at the beginning and end of each Krylov cycle in PETSc's scalable linear equation solvers (KSP) component's GMRES (generalized minimal residual method) and PGMRES (pipelined GMRES) methods \cite[Alg. 4]{GhyselsAshbyMeerbergenVanroose2013}. 
 Since changes and upgrades to HPC machines can affect performance, we note that experiments presented in this paper were performed in autumn 2018. 
 
 %Select data can be found in the open Bitbucket repository \cite{morgan2017theta}.

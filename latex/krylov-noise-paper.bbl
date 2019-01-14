@@ -1,217 +1,400 @@
-\begin{thebibliography}{29}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{}
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\bibitem[{Saad(1996)Yousef Saad}]{saad96iterative}
-Saad Y.
-\newblock Iterative Methods for Sparse Linear Systems.
-\newblock Boston: PWS Publishing Company; 1996.
+\begin{thebibliography}{27}
 
-\bibitem[{Dongarra et~al.(2015)Jack Dongarra and Piotr Luszczek and
-  others}]{HPCChallenge}
-Dongarra J, Luszczek P, et~al., {HPC} Challenge; 2015.
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Agarwal, Garg, and Vishnoi}{Agarwal
+  et~al\mbox{.}}{2005}]%
+        {agarwal2005impact}
+\bibfield{author}{\bibinfo{person}{Saurabh Agarwal}, \bibinfo{person}{Rahul
+  Garg}, {and} \bibinfo{person}{Nisheeth~K Vishnoi}.}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{The impact of noise on the scaling of collectives:
+  A theoretical approach}. In \bibinfo{booktitle}{\emph{International
+  Conference on High-Performance Computing}}. Springer,
+  \bibinfo{pages}{280--289}.
 \newblock
-  \urlprefix\url{http://icl.cs.utk.edu/hpcc/hpcc_results_lat_band.cgi?display=opt}.
 
-\bibitem[{Chronopoulos and Gear(1989)A. T. Chronopoulos and C. W.
-  Gear}]{Chronopoulos_Gear_1989}
-Chronopoulos AT, Gear CW.
-\newblock {$s$-step} iterative methods for symmetric linear systems.
-\newblock Journal of Computational and Applied Mathematics 1989;25:153--168.
 
-\bibitem[{Ghysels et~al.(2012)Ghysels, P. and Ashby, T.J. and Meerbergen, K.
-  and Vanroose, W.}]{Ghysels_Ashby_Meerbergen_Vanroose_2012}
-Ghysels P, Ashby TJ, Meerbergen K, Vanroose W.
-\newblock Hiding global communication latency in the {GMRES} algorithm on
-  massively parallel machines.
-\newblock Leuven, Belgium: Intel Exascience Lab; 2012.
-
-\bibitem[{Ghysels and Vanroose(2014)P. Ghysels and W.
-  Vanroose}]{GhyselsVanroose2014}
-Ghysels P, Vanroose W.
-\newblock Hiding Global Synchronization Latency in the Preconditioned Conjugate
-  Gradient Algorithm.
-\newblock Parallel Computing 2014;40(7):224--238.
+\bibitem[\protect\citeauthoryear{Alverson, Froese, Kaplan, and Roweth}{Alverson
+  et~al\mbox{.}}{2012}]%
+        {alverson2012cray}
+\bibfield{author}{\bibinfo{person}{Bob Alverson}, \bibinfo{person}{Edwin
+  Froese}, \bibinfo{person}{Larry Kaplan}, {and} \bibinfo{person}{Duncan
+  Roweth}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Cray XC series network}.
+\newblock \bibinfo{journal}{\emph{Cray Inc., White Paper WP-Aries01-1112}}
+  (\bibinfo{year}{2012}).
 \newblock
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0167819113000719},
-  7th Workshop on Parallel Matrix Algorithms and Applications.
 
-\bibitem[{Strzodka and G\"oddeke(2006)R. Strzodka and D.
-  G\"oddeke}]{StrzodkaGoddeke06}
-Strzodka R, G\"oddeke D.
-\newblock Pipelined Mixed Precision Algorithms on {FPGA}s for Fast and Accurate
-  {PDE} Solvers from Low Precision Components.
-\newblock In: Proceedings of the 14th Annual IEEE Symposium on
-  Field-Programmable Custom Computing Machines IEEE Computer Society; 2006. p.
-  259--270.
-\newblock FCCM '06.
 
-\bibitem[{Sturler and van~der Vorst(1995)E. De Sturler and H. A. van der
-  Vorst}]{Sturler_Vorst_1995}
-Sturler ED, van~der Vorst HA.
-\newblock Reducing the effect of global communication in {GMRES(m)} and CG on
-  parallel distributed memory computers.
-\newblock Applied Numerical Mathematics 1995;18:441--459.
+\bibitem[\protect\citeauthoryear{Balay, Abhyankar, Adams, Brown, Brune,
+  Buschelman, Dalcin, Eijkhout, Gropp, Kaushik, et~al\mbox{.}}{Balay
+  et~al\mbox{.}}{2017}]%
+        {balay2017petsc}
+\bibfield{author}{\bibinfo{person}{Satish Balay}, \bibinfo{person}{Shrirang
+  Abhyankar}, \bibinfo{person}{Mark Adams}, \bibinfo{person}{Jed Brown},
+  \bibinfo{person}{Peter Brune}, \bibinfo{person}{Kris Buschelman},
+  \bibinfo{person}{LD Dalcin}, \bibinfo{person}{Victor Eijkhout},
+  \bibinfo{person}{W Gropp}, \bibinfo{person}{Dinesh Kaushik}, {et~al\mbox{.}}}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Petsc users manual revision 3.8}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Argonne
+  National Lab.(ANL), Argonne, IL (United States)}.
+\newblock
 
-\bibitem[{Jacques et~al.(1999)T. Jacques and L. Nicolas and C.
-  Vollaire}]{JacquesNicolasVollaire12}
-Jacques T, Nicolas L, Vollaire C.
-\newblock Electromagnetic Scattering with the Boundary Integral Method on
-  {MIMD} Systems.
-\newblock In: High-Performance Computing and Networking, vol. 1593 of Lecture
-  Notes in Computer Science Springer; 1999.p. 1025--1031.
 
-\bibitem[{Cools(2018)Cools, Siegfried}]{Cools2018}
-Cools S.
-\newblock Numerical stability analysis of the class of communication hiding
-  pipelined Conjugate Gradient methods.
-\newblock arXiv preprint arXiv:180402962 2018;.
+\bibitem[\protect\citeauthoryear{Balay, Buschelman, Gropp, Kaushik, Knepley,
+  McInnes, Smith, and Zhang}{Balay et~al\mbox{.}}{2001}]%
+        {balay2001petsc}
+\bibfield{author}{\bibinfo{person}{Satish Balay}, \bibinfo{person}{Kris
+  Buschelman}, \bibinfo{person}{William~D Gropp}, \bibinfo{person}{Dinesh
+  Kaushik}, \bibinfo{person}{Matthew~G Knepley}, \bibinfo{person}{L~Curfman
+  McInnes}, \bibinfo{person}{Barry~F Smith}, {and} \bibinfo{person}{Hong
+  Zhang}.} \bibinfo{year}{2001}\natexlab{}.
+\newblock \bibinfo{title}{PETSc web page}.
+\newblock
+\newblock
 
-\bibitem[{Carson et~al.(2018)Carson, E. and Rozložník, M. and Strakoš, Z.
-  and Tichý, P. and Tůma, M.}]{CarsonEtAl2018}
-Carson E, Rozložník M, Strakoš Z, Tichý P, Tůma M.
-\newblock The Numerical Stability Analysis of Pipelined Conjugate Gradient
-  Methods: Historical Context and Methodology.
-\newblock SIAM Journal on Scientific Computing 2018;40(5):A3549--A3580.
-\newblock \urlprefix\url{https://doi.org/10.1137/16M1103361}.
 
-\bibitem[{Hoefler et~al.(2010)Hoefler, Torsten and Schneider, Timo and
-  Lumsdaine, Andrew}]{hoefler2010characterizing}
-Hoefler T, Schneider T, Lumsdaine A.
-\newblock Characterizing the influence of system noise on large-scale
-  applications by simulation.
-\newblock In: Proceedings of the 2010 ACM/IEEE International Conference for
-  High Performance Computing, Networking, Storage and Analysis IEEE Computer
-  Society; 2010. p. 1--11.
+\bibitem[\protect\citeauthoryear{Beckman, Iskra, Yoshii, and Coghlan}{Beckman
+  et~al\mbox{.}}{2006}]%
+        {beckman2006influence}
+\bibfield{author}{\bibinfo{person}{Pete Beckman}, \bibinfo{person}{Kamil
+  Iskra}, \bibinfo{person}{Kazutomo Yoshii}, {and} \bibinfo{person}{Susan
+  Coghlan}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{The influence of operating systems on the
+  performance of collective operations at extreme scale}. In
+  \bibinfo{booktitle}{\emph{Cluster Computing, 2006 IEEE International
+  Conference on}}. IEEE, \bibinfo{pages}{1--12}.
+\newblock
 
-\bibitem[{Ferreira et~al.(2008)Kurt B. Ferreira and Patrick Bridges and Ron
-  Brightwell}]{FerreiraBridgesBrightwell08}
-Ferreira KB, Bridges P, Brightwell R.
-\newblock Characterizing Application Sensitivity to {OS} Interference Using
-  Kernel-level Noise Injection.
-\newblock In: Proceedings of the 2008 ACM/IEEE Conference on Supercomputing SC
-  '08, Piscataway, NJ: IEEE Press; 2008. p. 19:1--19:12.
-\newblock \urlprefix\url{http://dl.acm.org/citation.cfm?id=1413370.1413390}.
 
-\bibitem[{Parker et~al.(2017)Parker, Scott and Morozov, Vitali and Chunduri,
-  Sudheer and Harms, Kevin and Knight, Chris and Kumaran,
-  Kalyan}]{parker2017early}
-Parker S, Morozov V, Chunduri S, Harms K, Knight C, Kumaran K.
-\newblock Early Evaluation of the Cray XC40 Xeon Phi System Theta at Argonne.
-\newblock Cray User Group 2017 proceedings 2017;.
+\bibitem[\protect\citeauthoryear{Bertsimas, Natarajan, and Teo}{Bertsimas
+  et~al\mbox{.}}{2006}]%
+        {bertsimas2006tight}
+\bibfield{author}{\bibinfo{person}{Dimitris Bertsimas},
+  \bibinfo{person}{Karthik Natarajan}, {and} \bibinfo{person}{Chung-Piaw Teo}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Tight bounds on expected order statistics}.
+\newblock \bibinfo{journal}{\emph{Probability in the Engineering and
+  Informational Sciences}} \bibinfo{volume}{20}, \bibinfo{number}{4}
+  (\bibinfo{year}{2006}), \bibinfo{pages}{667--686}.
+\newblock
 
-\bibitem[{Chunduri et~al.(2017)Chunduri, Sudheer and Harms, Kevin and Parker,
-  Scott and Morozov, Vitali and Oshin, Samuel and Cherukuri, Naveen and
-  Kumaran, Kalyan}]{chunduri2017run}
-Chunduri S, Harms K, Parker S, Morozov V, Oshin S, Cherukuri N, et~al.
-\newblock Run-to-run variability on Xeon Phi based Cray XC systems.
-\newblock In: Proceedings of the International Conference for High Performance
-  Computing, Networking, Storage and Analysis ACM; 2017. p.~52.
 
-\bibitem[{Beckman et~al.(2006)Beckman, Pete and Iskra, Kamil and Yoshii,
-  Kazutomo and Coghlan, Susan}]{beckman2006influence}
-Beckman P, Iskra K, Yoshii K, Coghlan S.
-\newblock The influence of operating systems on the performance of collective
-  operations at extreme scale.
-\newblock In: Cluster Computing, 2006 IEEE International Conference on IEEE;
-  2006. p. 1--12.
+\bibitem[\protect\citeauthoryear{Chronopoulos and Gear}{Chronopoulos and
+  Gear}{1989}]%
+        {Chronopoulos_Gear_1989}
+\bibfield{author}{\bibinfo{person}{A.~T. Chronopoulos} {and}
+  \bibinfo{person}{C.~W. Gear}.} \bibinfo{year}{1989}\natexlab{}.
+\newblock \showarticletitle{{$s$-step} iterative methods for symmetric linear
+  systems}.
+\newblock \bibinfo{journal}{\emph{J. Comput. Appl. Math.}}
+  \bibinfo{volume}{25} (\bibinfo{year}{1989}), \bibinfo{pages}{153--168}.
+\newblock
 
-\bibitem[{Hoefler et~al.(2007)T. Hoefler and A. Lumsdaine and W.
-  Rehm}]{HoeflerLumsdaineRehm07}
-Hoefler T, Lumsdaine A, Rehm W.
-\newblock Implementation and Performance Analysis of Non-Blocking Collective
-  Operations for {MPI}.
-\newblock In: Proceedings of the 2007 International Conference on High
-  Performance Computing, Networking, Storage and Analysis, SC07 IEEE Computer
-  Society/ACM; 2007. .
 
-\bibitem[{Agarwal et~al.(2005)Agarwal, Saurabh and Garg, Rahul and Vishnoi,
-  Nisheeth K}]{agarwal2005impact}
-Agarwal S, Garg R, Vishnoi NK.
-\newblock The impact of noise on the scaling of collectives: A theoretical
-  approach.
-\newblock In: International Conference on High-Performance Computing Springer;
-  2005. p. 280--289.
+\bibitem[\protect\citeauthoryear{Chunduri, Harms, Parker, Morozov, Oshin,
+  Cherukuri, and Kumaran}{Chunduri et~al\mbox{.}}{2017}]%
+        {chunduri2017run}
+\bibfield{author}{\bibinfo{person}{Sudheer Chunduri}, \bibinfo{person}{Kevin
+  Harms}, \bibinfo{person}{Scott Parker}, \bibinfo{person}{Vitali Morozov},
+  \bibinfo{person}{Samuel Oshin}, \bibinfo{person}{Naveen Cherukuri}, {and}
+  \bibinfo{person}{Kalyan Kumaran}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Run-to-run variability on Xeon Phi based Cray XC
+  systems}. In \bibinfo{booktitle}{\emph{Proceedings of the International
+  Conference for High Performance Computing, Networking, Storage and
+  Analysis}}. ACM, \bibinfo{pages}{52}.
+\newblock
 
-\bibitem[{Seelam et~al.(2010)Seelam, Seetharami and Fong, Liana and Tantawi,
-  Asser and Lewars, John and Divirgilio, John and Gildea,
-  Kevin}]{seelam2010extreme}
-Seelam S, Fong L, Tantawi A, Lewars J, Divirgilio J, Gildea K.
-\newblock Extreme scale computing: Modeling the impact of system noise in
-  multicore clustered systems.
-\newblock In: Parallel \& Distributed Processing (IPDPS), 2010 IEEE
-  International Symposium on IEEE; 2010. p. 1--12.
 
-\bibitem[{Morgan et~al.(2016)Hannah Morgan and Matthew G. Knepley and Patrick
-  Sanan and L. Ridgway Scott}]{morgan2016krylov}
-Morgan H, Knepley MG, Sanan P, Scott LR.
-\newblock A stochastic performance model for pipelined {K}rylov methods.
-\newblock Concurrency and Computation: Practice and Experience
-  2016;28(18):4532--4542.
+\bibitem[\protect\citeauthoryear{Cram{\'e}r}{Cram{\'e}r}{2016}]%
+        {cramer2016mathematical}
+\bibfield{author}{\bibinfo{person}{Harald Cram{\'e}r}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Mathematical methods of statistics
+  (PMS-9)}}. Vol.~\bibinfo{volume}{9}.
+\newblock \bibinfo{publisher}{Princeton university press}.
+\newblock
 
-\bibitem[{Sodani(2015)Sodani, Avinash}]{sodani2015knights}
-Sodani A.
-\newblock Knights landing (knl): 2nd generation intel{\textregistered} xeon phi
-  processor.
-\newblock In: Hot Chips 27 Symposium (HCS), 2015 IEEE IEEE; 2015. p. 1--24.
 
-\bibitem[{Alverson et~al.(2012)Alverson, Bob and Froese, Edwin and Kaplan,
-  Larry and Roweth, Duncan}]{alverson2012cray}
-Alverson B, Froese E, Kaplan L, Roweth D.
-\newblock Cray XC series network.
-\newblock Cray Inc, White Paper WP-Aries01-1112 2012;.
+\bibitem[\protect\citeauthoryear{David and Nagaraja}{David and
+  Nagaraja}{2004}]%
+        {david2004order}
+\bibfield{author}{\bibinfo{person}{Herbert~Aron David} {and}
+  \bibinfo{person}{Haikady~Navada Nagaraja}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Order statistics}.
+\newblock \bibinfo{journal}{\emph{Encyclopedia of Statistical Sciences}}
+  \bibinfo{volume}{9} (\bibinfo{year}{2004}).
+\newblock
 
-\bibitem[{Balay et~al.(2017)Balay, Satish and Abhyankar, Shrirang and Adams,
-  Mark and Brown, Jed and Brune, Peter and Buschelman, Kris and Dalcin, LD and
-  Eijkhout, Victor and Gropp, W and Kaushik, Dinesh and
-  others}]{balay2017petsc}
-Balay S, Abhyankar S, Adams M, Brown J, Brune P, Buschelman K, et~al.
-\newblock Petsc users manual revision 3.8.
-\newblock Argonne National Lab.(ANL), Argonne, IL (United States); 2017.
 
-\bibitem[{Balay et~al.(2001)Balay, Satish and Buschelman, Kris and Gropp,
-  William D and Kaushik, Dinesh and Knepley, Matthew G and McInnes, L Curfman
-  and Smith, Barry F and Zhang, Hong}]{balay2001petsc}
-Balay S, Buschelman K, Gropp WD, Kaushik D, Knepley MG, McInnes LC, et~al.,
-  PETSc web page; 2001.
+\bibitem[\protect\citeauthoryear{Dongarra, Luszczek, et~al\mbox{.}}{Dongarra
+  et~al\mbox{.}}{2015}]%
+        {HPCChallenge}
+\bibfield{author}{\bibinfo{person}{Jack Dongarra}, \bibinfo{person}{Piotr
+  Luszczek}, {et~al\mbox{.}}} \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{title}{{HPC} Challenge}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://icl.cs.utk.edu/hpcc/hpcc_results_lat_band.cgi?display=opt}
+\showURL{%
+\tempurl}
 
-\bibitem[{Cram{\'e}r(2016)Cram{\'e}r, Harald}]{cramer2016mathematical}
-Cram{\'e}r H.
-\newblock Mathematical methods of statistics (PMS-9), vol.~9.
-\newblock Princeton university press; 2016.
 
-\bibitem[{David and Nagaraja(2004)David, Herbert Aron and Nagaraja, Haikady
-  Navada}]{david2004order}
-David HA, Nagaraja HN.
-\newblock Order statistics.
-\newblock Encyclopedia of Statistical Sciences 2004;9.
+\bibitem[\protect\citeauthoryear{Ferreira, Bridges, and Brightwell}{Ferreira
+  et~al\mbox{.}}{2008}]%
+        {FerreiraBridgesBrightwell08}
+\bibfield{author}{\bibinfo{person}{Kurt~B. Ferreira}, \bibinfo{person}{Patrick
+  Bridges}, {and} \bibinfo{person}{Ron Brightwell}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Characterizing Application Sensitivity to {OS}
+  Interference Using Kernel-level Noise Injection}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2008 ACM/IEEE Conference on
+  Supercomputing}} \emph{(\bibinfo{series}{SC '08})}. \bibinfo{publisher}{IEEE
+  Press}, \bibinfo{address}{Piscataway, NJ}, Article \bibinfo{articleno}{19},
+  \bibinfo{numpages}{12}~pages.
+\newblock
+\showISBNx{978-1-4244-2835-9}
+\urldef\tempurl%
+\url{http://dl.acm.org/citation.cfm?id=1413370.1413390}
+\showURL{%
+\tempurl}
 
-\bibitem[{Bertsimas et~al.(2006)Bertsimas, Dimitris and Natarajan, Karthik and
-  Teo, Chung-Piaw}]{bertsimas2006tight}
-Bertsimas D, Natarajan K, Teo CP.
-\newblock Tight bounds on expected order statistics.
-\newblock Probability in the Engineering and Informational Sciences
-  2006;20(4):667--686.
 
-\bibitem[{Hammarlund et~al.(2014)Hammarlund, Per and Martinez, Alberto J and
-  Bajwa, Atiq A and Hill, David L and Hallnor, Erik and Jiang, Hong and Dixon,
-  Martin and Derr, Michael and Hunsaker, Mikal and Kumar, Rajesh and
-  others}]{hammarlund2014haswell}
-Hammarlund P, Martinez AJ, Bajwa AA, Hill DL, Hallnor E, Jiang H, et~al.
-\newblock Haswell: The fourth-generation intel core processor.
-\newblock IEEE Micro 2014;34(2):6--20.
+\bibitem[\protect\citeauthoryear{Ghysels, Ashby, Meerbergen, and
+  Vanroose}{Ghysels et~al\mbox{.}}{2013}]%
+        {GhyselsAshbyMeerbergenVanroose2013}
+\bibfield{author}{\bibinfo{person}{Pieter Ghysels}, \bibinfo{person}{Thomas~J
+  Ashby}, \bibinfo{person}{Karl Meerbergen}, {and} \bibinfo{person}{Wim
+  Vanroose}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Hiding global communication latency in the GMRES
+  algorithm on massively parallel machines}.
+\newblock \bibinfo{journal}{\emph{SIAM Journal on Scientific Computing}}
+  \bibinfo{volume}{35}, \bibinfo{number}{1} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{C48--C71}.
+\newblock
 
-\bibitem[{Kumaran(2016)Kumaran, Kalyan}]{kumaran2016introduction}
-Kumaran K.
-\newblock Introduction to Mira.
-\newblock In: Code for Q Workshop; 2016. .
 
-\bibitem[{Groves et~al.(2017)Groves, Taylor and Gu, Yizi and Wright, Nicholas
-  J}]{groves2017understanding}
-Groves T, Gu Y, Wright NJ.
-\newblock Understanding Performance Variability on the Aries Dragonfly Network.
-\newblock In: Cluster Computing (CLUSTER), 2017 IEEE International Conference
-  on IEEE; 2017. p. 809--813.
+\bibitem[\protect\citeauthoryear{Ghysels and Vanroose}{Ghysels and
+  Vanroose}{2014}]%
+        {GhyselsVanroose2014}
+\bibfield{author}{\bibinfo{person}{P. Ghysels} {and} \bibinfo{person}{W.
+  Vanroose}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Hiding Global Synchronization Latency in the
+  Preconditioned Conjugate Gradient Algorithm}.
+\newblock \bibinfo{journal}{\emph{Parallel Comput.}} \bibinfo{volume}{40},
+  \bibinfo{number}{7} (\bibinfo{year}{2014}), \bibinfo{pages}{224--238}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.parco.2013.06.001}
+\showDOI{\tempurl}
+\newblock
+\shownote{7th Workshop on Parallel Matrix Algorithms and Applications.}
+
+
+\bibitem[\protect\citeauthoryear{Groves, Gu, and Wright}{Groves
+  et~al\mbox{.}}{2017}]%
+        {groves2017understanding}
+\bibfield{author}{\bibinfo{person}{Taylor Groves}, \bibinfo{person}{Yizi Gu},
+  {and} \bibinfo{person}{Nicholas~J Wright}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Understanding Performance Variability on the Aries
+  Dragonfly Network}. In \bibinfo{booktitle}{\emph{Cluster Computing (CLUSTER),
+  2017 IEEE International Conference on}}. IEEE, \bibinfo{pages}{809--813}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hammarlund, Martinez, Bajwa, Hill, Hallnor,
+  Jiang, Dixon, Derr, Hunsaker, Kumar, et~al\mbox{.}}{Hammarlund
+  et~al\mbox{.}}{2014}]%
+        {hammarlund2014haswell}
+\bibfield{author}{\bibinfo{person}{Per Hammarlund}, \bibinfo{person}{Alberto~J
+  Martinez}, \bibinfo{person}{Atiq~A Bajwa}, \bibinfo{person}{David~L Hill},
+  \bibinfo{person}{Erik Hallnor}, \bibinfo{person}{Hong Jiang},
+  \bibinfo{person}{Martin Dixon}, \bibinfo{person}{Michael Derr},
+  \bibinfo{person}{Mikal Hunsaker}, \bibinfo{person}{Rajesh Kumar},
+  {et~al\mbox{.}}} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Haswell: The fourth-generation intel core
+  processor}.
+\newblock \bibinfo{journal}{\emph{IEEE Micro}} \bibinfo{volume}{34},
+  \bibinfo{number}{2} (\bibinfo{year}{2014}), \bibinfo{pages}{6--20}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hoefler, Lumsdaine, and Rehm}{Hoefler
+  et~al\mbox{.}}{2007}]%
+        {HoeflerLumsdaineRehm07}
+\bibfield{author}{\bibinfo{person}{T. Hoefler}, \bibinfo{person}{A. Lumsdaine},
+  {and} \bibinfo{person}{W. Rehm}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Implementation and Performance Analysis of
+  Non-Blocking Collective Operations for {MPI}}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2007 International Conference on
+  High Performance Computing, Networking, Storage and Analysis, SC07}}.
+  \bibinfo{publisher}{IEEE Computer Society/ACM}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hoefler, Schneider, and Lumsdaine}{Hoefler
+  et~al\mbox{.}}{2010}]%
+        {hoefler2010characterizing}
+\bibfield{author}{\bibinfo{person}{Torsten Hoefler}, \bibinfo{person}{Timo
+  Schneider}, {and} \bibinfo{person}{Andrew Lumsdaine}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Characterizing the influence of system noise on
+  large-scale applications by simulation}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2010 ACM/IEEE International
+  Conference for High Performance Computing, Networking, Storage and
+  Analysis}}. IEEE Computer Society, \bibinfo{pages}{1--11}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Jacques, Nicolas, and Vollaire}{Jacques
+  et~al\mbox{.}}{1999}]%
+        {JacquesNicolasVollaire12}
+\bibfield{author}{\bibinfo{person}{T. Jacques}, \bibinfo{person}{L. Nicolas},
+  {and} \bibinfo{person}{C. Vollaire}.} \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{Electromagnetic Scattering with the Boundary
+  Integral Method on {MIMD} Systems}.
+\newblock In \bibinfo{booktitle}{\emph{High-Performance Computing and
+  Networking}}. \bibinfo{series}{Lecture Notes in Computer Science},
+  Vol.~\bibinfo{volume}{1593}. \bibinfo{publisher}{Springer},
+  \bibinfo{pages}{1025--1031}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kumaran}{Kumaran}{2016}]%
+        {kumaran2016introduction}
+\bibfield{author}{\bibinfo{person}{Kalyan Kumaran}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Introduction to Mira}. In
+  \bibinfo{booktitle}{\emph{Code for Q Workshop}}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Morgan, Knepley, Sanan, and Scott}{Morgan
+  et~al\mbox{.}}{2016}]%
+        {morgan2016krylov}
+\bibfield{author}{\bibinfo{person}{Hannah Morgan}, \bibinfo{person}{Matthew~G.
+  Knepley}, \bibinfo{person}{Patrick Sanan}, {and} \bibinfo{person}{L.~Ridgway
+  Scott}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{A stochastic performance model for pipelined
+  {K}rylov methods}.
+\newblock \bibinfo{journal}{\emph{Concurrency and Computation: Practice and
+  Experience}} \bibinfo{volume}{28}, \bibinfo{number}{18}
+  (\bibinfo{year}{2016}), \bibinfo{pages}{4532--4542}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Parker, Morozov, Chunduri, Harms, Knight, and
+  Kumaran}{Parker et~al\mbox{.}}{2017}]%
+        {parker2017early}
+\bibfield{author}{\bibinfo{person}{Scott Parker}, \bibinfo{person}{Vitali
+  Morozov}, \bibinfo{person}{Sudheer Chunduri}, \bibinfo{person}{Kevin Harms},
+  \bibinfo{person}{Chris Knight}, {and} \bibinfo{person}{Kalyan Kumaran}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Early Evaluation of the Cray XC40 Xeon Phi System
+  Theta at Argonne}.
+\newblock \bibinfo{journal}{\emph{Cray User Group 2017 proceedings}}
+  (\bibinfo{year}{2017}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Saad}{Saad}{1996}]%
+        {saad96iterative}
+\bibfield{author}{\bibinfo{person}{Yousef Saad}.}
+  \bibinfo{year}{1996}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Iterative Methods for Sparse Linear
+  Systems}}.
+\newblock \bibinfo{publisher}{PWS Publishing Company},
+  \bibinfo{address}{Boston}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Seelam, Fong, Tantawi, Lewars, Divirgilio, and
+  Gildea}{Seelam et~al\mbox{.}}{2010}]%
+        {seelam2010extreme}
+\bibfield{author}{\bibinfo{person}{Seetharami Seelam}, \bibinfo{person}{Liana
+  Fong}, \bibinfo{person}{Asser Tantawi}, \bibinfo{person}{John Lewars},
+  \bibinfo{person}{John Divirgilio}, {and} \bibinfo{person}{Kevin Gildea}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Extreme scale computing: Modeling the impact of
+  system noise in multicore clustered systems}. In
+  \bibinfo{booktitle}{\emph{Parallel \& Distributed Processing (IPDPS), 2010
+  IEEE International Symposium on}}. IEEE, \bibinfo{pages}{1--12}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sodani}{Sodani}{2015}]%
+        {sodani2015knights}
+\bibfield{author}{\bibinfo{person}{Avinash Sodani}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Knights landing (knl): 2nd generation
+  intel{\textregistered} xeon phi processor}. In \bibinfo{booktitle}{\emph{Hot
+  Chips 27 Symposium (HCS), 2015 IEEE}}. IEEE, \bibinfo{pages}{1--24}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Strzodka and G\"oddeke}{Strzodka and
+  G\"oddeke}{2006}]%
+        {StrzodkaGoddeke06}
+\bibfield{author}{\bibinfo{person}{R. Strzodka} {and} \bibinfo{person}{D.
+  G\"oddeke}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Pipelined Mixed Precision Algorithms on {FPGA}s for
+  Fast and Accurate {PDE} Solvers from Low Precision Components}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 14th Annual IEEE Symposium on
+  Field-Programmable Custom Computing Machines}}. IEEE Computer Society,
+  \bibinfo{pages}{259--270}.
+\newblock
+\newblock
+\shownote{FCCM '06.}
+
+
+\bibitem[\protect\citeauthoryear{Sturler and van~der Vorst}{Sturler and van~der
+  Vorst}{1995}]%
+        {Sturler_Vorst_1995}
+\bibfield{author}{\bibinfo{person}{E.~De Sturler} {and} \bibinfo{person}{H.~A.
+  van~der Vorst}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Reducing the effect of global communication in
+  {GMRES(m)} and CG on parallel distributed memory computers}.
+\newblock \bibinfo{journal}{\emph{Applied Numerical Mathematics}}
+  \bibinfo{volume}{18} (\bibinfo{year}{1995}), \bibinfo{pages}{441--459}.
+\newblock
+
 
 \end{thebibliography}

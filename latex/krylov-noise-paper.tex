@@ -112,10 +112,10 @@
 In this work, we develop a performance model and study the impact of 
 operating system, machine variance, and other factors on Krylov and pipelined Krylov method execution.
 We perform repeated runs and collect fine-grained data that 
- shows the influence of variability on Krylov and pipelined Krylov methods.
+ show the influence of variability on Krylov and pipelined Krylov methods.
 To succinctly describe the execution performance, we 
  employ stochastic models based on the distribution of iteration times of each method.
- We test the models with collected data and suggest ways to improve and expand them in order to make a prior performance estimates.
+ We test the models with collected data and suggest ways to improve and expand them in order to make a priori performance estimates.
 \end{abstract}
 
 
@@ -159,7 +159,7 @@ To succinctly describe the execution performance, we
 
 % one page long-ish
 
-Large-scale simulations often use Krylov methods \cite{saad96iterative} to solve sparse systems of equations in high performance computing (HPC) environments. 
+Large-scale simulations often use Krylov methods \cite{saad96iterative,VanDerVorst2003} to solve sparse systems of equations in high performance computing (HPC) environments. 
 As we move to more massively parallel computing the latency cost for global communication has skyrocketed \cite{HPCChallenge}, degrading the performance of Krylov methods because of the reduction operations used in each iteration.
 To mitigate the latency associated with global communication, algebraically equivalent pipelined versions of Krylov methods have been introduced 
 \cite{Chronopoulos_Gear_1989, GhyselsAshbyMeerbergenVanroose2013, GhyselsVanroose2014, StrzodkaGoddeke06, Sturler_Vorst_1995, JacquesNicolasVollaire12}. 
@@ -190,7 +190,7 @@ In Section \ref{sec:performance-model} we employ our stochastic performance mode
 
 \section{Stochastic model review} \label{sec:model-review}
 
-A Krylov method is modeled as a set of $P$ processes repeatedly performing some local computation and global communication. Because of the synchronizations in each iteration, the processors perform in lockstep so that the total time for each iteration is the time given by the slowest processor. Then the total time $T$ for a Krylov method is
+A Krylov method is modeled as a set of $P$ processes repeatedly performing local computation and global communication. Because of the synchronizations in each of iteration, the processors perform in lockstep so that the total time for each iteration is the time given by the slowest processor. Let $p$ index the $P$ processors and $k$ index the $K$ iterations. Then, the total time $T$ for a Krylov method is modeled as
 \begin{equation}
 T = \sum_k \max_p T^k_p,
 \end{equation}
@@ -204,28 +204,29 @@ E[T] =  K P \int ^{\infty}_{-\infty} x F(x)^{P-1} f(x) dx \label{eq:krylov-model
 \end{equation}
 where the random variables $\mathcal{T}^k_p$ are drawn from a distribution with probability density function (pdf) $f(x)$ and cumulative distribution function (cdf) $F(x)$. 
 
-Similarly, we model a pipelined Krylov method as a set of $P$ communicating processors. Pipelined methods employ split-phase collectives that do not require global synchronizations. Rather, the collective operation is first initialized, say with  ${\texttt{MPI\_Ibcast()}}$, and later finalized with ${\texttt{MPI\_Wait()}}$ so that useful work can continue between initialization and finalization. 
-Provided no processor falls too far behind, the total time for a pipelined method $T'$ is the time it take the slowest processor to perform all the given work 
+Similarly, we model a pipelined Krylov method as a set of $P$ communicating processors. Pipelined methods employ split-phase collectives that do not require global synchronizations. Rather, the collective operation is first initialized, say with  ${\texttt{MPI\_Iallreduce()}}$, and later finalized with ${\texttt{MPI\_Wait()}}$ so that useful work can continue between initialization and finalization. 
+Provided no processor falls too far behind, the total time for a pipelined method $T'$ is the time for the slowest processor to perform all the given work 
 \begin{equation}
 T' = \max_p \sum_k T^k_p.
 \end{equation}
-Because of detours, we do not expect the iteration times to be constant. Again we ask for the expected total run time
+Because of detours, we do not expect the iteration times to be constant. Again, we ask for the expected total run time
 \begin{equation}
-E[T'] = E[\max_p \sum_k \mathcal{T}^k_p], \label{eq:pipeline-expression}
+E[T'] = E\left[\max_p \sum_k \mathcal{T}^k_p\right], \label{eq:pipeline-expression}
 \end{equation}
 letting the iterates be random variables drawn from a distribution. 
-If the iterates $\mathcal{T}^k_p$ are identical and independent of process ($p$) and stationary in time ($k$), then, in the limit of large $K$, $\mathcal{T}^k_p \rightarrow \mu$ where $\mu$ is the mean of the underlying iteration time distribution with pdf $f(x)$ and cdf $F(x)$. So we have an expression to compute the expected total time for a pipelined method
+If the iterates $\mathcal{T}^k_p$ are identically distributed with finite mean and variance, independent of process ($p$) and stationary in time ($k$), then, in the limit of large $K$, $\tfrac{1}{K}\sum_k\mathcal{T}^k_p \rightarrow \mu$ where $\mu$ is the mean of the underlying iteration time distribution with pdf $f(x)$ and cdf $F(x)$. So we have an expression to compute the expected total time for a pipelined method
 \begin{equation}
 E[T'] \rightarrow K\mu. \label{eq:pipeline-model}
 \end{equation}
 
-In the next section we present fine-grained data collected from runs of Krylov and pipelined Krylov methods. This gives us insight into how detours affect these simulations, which assumptions above are realistic, and how the models might be refined. For a more thorough explanation of the arguments presented in this section, see \cite{morgan2016krylov}.
+For a more thorough explanation of the arguments presented in this section, see \cite{morgan2016krylov}.
+In the next section we present fine-grained data collected from runs of Krylov and pipelined Krylov methods. This gives us insight into how detours affect these simulations, which assumptions above are realistic, and how the models might be refined. 
 
 \section{Experimental results} \label{sec:experimental-results}
 
 Here we present the results from a set of experiments run on the Cray XC40 Theta at the Argonne Leadership Computing Facility. 
-Theta contains Xeon Phi Knights Landing (KNL) compute nodes \cite{sodani2015knights} with 64 CPU processors per node connected by a Cray Aries dragonfly topology \cite{alverson2012cray}.
-We use the Portable, Extensible Toolkit for Scientific Computation (PETSc) \cite{balay2017petsc, balay2001petsc} software package to simulate the solution to problems with varying characteristics such as sparsity pattern. 
+Theta contains Xeon Phi Knights Landing (KNL) compute nodes \cite{sodani2015knights} with 64 CPU processors per node connected by a Cray Aries interconnect with dragonfly topology \cite{alverson2012cray}.
+We use the Portable, Extensible Toolkit for Scientific Computation (PETSc) \cite{petsc-user-ref, petsc-web-page} software package to simulate the solution to problems with varying characteristics such as sparsity pattern. 
 One MPI rank per core is used throughout and we boot the nodes in quadrant clustering mode with flat memory mode. 
 We collect iteration times $\mathcal{T}^k_p$ by inserting calls to ${\texttt{MPI\_Wtime()}}$ at the beginning and end of each Krylov cycle in PETSc's scalable linear equation solvers (KSP) component's GMRES (generalized minimal residual method) and PGMRES (pipelined GMRES) methods \cite[Alg. 4]{GhyselsAshbyMeerbergenVanroose2013}. 
 Since changes and upgrades to HPC machines can affect performance, we note that experiments presented in this paper were performed in autumn 2018. 
@@ -233,7 +234,7 @@ Since changes and upgrades to HPC machines can affect performance, we note that 
 %Select data can be found in the open Bitbucket repository \cite{morgan2017theta}.
 
 \subsection{One-dimensional Laplacian} \label{sec:ex23}
-PETSc tutorial ex23 is a one-dimensional discretization of the Laplacian, resulting in a simple tridiagonal system. 
+PETSc KSP tutorial ex23\footnote{\texttt{/src/ksp/ksp/examples/tutorials/ex23.c} in PETSc 3.10} is a one-dimensional discretization of the Laplacian, resulting in a simple tridiagonal system. 
 We run ex23 with GMRES and PGMRES on 8192 processors with $10^6$ unknowns and a Jacobi preconditioner. 
 Throughout these simulations we force 5000 iterations of the Krylov method.
 
@@ -248,7 +249,7 @@ Throughout these simulations we force 5000 iterations of the Krylov method.
 
 
 The stochastic model expressions \eqref{eq:krylov-model} and \eqref{eq:pipeline-model} place assumptions on the iterates $\mathcal{T}^k_p$. We check them here to examine the actual performance of the algorithms and to justify use of the models. 
-In Figure \ref{fig:ex23-identical} we graph the distribution of the iterates for select processors identified by their MPI ranks. The distributions look similar between ranks, implying that the iterations might be identical with respect to process. We make use of the two sample Kolmogorov–Smirnov test to check whether two samples (e.g. iterations from rank 0 and rank 1) are drawn from the same underlying distribution. The Kolmogorov–Smirnov test calculates the distance between the empirical distributions of two samples with empirical distribution functions $F_1$ of size $n$ and $F_2$ of size $m$ with
+In Figure \ref{fig:ex23-identical} we graph the distribution of the iterates for select processors identified by their MPI ranks. The distributions look similar between ranks, implying that the iterations might be identical with respect to process. We make use of the two sample Kolmogorov-Smirnov test to check whether two samples (e.g. iterations from rank 0 and rank 1) are drawn from the same underlying distribution. The Kolmogorov-Smirnov test calculates the distance between the empirical distributions of two samples with empirical distribution functions $F_1$ of size $n$ and $F_2$ of size $m$ with
 $$ D = \sup_x |F_1(x) - F_2(x)|. $$
 We reject the hypothesis that the samples come from the same distribution with significance level $\alpha$ if 
 $$D > c(\alpha)\sqrt{\frac{n + m}{nm}}$$
@@ -258,8 +259,8 @@ We find that we do not reject that GMRES ranks 0 and 1 come from the same distri
 On rank 1, we reject none of the $P-1$ pairs of GMRES ranks and reject $54.5\%$ of PGMRES pairs.
 %Overall, we do not reject $x\%$ of the $\frac{P(P-1)}{2}$ pairs of GMRES ranks and $y\%$ of PGMRES ranks.
 
-Because it is inefficient to orthogonalize against a very big basis, GMRES methods are often implemented to restart after $R$ iterations. When a Krylov method restarts, the basis for the Krylov space is thrown out and the current solution is used as the initial guess for the next cycle.
-Since the PETSc default restart value $R = 30$ and each cycle of PGMRES uses two additional iterations to ``fill the pipeline," 5334 iterations are actually employed instead of 5000. Some of these are very quick and easily identifiable as the bump of very short iterations in Figure \ref{fig:ex23-identical} (right). 
+Because it is inefficient to orthogonalize against a very big basis, GMRES methods are typically implemented to restart after $R$ iterations. When a Krylov method restarts, the basis for the Krylov space is discarded and the current solution is used as the initial guess for the next cycle.
+Since the PETSc default restart value is $30$ and each cycle of PGMRES uses two additional iterations to ``fill the pipeline," 5334 iterations are actually employed instead of 5000. Some of these are very quick and easily identifiable as the bump of very short iterations in Figure \ref{fig:ex23-identical} (right). 
 
 \iffalse
 \begin{figure}
@@ -286,8 +287,8 @@ Since the PETSc default restart value $R = 30$ and each cycle of PGMRES uses two
 \end{figure}
 
 
-Figure \ref{fig:ex23-independent} shows the time for iterations $k=44$ (GMRES) and $k=48$ (PGMRES) on process $p$ in order of MPI rank. Iterates are drawn with grey bars and we include a inset graph that shows the iterations on the first ten nodes delineated by black lines. 
-GMRES iterates are nearly constant on a node, each KNL node of 64 processors is clearly visible in Figure \ref{fig:ex23-independent} (left, inset) so that the iterations are not really independent in $p$ as we claimed above. The variance of iteration times on node 0 (with MPI ranks 0-63) is $6.3\cdot10^{-13}$. 
+Figure \ref{fig:ex23-independent} shows the time for iterations $k=44$ (GMRES) and $k=48$ (PGMRES) on process $p$ in order of MPI rank. Iterates are drawn with grey bars and we include a inset graph that shows the iterations on the first ten nodes, delineated by black lines. 
+GMRES iterates are nearly constant on a node; each KNL node of 64 processors is clearly visible in Figure \ref{fig:ex23-independent} (left, inset) so that the iterations are not truly independent in $p$ as we assumed above. The variance of iteration times on node 0 (with MPI ranks 0-63) is $6.3\cdot10^{-13}$. 
 This could be due to the synchronizations in each iteration of GMRES, forcing processors on a node to perform in lockstep. 
 There is also some periodic behavior over all the nodes.
 Conversely, PGMRES iterations appear to contain more variability on a node ($1.4\cdot10^{-10}$ on the node with MPI ranks 0-63, three orders of magnitude greater than GMRES), but less between them. 
@@ -313,12 +314,12 @@ The derivations in Section \ref{sec:model-review} made the simplifying assumptio
 
 
 \subsection{Blatter-Pattyn equations}
-PETSc ex48 solves the hydrostatic equations for ice sheet flow, where the ice uses a power-law rheology with Glen exponent 3. This generates a much denser system of equations with about 10 times more nonzeros per row than ex23. Again we choose our problem size so that there are $10^6$ unknowns, use a Jacobi preconditioner, and force 5000 iterates of the Krylov method. We stop after one nonlinear iteration. 
+PETSc SNES tutorial ex48\footnote{\texttt{src/snes/examples/tutorials/ex48.c} in PETSc 3.10} solves the hydrostatic equations for ice sheet flow, where the ice uses a power-law rheology with Glen exponent 3. This generates a much denser system of equations with about 10 times more nonzeros per row than ex23. Again we choose our problem size so that there are $10^6$ unknowns, use a Jacobi preconditioner, and force 5000 iterates of the Krylov method. We stop after one nonlinear iteration. 
 
-We repeat the analysis from Section \ref{sec:ex23} and find qualitatively similar results, shown in Figure \ref{fig:ex48}. Using the Kolmogorov–Smirnov test again we find that we do not reject the assumption that GMRES iterates from ranks 0 and 1 come from the same distribution since $D = 0.003 < 0.024$ and we reject that PGMRES iterates come from the same distribution since $D = 0.078 > 0.023$.
+We repeat the analysis from Section \ref{sec:ex23} and find qualitatively similar results, shown in Figure \ref{fig:ex48}. Using the Kolmogorov-Smirnov test again we find that we do not reject the assumption that GMRES iterates from ranks 0 and 1 come from the same distribution since $D = 0.003 < 0.024$ and we reject that PGMRES iterates come from the same distribution since $D = 0.078 > 0.023$.
 The iterates on a fixed process $p$ look like they could be from the same family of distributions with different parameters as those in the previous subsection. 
 
-GMRES iterates again look highly dependent on the node with node 0 variance $4.3\cdot10^{-13}$. The variance on PGMRES node 0 is $8.6\cdot10^{-10}$, larger than before, and there is more variation between PGMRES nodes which looks periodic. This could be explained by the communication induced by the matrix sparsity pattern. While certain nodes appear to take much longer, the colormap (bottom right) shows that overall processors perform similarly within an iteration. Again, the computation is  not stationary in time. 
+GMRES iterates again appear highly dependent on the node with node 0 variance $4.3\cdot10^{-13}$. The variance on PGMRES node 0 is $8.6\cdot10^{-10}$, larger than before, and there is more variation between PGMRES nodes which looks periodic. This could be explained by the communication induced by the matrix sparsity pattern. While certain nodes appear to take much longer, the colormap (bottom right) shows that overall processors perform similarly within an iteration. Again, the computation is  not stationary in time. 
 
 \begin{figure}[t]
 \centering
@@ -352,7 +353,7 @@ Similarly for a pipelined method, we use \eqref{eq:pipeline-expression} as befor
 where $\mu_k$ is the mean of the underlying distribution in iteration $k$. 
 
 The original Krylov model \eqref{eq:krylov-model} benefits from slight alteration as well. 
-Since the iterates on each node are nearly constant, shown in Figure \eqref{fig:ex23-independent} (left) and Figure \ref{fig:ex48} (top middle), they are more suitably modeled by $\widehat{P} = P/64$  independent random variables than $P$ independent processors. We make use of this substitution in the next section but it does not seem to effect \eqref{eq:updated-krylov-model} much.
+Since the iterates on each node are nearly constant, shown in Figure \eqref{fig:ex23-independent} (left) and Figure \ref{fig:ex48} (top middle), they are more suitably modeled by $\widehat{P} = P/64$  independent random variables than $P$ independent processors. We make use of this substitution in the next section but it does not seem to strongly affect \eqref{eq:updated-krylov-model}.
 
 
 \section{Performance modeling} \label{sec:performance-model}
@@ -372,20 +373,20 @@ We will use ``bulk statistics" with these performance models, taking all iterati
 \end{figure}
 
 To find the functions $f(x)$ and $F(x)$ and mean $\mu$, we use Scipy's ${\texttt{stats}}$ package to fit various analytical distributions to our collected data. For a given continuous distribution and data, the ${\texttt{fit}}$ function returns the maximum likelihood estimation for the shape, location, and scale parameters by maximizing a log-likelihood function.  
-We pick the distributions that minimize the sum of squared error between the data and the fit distribution.
+We choose distributions which minimize the sum of squared error between the data and the fit distribution.
 For the pipelined methods, we disregard the two iterations in each cycle that ``fill the pipeline" to avoid distribution fitting complications.
 
 
 
 
-Using these good fitting distributions, we can calculate $E[T]$ and $E[T']$ and compare the expected results to the actual KSPSolve times (the time spent inside the Krylov solver) provided by PETSc's ${\texttt{-log\_view}}$ option. 
+Using these well-fitting distributions, we can calculate $E[T]$ and $E[T']$ and compare the expected results to the actual \texttt{KSPSolve times} (the time spent inside the Krylov solver) provided by PETSc's ${\texttt{-log\_view}}$ option. 
 For integration in \eqref{eq:krylov-model} we use Python's ${\texttt{quad}}$ function and integrate over the bounds of the data.
 
 To employ the updated models $\widehat{E}[T]$ and $\widehat{E}[T']$, we again perform distribution fitting using ${\texttt{scipy}}$, this time for each iteration to find  $f_k(x)$, $F_k(x)$, and mean $\mu_k$.
 We claim that the runtimes $\mathcal{T}^k_p$ for each iteration $k$ are from the same family with possibly different parameters. 
 Not all iterations resemble the same distribution family, so we use a uniform distribution to model the iterations, shown fitted to GMRES and PGMRES iterations in Figure \ref{fig:iterations-with-fitted-uniform}. 
 The distribution parameters vary by iteration.
-In \eqref{eq:updated-krylov-model}, integration is performed in each iteration again using ${\texttt{quad}}$ and the calculated expected total times are compared to the KSPSolve time.
+In \eqref{eq:updated-krylov-model}, integration is performed in each iteration again using ${\texttt{quad}}$ and the calculated expected total times are compared to the \texttt{KSPSolve} time.
 
 Analytical expressions have been used \cite{seelam2010extreme} to bound the maximum of a set of random variables using the sample mean $\mu_X$ and standard deviation $\sigma_X$.  Cramer \cite{cramer2016mathematical, david2004order} bound the maximum of $N$ identical and independent random variables  with
 \begin{equation}
@@ -400,7 +401,7 @@ We will use these to compare with our Krylov performance models.
 \subsection{Results}
 
 Distribution fitting alone gives some insight into algorithm execution. 
-In Figure \ref{fig:bulk-fitted}, we show bulk data from Section \ref{sec:experimental-results} with the Johnson SU distribution. Note that there were some other good fitting distributions, including Non-central Student's T.
+In Figure \ref{fig:bulk-fitted}, we show bulk data from Section \ref{sec:experimental-results} with the Johnson SU distribution. Note that there were some other well-fitting distributions, including Non-central Student's T.
 The bulk data show that in a given method, the iterates $\mathcal{T}^k_p$ are mostly clustered and fairly quick with a fewer, longer, giving the distribution a small tail.
 In general, PGMRES runtimes were faster than GMRES, consistent with faster overall execution in these examples. Ex48 runtimes are shifted to the right of ex23 and more spread out, implying longer iterations with more variation. 
 
@@ -412,7 +413,7 @@ In one case, the non-stationary model $\widehat{E}[T']$ is not as good a predict
 The results show that when we have available iteration data, the updated performance models \eqref{eq:updated-krylov-model} and \eqref{eq:updated-pipelined-model} are good performance predictors and we will use them from here on. 
 
 \begin{table*}[t]
-\caption{Performance model results and bounds for ex23 and ex48 with good fitting distributions.}
+\caption{Performance model results and bounds for ex23 and ex48 with well-fitting distributions.}
 \begin{center}
 \begin{tabular}{| l l l l l  l l |} \hline
  ex23 & KSPSolve & $E_{\text {JohnSU}}\left[T\right]$ & $E_{\text {NCT}}\left[T\right]$ & $\widehat{E}_{\text {Unif}}\left[T\right]$  & Cramer bound & Bertsimas bound \\
@@ -447,12 +448,12 @@ In the previous section, we showed that our performance models $\widehat{E}[T]$ 
 
 Bulk statistics appear to be enough to succinctly describe the performance of a pipelined method, they are not a sufficient way to describe a traditional Krylov method. Instead, we used non-stationary uniform distributions to model each iteration, shown in Figure \ref{fig:iterations-with-fitted-uniform}.
 Here we see how non-stationary the iterations actually are, in this case they are almost non-overlapping, and how the parameters change over time. 
-That is, for each iteration $k$, the random variables $\mathcal{T}_p^k$ follow a uniform distribution with pdf $f_k$ and cdf $F_k$ given by
+That is, for each iteration $k$, the random variables $\mathcal{T}_p^k$ are modeled as following a uniform distribution with pdf $f_k$ and cdf $F_k$ given by
 \begin{equation} \label{eq:uniform}
 f_k(x) = \frac{1}{b_k - a_k}, \quad F_k(x) = \frac{x-a_k}{b_k-a_k}.
 \end{equation}
 The uniform distribution can be described with two parameters: the minimum $a_k$ and the span $s_k = b_k - a_k$. We model a Krylov method with $K$ uniform distributions
-where in each iteration the uniform parameters $a_k$ and $s_k$ are random variables drawn from some distribution. 
+where in each iteration the uniform parameters $a_k$ and $s_k$ are random variables themselves drawn from some distribution. 
 Figure \ref{fig:uniform-params-fitted} show histograms of the uniform parameters from  PETSc ex48 using GMRES and PGMRES with fitted Johnson SU distribution.
 Johnson SU, a transformation of the normal distribution, is described by two shape parameters $a$ and $b$ and location and scale parameters ${\texttt{loc}}$ and ${\texttt{scale}}$ in Scipy.  
 
@@ -514,7 +515,7 @@ ex23 & ${\texttt{$a$}}$ &${\texttt{$b$}}$ & ${\texttt{loc}}$ & ${\texttt{scale}}
 
 \section{Extension to other algorithms and computing platforms}\label{sec:more-experiments}
 
-In the last section, we saw that we can reasonable simulate the execution time of a Krylov method given Johnson SU parameters to model uniformly distributed iterations. 
+In the last section, we saw that we can reasonably simulate the execution time of a Krylov method given Johnson SU parameters to model uniformly distributed iterations. 
 Many factors can influence performance such as algorithm and matrix pattern, as we've seen. 
 In this section, we expand our experiments to study other factors including problem size and computing platform in an effort to test our non-stationary model in other scenarios and suggest ways to perform a priori runtime estimates.
 Again, these experiments were performed in autumn 2018. 
@@ -550,9 +551,9 @@ Static-scaling changes exaggerate what we see for strong-scaling.
 
 \subsection{BCGS}\label{sec:bcgs}
 
-We solve PETSc ex23, the one-dimensional Laplacian problem, using the Stabalized biconjugate gradient method (BCGS) and a pipelined version (PIPEBCGS) with 5000 linear iterations and $10^6$ unknowns on Theta.  
+We solve PETSc ex23, the one-dimensional Laplacian problem, using the Stabilized Biconjugate Gradient method (BCGS) and a pipelined version (PIPEBCGS) with 5000 linear iterations and $10^6$ unknowns on Theta.  
 
-Many aspects of the BCGS and PIPEBCGS computations were consistent with GMRES and PGMRES, such as non-stationary iterates and nearly constant BCGS runtimes on a given node of Theta. 
+Many aspects of the BCGS and PIPEBCGS computations are consistent with GMRES and PGMRES, such as non-stationary iterates and nearly constant BCGS runtimes on a given node of Theta. 
 Figure \ref{fig:bcgs} shows uniform parameter $a_k$ and $s_k$ histograms with GMRES and PGMRES for comparison. 
 Although with different parameters, the BCGS and PIPEBCGS distributions look like they can be modeled by Johnson SU distribution family, 
 suggesting that our performance model is applicable to Krylov methods outside of GMRES methods.
@@ -569,7 +570,7 @@ Performance results for BCGS and PIPEBCGS using our non-stationary stochastic mo
 
 \subsection{Piz Daint}\label{sec:pizdaint}
 
-We repeat experiments on the Cray XC40 Piz Daint supercomputer at the Swiss National Computing Center. 
+We repeat experiments on the Cray XC40 Piz Daint supercomputer\footnote{hybrid partition, November 2018} at the Swiss National Computing Center. 
 Piz Daint and Theta both employ a Aries Dragonfly interconnect but Piz Daint contains Intel Xeon E5 Haswell  processors \cite{hammarlund2014haswell} on compute nodes, so the differences we see are likely due to different processors or the shared use of a communication network.
 Figure \ref{fig:pizdaint} shows runs of ex48 with GMRES and PGMRES on 8192 processors and $10^6$ unknowns. 
 In a given iteration, the quickest processor can be much faster on Piz Daint than Theta, but both uniform parameters contain much more variation.
